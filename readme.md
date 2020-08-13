@@ -1,4 +1,4 @@
-# Yet Another Ergonomical Mechanical Keyboard
+# Yet Another Ergonomic Mechanical Keyboard
 
 ## Bill of materials
 

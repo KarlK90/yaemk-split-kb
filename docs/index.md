@@ -1,4 +1,4 @@
-# Yet Another Ergonomical Mechanical Keyboard
+# Yet Another Ergonomic Mechanical Keyboard
 
 Is a 8x5 staggered column split keyboard with an pronounced offset between the colums. 
 
