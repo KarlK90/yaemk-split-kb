@@ -1610,4 +1610,6 @@ F 3 "" H 3650 5800 60  0000 C CNN
 $EndComp
 Text Notes 550  6150 0    50   ~ 0
 VBUS Filter according to:\nhttp://www.ftdichip.com/Support/Documents/AppNotes/AN_146_USB_Hardware_Design_Guidelines_for_FTDI_ICs.pdf
+Text Notes 4800 3050 0    50   ~ 0
+Pull Ups are optional for I2C
 $EndSCHEMATC
