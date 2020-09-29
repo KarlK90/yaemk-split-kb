@@ -107,17 +107,6 @@ F 3 "" H 1500 7200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L YAEMK:C C50
-U 1 1 5EAFD6B3
-P 2700 7200
-F 0 "C50" H 2815 7238 40  0000 L CNN
-F 1 "100n" H 2815 7162 40  0000 L CNN
-F 2 "prettylib:SMD-0603" H 2738 7050 30  0001 C CNN
-F 3 "" H 2700 7200 60  0000 C CNN
-	1    2700 7200
-	1    0    0    -1  
-$EndComp
-$Comp
 L YAEMK:C C49
 U 1 1 5EAFD6BD
 P 2300 7200
@@ -126,17 +115,6 @@ F 1 "100n" H 2415 7162 40  0000 L CNN
 F 2 "prettylib:SMD-0603" H 2338 7050 30  0001 C CNN
 F 3 "" H 2300 7200 60  0000 C CNN
 	1    2300 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L YAEMK:C C52
-U 1 1 5EB0F837
-P 3100 7200
-F 0 "C52" H 3215 7238 40  0000 L CNN
-F 1 "100n" H 3215 7162 40  0000 L CNN
-F 2 "prettylib:SMD-0603" H 3138 7050 30  0001 C CNN
-F 3 "" H 3100 7200 60  0000 C CNN
-	1    3100 7200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -173,30 +151,10 @@ Wire Wire Line
 	1900 7450 1500 7450
 Wire Wire Line
 	2300 7400 2300 7450
-Connection ~ 2300 7450
 Wire Wire Line
 	2300 7450 1900 7450
 Wire Wire Line
-	2700 7400 2700 7450
-Connection ~ 2700 7450
-Wire Wire Line
-	2700 7450 2300 7450
-Wire Wire Line
-	3100 7400 3100 7450
-Wire Wire Line
-	3100 7450 2700 7450
-Wire Wire Line
-	3100 7000 3100 6950
-Wire Wire Line
-	2700 7000 2700 6950
-Connection ~ 2700 6950
-Wire Wire Line
-	2700 6950 3100 6950
-Wire Wire Line
 	2300 7000 2300 6950
-Connection ~ 2300 6950
-Wire Wire Line
-	2300 6950 2700 6950
 Wire Wire Line
 	1900 7000 1900 6950
 Connection ~ 1900 6950
@@ -247,7 +205,7 @@ L Device:Crystal_GND24_Small HSE1
 U 1 1 5EBBD983
 P 9650 950
 F 0 "HSE1" H 9300 1200 50  0000 L CNN
-F 1 "12MHz" H 9300 1100 50  0000 L CNN
+F 1 "8MHz" H 9300 1100 50  0000 L CNN
 F 2 "prettylib:Crystal_SMD_EuroQuartz_MJ-4Pin_5.0x3.2mm" H 9650 950 50  0001 C CNN
 F 3 "~" H 9650 950 50  0001 C CNN
 	1    9650 950 
@@ -402,35 +360,9 @@ Wire Notes Line
 	10150 3750 10150 4800
 Text Notes 10150 3750 0    60   ~ 0
 JTAG Interface\n
-$Comp
-L YAEMK:R R8
-U 1 1 539C9F3B
-P 7700 4350
-F 0 "R8" V 7750 4550 50  0000 C CNN
-F 1 "33" V 7700 4350 50  0000 C CNN
-F 2 "prettylib:SMD-0603" V 7800 4350 50  0001 C CNN
-F 3 "" H 7700 4350 60  0001 C CNN
-	1    7700 4350
-	0    1    1    0   
-$EndComp
-$Comp
-L YAEMK:R R7
-U 1 1 539C9F35
-P 7700 4250
-F 0 "R7" V 7650 4050 50  0000 C CNN
-F 1 "33" V 7700 4250 50  0000 C CNN
-F 2 "prettylib:SMD-0603" V 7600 4250 50  0001 C CNN
-F 3 "" H 7700 4250 60  0001 C CNN
-	1    7700 4250
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	7300 4350 7450 4350
-Wire Wire Line
-	7300 4250 7450 4250
 Text GLabel 7950 4250 2    39   Input ~ 0
 USB_D-
-Text GLabel 8250 4350 2    39   Input ~ 0
+Text GLabel 7950 4350 2    39   Input ~ 0
 USB_D+
 Text GLabel 7300 4450 2    39   Input ~ 0
 JTMS
@@ -524,66 +456,14 @@ F 3 "" H 1950 1200 60  0001 C CNN
 $EndComp
 NoConn ~ 1700 2100
 NoConn ~ 1700 2000
-Text GLabel 5000 3750 0    39   Input ~ 0
-USART1_TX
-Text GLabel 5000 3850 0    39   Input ~ 0
-USART1_RX
-$Comp
-L YAEMK:R R16
-U 1 1 5E9A1C8A
-P 5500 3450
-F 0 "R16" V 5600 3450 50  0000 C CNN
-F 1 "2k2" V 5500 3450 50  0000 C CNN
-F 2 "prettylib:SMD-0603" V 5400 3450 60  0001 C CNN
-F 3 "" H 5500 3450 60  0001 C CNN
-	1    5500 3450
-	1    0    0    -1  
-$EndComp
-$Comp
-L YAEMK:R R15
-U 1 1 5E9A2A81
-P 5200 3450
-F 0 "R15" V 5300 3450 50  0000 C CNN
-F 1 "2k2" V 5200 3450 50  0000 C CNN
-F 2 "prettylib:SMD-0603" V 5100 3450 60  0001 C CNN
-F 3 "" H 5200 3450 60  0001 C CNN
-	1    5200 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6000 3750 5200 3750
-Wire Wire Line
-	5000 3850 5500 3850
-Wire Wire Line
-	5200 3700 5200 3750
-Connection ~ 5200 3750
-Wire Wire Line
-	5200 3750 5000 3750
-Wire Wire Line
-	5500 3700 5500 3850
-Connection ~ 5500 3850
-Wire Wire Line
-	5500 3850 6000 3850
-Wire Wire Line
-	5500 3200 5350 3200
-$Comp
-L YAEMK:VDD #PWR0102
-U 1 1 5E9D032B
-P 5350 3200
-F 0 "#PWR0102" H 5350 3300 30  0001 C CNN
-F 1 "VDD" H 5350 3310 30  0000 C CNN
-F 2 "" H 5350 3200 60  0000 C CNN
-F 3 "" H 5350 3200 60  0000 C CNN
-	1    5350 3200
-	1    0    0    -1  
-$EndComp
-Connection ~ 5350 3200
-Wire Wire Line
-	5350 3200 5200 3200
+Text GLabel 6000 4150 0    39   Input ~ 0
+USART3_TX
+Text GLabel 6000 4250 0    39   Input ~ 0
+USART3_RX
 Text GLabel 4800 2000 3    39   Input ~ 0
-USART1_TX
+USART3_TX
 Text GLabel 4400 1100 3    39   Input ~ 0
-USART1_RX
+USART3_RX
 Wire Wire Line
 	2200 1100 2200 1150
 $Comp
@@ -665,38 +545,8 @@ Text GLabel 1000 3850 0    39   Input ~ 0
 ESD_USB_D-
 Text GLabel 7300 4650 2    39   Input ~ 0
 JTDI
-NoConn ~ 6000 3550
 Text GLabel 6000 3650 0    39   Input ~ 0
 MCU_LED
-$Comp
-L YAEMK:R R14
-U 1 1 5EB2A1F5
-P 8100 4600
-F 0 "R14" V 8200 4600 50  0000 C CNN
-F 1 "1k5" V 8100 4600 50  0000 C CNN
-F 2 "prettylib:SMD-0603" V 8000 4600 60  0001 C CNN
-F 3 "" H 8100 4600 60  0001 C CNN
-	1    8100 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L YAEMK:VDD #PWR0105
-U 1 1 5EB2AF1A
-P 8100 4950
-F 0 "#PWR0105" H 8100 5050 30  0001 C CNN
-F 1 "VDD" H 8100 5060 30  0000 C CNN
-F 2 "" H 8100 4950 60  0000 C CNN
-F 3 "" H 8100 4950 60  0000 C CNN
-	1    8100 4950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8250 4350 8100 4350
-Connection ~ 8100 4350
-Wire Wire Line
-	8100 4350 7950 4350
-Wire Wire Line
-	8100 4850 8100 4950
 Wire Notes Line
 	2450 600  2450 2700
 Wire Wire Line
@@ -781,17 +631,15 @@ Text GLabel 6000 3250 0    39   Input ~ 0
 Col2
 Text GLabel 6000 3350 0    39   Input ~ 0
 Col3
-Text GLabel 7300 3350 2    39   Input ~ 0
-TIM2_CH3
 Text GLabel 7300 3450 2    39   Input ~ 0
 Col1
 Text GLabel 6000 4350 0    39   Input ~ 0
 Col4
-Text GLabel 6000 4450 0    39   Input ~ 0
+Text GLabel 5950 5400 0    39   Input ~ 0
 Col5
 Text GLabel 7300 4050 2    39   Input ~ 0
 Col6
-Text GLabel 6000 4650 0    39   Input ~ 0
+Text GLabel 6000 5550 0    39   Input ~ 0
 Col7
 Text GLabel 7300 3750 2    39   Input ~ 0
 Row3
@@ -955,9 +803,9 @@ Wire Wire Line
 Wire Wire Line
 	3600 1650 3750 1650
 Text GLabel 4400 2000 3    39   Input ~ 0
-USART1_RX
+USART3_RX
 Text GLabel 4800 1100 3    39   Input ~ 0
-USART1_TX
+USART3_TX
 Wire Wire Line
 	4400 1100 4400 900 
 Wire Wire Line
@@ -994,61 +842,10 @@ Text GLabel 1700 1600 2    39   Input ~ 0
 ESD_USB_D+
 Text GLabel 1700 1400 2    39   Input ~ 0
 ESD_USB_D-
-NoConn ~ 6000 3950
-NoConn ~ 7300 3250
-NoConn ~ 7300 3150
-$Comp
-L YAEMK:C C3
-U 1 1 5EF63CC9
-P 3500 7200
-F 0 "C3" H 3615 7238 40  0000 L CNN
-F 1 "100n" H 3615 7162 40  0000 L CNN
-F 2 "prettylib:SMD-0603" H 3538 7050 30  0001 C CNN
-F 3 "" H 3500 7200 60  0000 C CNN
-	1    3500 7200
-	1    0    0    -1  
-$EndComp
-$Comp
-L YAEMK:C C38
-U 1 1 5EF63CD3
-P 3900 7200
-F 0 "C38" H 4015 7238 40  0000 L CNN
-F 1 "100n" H 4015 7162 40  0000 L CNN
-F 2 "prettylib:SMD-0603" H 3938 7050 30  0001 C CNN
-F 3 "" H 3900 7200 60  0000 C CNN
-	1    3900 7200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 7400 3500 7450
-Connection ~ 3500 7450
-Wire Wire Line
-	3500 7450 3100 7450
-Wire Wire Line
-	3900 7400 3900 7450
-Wire Wire Line
-	3900 7450 3500 7450
-Wire Wire Line
-	3900 7000 3900 6950
-Wire Wire Line
-	3500 7000 3500 6950
-Connection ~ 3500 6950
-Wire Wire Line
-	3500 6950 3900 6950
-Wire Wire Line
-	3100 6950 3500 6950
-Connection ~ 3100 6950
-Connection ~ 3100 7450
-Wire Notes Line
-	4250 6750 4250 7650
-Wire Notes Line
-	600  6750 4250 6750
-Wire Notes Line
-	600  7650 4250 7650
-Text GLabel 6000 4150 0    39   Input ~ 0
-I2C2_SCL
-Text GLabel 6000 4250 0    39   Input ~ 0
-I2C2_SDA
+Text GLabel 6000 3750 0    39   Input ~ 0
+I2C1_SCL
+Text GLabel 6000 3850 0    39   Input ~ 0
+I2C1_SDA
 $Comp
 L YAEMK:CONN_4 P3
 U 1 1 5F00435C
@@ -1083,9 +880,9 @@ F 3 "" H 9250 5450 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 9250 5300 0    39   Input ~ 0
-I2C2_SCL
+I2C1_SCL
 Text GLabel 9250 5150 0    39   Input ~ 0
-I2C2_SDA
+I2C1_SDA
 Text Notes 9450 6450 0    50   ~ 0
 Display provides pull-up resistors
 Text Notes 8850 4950 0    60   ~ 0
@@ -1223,9 +1020,9 @@ F 3 "" H 9250 6100 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 9250 5950 0    39   Input ~ 0
-I2C2_SCL
+I2C1_SCL
 Text GLabel 9250 5800 0    39   Input ~ 0
-I2C2_SDA
+I2C1_SDA
 Wire Wire Line
 	9250 5800 9400 5800
 Wire Wire Line
@@ -1328,7 +1125,7 @@ NRST
 Wire Wire Line
 	9150 4050 9250 4050
 Connection ~ 9250 4050
-Text GLabel 6000 4050 0    50   Input ~ 0
+Text GLabel 5850 5000 0    39   Input ~ 0
 HANDNESS
 Text GLabel 10100 2850 3    50   Input ~ 0
 HANDNESS
@@ -1610,6 +1407,47 @@ F 3 "" H 3650 5800 60  0000 C CNN
 $EndComp
 Text Notes 550  6150 0    50   ~ 0
 VBUS Filter according to:\nhttp://www.ftdichip.com/Support/Documents/AppNotes/AN_146_USB_Hardware_Design_Guidelines_for_FTDI_ICs.pdf
-Text Notes 4800 3050 0    50   ~ 0
-Pull Ups are optional for I2C
+Wire Notes Line
+	600  6750 2600 6750
+Wire Notes Line
+	2600 6750 2600 7650
+Wire Notes Line
+	2600 7650 600  7650
+Text GLabel 6000 4450 0    39   Input ~ 0
+SPI2_SCK
+Text GLabel 6000 4650 0    39   Input ~ 0
+SPI2_MOSI
+Wire Wire Line
+	7300 4250 7950 4250
+Wire Wire Line
+	7300 4350 7800 4350
+Wire Wire Line
+	7800 5000 7800 5150
+$Comp
+L YAEMK:R R7
+U 1 1 5F7561A0
+P 7800 4750
+F 0 "R7" V 7900 4750 50  0000 C CNN
+F 1 "1k5" V 7800 4750 50  0000 C CNN
+F 2 "prettylib:SMD-0603" V 7700 4750 60  0001 C CNN
+F 3 "" H 7800 4750 60  0001 C CNN
+	1    7800 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4500 7800 4350
+Connection ~ 7800 4350
+Wire Wire Line
+	7800 4350 7950 4350
+$Comp
+L YAEMK:VDD #PWR0102
+U 1 1 5F76C3D6
+P 7800 5150
+F 0 "#PWR0102" H 7800 5250 30  0001 C CNN
+F 1 "VDD" H 7800 5260 30  0000 C CNN
+F 2 "" H 7800 5150 60  0000 C CNN
+F 3 "" H 7800 5150 60  0000 C CNN
+	1    7800 5150
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
