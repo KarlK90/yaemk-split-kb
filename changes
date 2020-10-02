@@ -1,0 +1,12 @@
+* Diodes 323 -> 123 for increased routing space
+* I2C EEPROM
+* I2C1 for Display and EEPROM
+* SPI2 for APA2020 / HD107s LEDs
+* USART3 for Split Comms
+* Pinky Column down by ~2mm
+
+TODO:
+* Pinky Colum routing
+* APA2020 LEDs
+* Matrix Routing
+* RISC-V Log
