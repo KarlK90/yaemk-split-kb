@@ -7,6 +7,7 @@ Is a 8x5 staggered column split keyboard with an pronounced offset between the c
 ## Features
 
 * On-Board ARM Microcontrollers (STM32F103 or STM32F303)
+* runs with qmk Firmware
 * 64-66 x 1u Keys
 * Kailh MX Hotswap Sockets
 * Per-Key RGB WS2812 Backlighting, mounted in-board
