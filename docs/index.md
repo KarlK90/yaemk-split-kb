@@ -2,6 +2,8 @@
 
 Is a 8x5 staggered column split keyboard with an pronounced offset between the colums. 
 
+![YAEMK front](./images/yaemk_front_1200.jpeg)
+
 ## Features
 
 * On-Board ARM Microcontrollers (STM32F103 or STM32F303)
@@ -17,6 +19,8 @@ Is a 8x5 staggered column split keyboard with an pronounced offset between the c
 * Extra slim design, no component is taller than 2mm
 
 ## Bill of Materials
+
+[Interactiv html BOM](./ibom_rev1-1.html)
 
 ## Build Guide
 
