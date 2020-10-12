@@ -23,11 +23,10 @@ Is a 8x5 staggered column split keyboard with an pronounced offset between the c
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-Mvi0P6VIho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## Bill of Materials
 
-[Interactiv html BOM](./ibom_rev1-1.html)
 
 ## Build Guide
 
 If you have never soldered SMD components before don't be afraid it is absolutly doable with the right tools and some practice. 
 
+You can find the Bill of Materials and component placement in this [Interactiv html BOM](./ibom_rev1-1.html).
