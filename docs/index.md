@@ -18,6 +18,10 @@ Is a 8x5 staggered column split keyboard with an pronounced offset between the c
 * SMD Components
 * Extra slim design, no component is taller than 2mm
 
+## Demo
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-Mvi0P6VIho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Bill of Materials
 
 [Interactiv html BOM](./ibom_rev1-1.html)
