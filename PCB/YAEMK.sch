@@ -1003,17 +1003,6 @@ Text GLabel 1000 6000 0    60   Input ~ 0
 Rot_A
 Text GLabel 3600 6000 2    60   Input ~ 0
 Rot_B
-$Comp
-L YAEMK:+5V #PWR0101
-U 1 1 5EF4B6B0
-P 2300 5300
-F 0 "#PWR0101" H 2300 5390 20  0001 C CNN
-F 1 "+5V" H 2296 5428 30  0000 C CNN
-F 2 "" H 2300 5300 60  0000 C CNN
-F 3 "" H 2300 5300 60  0000 C CNN
-	1    2300 5300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2200 6900 2200 6800
 Wire Wire Line
@@ -1124,10 +1113,6 @@ Wire Wire Line
 Wire Wire Line
 	1800 6850 1800 6600
 Wire Wire Line
-	2300 5400 2200 5400
-Wire Wire Line
-	2300 5300 2300 5400
-Wire Wire Line
 	2200 6000 2200 5900
 Connection ~ 2200 6000
 $Comp
@@ -1141,9 +1126,6 @@ F 3 "" H 2400 5650 30  0000 C CNN
 	1    2400 5650
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	2400 5400 2300 5400
-Connection ~ 2300 5400
 Wire Wire Line
 	2400 5900 2400 6000
 Connection ~ 2400 6000
@@ -1320,4 +1302,20 @@ Wire Notes Line
 	6950 600  8350 600 
 Text Notes 6950 600  0    50   ~ 0
 Mounting Hardware
+Wire Wire Line
+	2200 5400 2300 5400
+$Comp
+L YAEMK:VDD #PWR0101
+U 1 1 5FA3B535
+P 2300 5400
+F 0 "#PWR0101" H 2300 5500 30  0001 C CNN
+F 1 "VDD" H 2314 5538 30  0000 C CNN
+F 2 "" H 2300 5400 60  0000 C CNN
+F 3 "" H 2300 5400 60  0000 C CNN
+	1    2300 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2300 5400
+Wire Wire Line
+	2300 5400 2400 5400
 $EndSCHEMATC
