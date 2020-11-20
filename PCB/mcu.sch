@@ -440,17 +440,6 @@ Text GLabel 8050 6550 0    39   Input ~ 0
 BOOT0_CHARGE
 Wire Notes Line
 	2450 600  2450 2700
-$Comp
-L YAEMK:STM32F103CBTx U5
-U 1 1 5E921694
-P 8750 6350
-F 0 "U5" H 9200 7800 50  0000 C CNN
-F 1 "STM32F103CBTx" H 8700 6350 50  0000 C CNN
-F 2 "prettylib:LQFP-48_7x7mm_P0.5mm" H 8150 4950 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 8750 6350 50  0001 C CNN
-	1    8750 6350
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	14900 3850 15900 3850
 Wire Notes Line
@@ -516,31 +505,31 @@ Wire Notes Line
 	2450 2700 5000 2700
 Wire Notes Line
 	2450 600  5000 600 
-Text GLabel 9350 6550 2    39   Input ~ 0
+Text GLabel 9350 6850 2    39   Input ~ 0
 Col2
-Text GLabel 8050 6350 0    39   Input ~ 0
+Text GLabel 8050 6150 0    39   Input ~ 0
 Col3
-Text GLabel 9350 6450 2    39   Input ~ 0
+Text GLabel 9350 6350 2    39   Input ~ 0
 Col1
-Text GLabel 8050 7350 0    39   Input ~ 0
+Text GLabel 8050 6250 0    39   Input ~ 0
 Col4
-Text GLabel 8000 8400 0    39   Input ~ 0
+Text GLabel 8050 6350 0    39   Input ~ 0
 Col5
-Text GLabel 9350 7050 2    39   Input ~ 0
+Text GLabel 8050 7450 0    39   Input ~ 0
 Col6
-Text GLabel 8050 8550 0    39   Input ~ 0
+Text GLabel 8050 7550 0    39   Input ~ 0
 Col7
 Text GLabel 9350 6750 2    39   Input ~ 0
 Row3
-Text GLabel 10000 5950 2    39   Input ~ 0
-Row4
 Text GLabel 9350 6650 2    39   Input ~ 0
+Row4
+Text GLabel 9350 6250 2    39   Input ~ 0
 Row5
-Text GLabel 10100 6450 2    39   Input ~ 0
-Row1
-Text GLabel 8050 7550 0    39   Input ~ 0
-Row2
 Text GLabel 9350 6950 2    39   Input ~ 0
+Row1
+Text GLabel 8050 7350 0    39   Input ~ 0
+Row2
+Text GLabel 8050 7650 0    39   Input ~ 0
 Col8
 NoConn ~ 3600 1100
 NoConn ~ 3600 1200
@@ -644,9 +633,9 @@ Text GLabel 15300 4400 0    39   Input ~ 0
 JTCK
 Text GLabel 15300 4500 0    39   Input ~ 0
 JTMS
-Text GLabel 8050 6150 0    39   Input ~ 0
+Text GLabel 9350 6450 2    39   Input ~ 0
 Rot_A
-Text GLabel 9350 6850 2    39   Input ~ 0
+Text GLabel 9350 6550 2    39   Input ~ 0
 Rot_B
 Wire Wire Line
 	3600 1450 3750 1450
@@ -1324,7 +1313,7 @@ Wire Wire Line
 Wire Wire Line
 	13050 2000 12250 2000
 Connection ~ 12250 2000
-Text GLabel 9350 6350 2    39   Input ~ 0
+Text GLabel 9350 6150 2    39   Input ~ 0
 TIM2_CH3
 $Comp
 L Device:D_Schottky D77
@@ -1518,4 +1507,15 @@ F 3 "" H 14750 2750 60  0000 C CNN
 $EndComp
 Text GLabel 14950 3250 2    39   Input ~ 0
 HANDNESS
+$Comp
+L MCU_ST_STM32F3:STM32F303CCTx U5
+U 1 1 5E921694
+P 8750 6350
+F 0 "U5" H 9200 7800 50  0000 C CNN
+F 1 "STM32F303CCTx" H 8700 6350 50  0000 C CNN
+F 2 "prettylib:LQFP-48_7x7mm_P0.5mm" H 8150 4950 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/CD00161566.pdf" H 8750 6350 50  0001 C CNN
+	1    8750 6350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

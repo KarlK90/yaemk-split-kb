@@ -1456,4 +1456,130 @@ Wire Wire Line
 	9450 5100 10050 5100
 Wire Wire Line
 	11000 4800 10950 4800
+$Comp
+L Jumper:SolderJumper_2_Open JP3
+U 1 1 5FC59A5F
+P 1700 3250
+F 0 "JP3" H 1700 3455 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 1700 3364 50  0000 C CNN
+F 2 "prettylib:SOLDER_JUMPER_2" H 1700 3250 50  0001 C CNN
+F 3 "~" H 1700 3250 50  0001 C CNN
+	1    1700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 5FC5EAF9
+P 2250 5300
+F 0 "JP4" H 2250 5505 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 2250 5414 50  0000 C CNN
+F 2 "prettylib:SOLDER_JUMPER_2" H 2250 5300 50  0001 C CNN
+F 3 "~" H 2250 5300 50  0001 C CNN
+	1    2250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP5
+U 1 1 5FC601CD
+P 4650 5300
+F 0 "JP5" H 4650 5505 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 4650 5414 50  0000 C CNN
+F 2 "prettylib:SOLDER_JUMPER_2" H 4650 5300 50  0001 C CNN
+F 3 "~" H 4650 5300 50  0001 C CNN
+	1    4650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP7
+U 1 1 5FC6267C
+P 6450 5300
+F 0 "JP7" H 6450 5505 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 6450 5414 50  0000 C CNN
+F 2 "prettylib:SOLDER_JUMPER_2" H 6450 5300 50  0001 C CNN
+F 3 "~" H 6450 5300 50  0001 C CNN
+	1    6450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP8
+U 1 1 5FC68D55
+P 7100 3300
+F 0 "JP8" H 7100 3505 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 7100 3414 50  0000 C CNN
+F 2 "prettylib:SOLDER_JUMPER_2" H 7100 3300 50  0001 C CNN
+F 3 "~" H 7100 3300 50  0001 C CNN
+	1    7100 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_2_Open JP6
+U 1 1 5FC6B932
+P 5300 3300
+F 0 "JP6" H 5300 3505 50  0000 C CNN
+F 1 "SolderJumper_2_Open" H 5300 3414 50  0000 C CNN
+F 2 "prettylib:SOLDER_JUMPER_2" H 5300 3300 50  0001 C CNN
+F 3 "~" H 5300 3300 50  0001 C CNN
+	1    5300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 3800 5000 3300
+Wire Wire Line
+	5000 3300 5150 3300
+Connection ~ 5000 3800
+Wire Wire Line
+	5450 3300 5600 3300
+Wire Wire Line
+	5600 3300 5600 3800
+Connection ~ 5600 3800
+Wire Wire Line
+	1850 3250 2000 3250
+Wire Wire Line
+	2000 3250 2000 3800
+Connection ~ 2000 3800
+Wire Wire Line
+	1550 3250 1400 3250
+Wire Wire Line
+	1400 3250 1400 3800
+Connection ~ 1400 3800
+Wire Wire Line
+	6800 3800 6800 3300
+Wire Wire Line
+	6800 3300 6950 3300
+Connection ~ 6800 3800
+Wire Wire Line
+	7250 3300 7400 3300
+Wire Wire Line
+	7400 3300 7400 3800
+Connection ~ 7400 3800
+Wire Wire Line
+	6600 5300 6750 5300
+Wire Wire Line
+	6750 5300 6750 4800
+Connection ~ 6750 4800
+Wire Wire Line
+	6150 4800 6150 5300
+Wire Wire Line
+	6150 5300 6300 5300
+Connection ~ 6150 4800
+Wire Wire Line
+	4800 5300 4950 5300
+Wire Wire Line
+	4950 5300 4950 4800
+Connection ~ 4950 4800
+Wire Wire Line
+	4350 4800 4350 5300
+Wire Wire Line
+	4350 5300 4500 5300
+Connection ~ 4350 4800
+Wire Wire Line
+	2550 4800 2550 5300
+Wire Wire Line
+	2550 5300 2400 5300
+Connection ~ 2550 4800
+Wire Wire Line
+	1950 4800 1950 5300
+Wire Wire Line
+	1950 5300 2100 5300
+Connection ~ 1950 4800
 $EndSCHEMATC
