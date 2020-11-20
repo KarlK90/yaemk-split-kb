@@ -696,7 +696,7 @@ F 3 "" H 5150 2100 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 700  3300 1    60   BiDi ~ 0
-TIM2_CH3
+RGB_DATA
 NoConn ~ 8950 3950
 $Comp
 L YAEMK:SK6812MINI-E D50
