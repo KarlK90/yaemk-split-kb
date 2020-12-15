@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name YAEMK)(type Legacy)(uri /home/karlk/Development/AWE-Mechanical-Keyboards/Ergodox/PCB/lib/YAEMK.lib)(options "")(descr ""))
-  (lib (name YAEMK-rescue)(type Legacy)(uri ${KIPRJMOD}/YAEMK-rescue.lib)(options "")(descr ""))
+  (lib (name YAEMK)(type Legacy)(uri ${KIPRJMOD}/lib/YAEMK.lib)(options "")(descr ""))
 )

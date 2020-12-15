@@ -803,8 +803,6 @@ Wire Wire Line
 	4900 2250 4900 2950
 Wire Wire Line
 	5600 2250 5600 2950
-Wire Wire Line
-	5600 1550 5600 2250
 $Sheet
 S 8450 650  850  800 
 U 54B2C0DD
@@ -815,12 +813,6 @@ Wire Notes Line
 	550  600  550  4950
 Text Notes 550  600  0    39   ~ 0
 Switch Matrix
-$Sheet
-S 8450 1800 850  850 
-U 549878F0
-F0 "mcu" 50
-F1 "mcu.sch" 50
-$EndSheet
 $Comp
 L YAEMK:MX_WS2812_2U_2X1U S1
 U 1 1 5F0DAADF
@@ -1155,7 +1147,7 @@ Wire Wire Line
 Text GLabel 4350 3650 2    60   Input ~ 0
 Rot_Row
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH6
+L YAEMK:Mounting_Hole MH6
 U 1 1 5EF9B2DD
 P 7900 2400
 F 0 "MH6" V 7847 2550 60  0000 L CNN
@@ -1166,7 +1158,7 @@ F 3 "" H 7900 2400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH1
+L YAEMK:Mounting_Hole MH1
 U 1 1 5EF9B5B8
 P 7900 800
 F 0 "MH1" V 7847 950 60  0000 L CNN
@@ -1177,7 +1169,7 @@ F 3 "" H 7900 800 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH7
+L YAEMK:Mounting_Hole MH7
 U 1 1 5EF9C683
 P 7900 2700
 F 0 "MH7" V 7847 2850 60  0000 L CNN
@@ -1188,7 +1180,7 @@ F 3 "" H 7900 2700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH2
+L YAEMK:Mounting_Hole MH2
 U 1 1 5EF9D40E
 P 7900 1100
 F 0 "MH2" V 7847 1250 60  0000 L CNN
@@ -1199,7 +1191,7 @@ F 3 "" H 7900 1100 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH8
+L YAEMK:Mounting_Hole MH8
 U 1 1 5EF9E2EE
 P 7900 3000
 F 0 "MH8" V 7847 3150 60  0000 L CNN
@@ -1210,7 +1202,7 @@ F 3 "" H 7900 3000 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH3
+L YAEMK:Mounting_Hole MH3
 U 1 1 5EF9E2F8
 P 7900 1400
 F 0 "MH3" V 7847 1550 60  0000 L CNN
@@ -1221,7 +1213,7 @@ F 3 "" H 7900 1400 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH9
+L YAEMK:Mounting_Hole MH9
 U 1 1 5EF9E302
 P 7900 3300
 F 0 "MH9" V 7847 3450 60  0000 L CNN
@@ -1232,7 +1224,7 @@ F 3 "" H 7900 3300 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH4
+L YAEMK:Mounting_Hole MH4
 U 1 1 5EF9E30C
 P 7900 1700
 F 0 "MH4" V 7847 1850 60  0000 L CNN
@@ -1243,7 +1235,7 @@ F 3 "" H 7900 1700 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L YAEMK-rescue:Mounting_Hole-YAEMK MH5
+L YAEMK:Mounting_Hole MH5
 U 1 1 5F03D0F0
 P 7900 2050
 F 0 "MH5" V 7847 2200 60  0000 L CNN
@@ -1253,6 +1245,38 @@ F 3 "" H 7900 2050 60  0000 C CNN
 	1    7900 2050
 	0    1    1    0   
 $EndComp
+$Comp
+L YAEMK:VSS #PWR05
+U 1 1 5F07D6B4
+P 7800 3600
+F 0 "#PWR05" H 7800 3600 30  0001 C CNN
+F 1 "VSS" H 7800 3500 30  0000 C CNN
+F 2 "" H 7800 3600 60  0000 C CNN
+F 3 "" H 7800 3600 60  0000 C CNN
+	1    7800 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 2950 3500 4600
+Wire Notes Line
+	8350 600  8350 3800
+Wire Notes Line
+	8350 3800 6950 3800
+Wire Notes Line
+	6950 3800 6950 600 
+Wire Notes Line
+	6950 600  8350 600 
+Text Notes 6950 600  0    50   ~ 0
+Mounting Hardware
+Wire Wire Line
+	2200 5400 2300 5400
+Text GLabel 2300 5250 2    50   Input ~ 0
+RGB_VDD
+Wire Wire Line
+	2300 5250 2300 5400
+Connection ~ 2300 5400
+Wire Wire Line
+	2300 5400 2400 5400
 Wire Wire Line
 	7800 800  7800 1100
 Connection ~ 7800 1100
@@ -1276,39 +1300,15 @@ Wire Wire Line
 Connection ~ 7800 3000
 Wire Wire Line
 	7800 3000 7800 3300
-$Comp
-L YAEMK:VSS #PWR05
-U 1 1 5F07D6B4
-P 7800 3600
-F 0 "#PWR05" H 7800 3600 30  0001 C CNN
-F 1 "VSS" H 7800 3500 30  0000 C CNN
-F 2 "" H 7800 3600 60  0000 C CNN
-F 3 "" H 7800 3600 60  0000 C CNN
-	1    7800 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 3300 7800 3600
 Connection ~ 7800 3300
 Wire Wire Line
-	3500 2950 3500 4600
-Wire Notes Line
-	8350 600  8350 3800
-Wire Notes Line
-	8350 3800 6950 3800
-Wire Notes Line
-	6950 3800 6950 600 
-Wire Notes Line
-	6950 600  8350 600 
-Text Notes 6950 600  0    50   ~ 0
-Mounting Hardware
+	7800 3300 7800 3600
+$Sheet
+S 8450 1800 850  850 
+U 549878F0
+F0 "mcu" 50
+F1 "mcu.sch" 50
+$EndSheet
 Wire Wire Line
-	2200 5400 2300 5400
-Text GLabel 2300 5250 2    50   Input ~ 0
-RGB_VDD
-Wire Wire Line
-	2300 5250 2300 5400
-Connection ~ 2300 5400
-Wire Wire Line
-	2300 5400 2400 5400
+	5600 1550 5600 2250
 $EndSCHEMATC

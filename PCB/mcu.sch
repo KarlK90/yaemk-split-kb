@@ -43,12 +43,14 @@ Wire Wire Line
 	8550 4800 8550 4850
 Wire Wire Line
 	8850 4800 8850 4850
-Connection ~ 8550 4800
+Connection ~ 8850 4800
+Wire Wire Line
+	8950 4800 8850 4800
 Wire Wire Line
 	8750 4850 8750 4800
-Connection ~ 8750 4800
 Wire Wire Line
 	8750 4800 8850 4800
+Connection ~ 8750 4800
 Wire Wire Line
 	8550 8000 8550 7900
 Wire Wire Line
@@ -58,16 +60,16 @@ Wire Wire Line
 Connection ~ 8550 7900
 Wire Wire Line
 	8550 7900 8550 7850
+Connection ~ 8650 7900
 Wire Wire Line
 	8650 7900 8750 7900
 Wire Wire Line
 	8750 7900 8750 7850
-Connection ~ 8650 7900
+Connection ~ 8750 7900
 Wire Wire Line
 	8750 7900 8850 7900
 Wire Wire Line
 	8850 7900 8850 7850
-Connection ~ 8750 7900
 $Comp
 L YAEMK:C C39
 U 1 1 5EAED213
@@ -126,45 +128,52 @@ $EndComp
 Wire Wire Line
 	700  3100 700  3050
 Wire Wire Line
-	700  3050 1050 3050
-Wire Wire Line
 	700  3550 700  3500
 Wire Wire Line
 	1050 3500 1050 3550
-Connection ~ 1050 3550
 Wire Wire Line
 	1050 3550 700  3550
+Connection ~ 1050 3550
+Wire Wire Line
+	1450 3550 1050 3550
 Wire Wire Line
 	1450 3500 1450 3550
 Connection ~ 1450 3550
 Wire Wire Line
-	1450 3550 1050 3550
+	1850 3550 1450 3550
 Wire Wire Line
 	1850 3500 1850 3550
 Connection ~ 1850 3550
 Wire Wire Line
-	1850 3550 1450 3550
-Wire Wire Line
-	2250 3500 2250 3550
-Wire Wire Line
 	2250 3550 1850 3550
 Wire Wire Line
+	2250 3500 2250 3550
+Connection ~ 2250 3550
+Wire Wire Line
+	2650 3550 2250 3550
+Wire Wire Line
 	2250 3100 2250 3050
+Connection ~ 2250 3050
+Wire Wire Line
+	2250 3050 2650 3050
 Wire Wire Line
 	1850 3100 1850 3050
-Connection ~ 1850 3050
 Wire Wire Line
 	1850 3050 2250 3050
+Connection ~ 1850 3050
 Wire Wire Line
 	1450 3100 1450 3050
-Connection ~ 1450 3050
 Wire Wire Line
 	1450 3050 1850 3050
+Connection ~ 1450 3050
 Wire Wire Line
-	1050 3100 1050 3050
-Connection ~ 1050 3050
+	700  3050 1050 3050
 Wire Wire Line
 	1050 3050 1450 3050
+Connection ~ 1050 3050
+Wire Wire Line
+	1050 3100 1050 3050
+Connection ~ 700  3050
 $Comp
 L YAEMK:VDD #PWR07
 U 1 1 5EB9125B
@@ -176,7 +185,6 @@ F 3 "" H 700 3050 60  0000 C CNN
 	1    700  3050
 	1    0    0    -1  
 $EndComp
-Connection ~ 700  3050
 $Comp
 L YAEMK:VSS #PWR08
 U 1 1 5EB91F52
@@ -188,9 +196,9 @@ F 3 "" H 700 3600 60  0000 C CNN
 	1    700  3600
 	1    0    0    -1  
 $EndComp
+Connection ~ 700  3550
 Wire Wire Line
 	700  3600 700  3550
-Connection ~ 700  3550
 Wire Notes Line
 	550  3750 550  2850
 Text Notes 550  2850 0    60   ~ 0
@@ -239,6 +247,11 @@ F 3 "" H 14100 1250 60  0000 C CNN
 	1    14100 1250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	14000 1050 14100 1050
+Connection ~ 14100 1050
+Wire Wire Line
+	14100 1050 14300 1050
 $Comp
 L YAEMK:C C47
 U 1 1 5EBDC17A
@@ -251,15 +264,10 @@ F 3 "" H 14700 1250 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	14000 1050 14100 1050
-Wire Wire Line
-	14100 1050 14300 1050
-Connection ~ 14100 1050
-Wire Wire Line
 	14500 1050 14700 1050
+Connection ~ 14700 1050
 Wire Wire Line
 	14700 1050 14850 1050
-Connection ~ 14700 1050
 Wire Wire Line
 	15350 1050 15400 1050
 Wire Wire Line
@@ -354,12 +362,12 @@ BOOT0
 Wire Wire Line
 	14400 1150 14400 1450
 Wire Wire Line
-	8550 4800 8650 4800
+	8650 4800 8750 4800
 Wire Wire Line
-	8650 4850 8650 4800
+	8550 4800 8650 4800
 Connection ~ 8650 4800
 Wire Wire Line
-	8650 4800 8750 4800
+	8650 4850 8650 4800
 $Comp
 L YAEMK:VSS #PWR020
 U 1 1 5EAADE05
@@ -460,16 +468,6 @@ Text GLabel 3600 900  2    39   Input ~ 0
 USB_VBUS_IN_FUSED
 NoConn ~ 3600 2100
 NoConn ~ 3600 2000
-Wire Wire Line
-	3600 1400 3600 1450
-Connection ~ 3600 1450
-Wire Wire Line
-	3600 1450 3600 1500
-Wire Wire Line
-	3600 1600 3600 1650
-Connection ~ 3600 1650
-Wire Wire Line
-	3600 1650 3600 1700
 $Comp
 L YAEMK:SolderJumper_3_Open JP1
 U 1 1 5F00DFE3
@@ -566,7 +564,6 @@ F 3 "" H 3050 2500 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 2500 3450 2500
-Connection ~ 3450 2500
 Wire Wire Line
 	2800 2500 2700 2500
 Connection ~ 2700 2500
@@ -574,6 +571,7 @@ Wire Wire Line
 	2700 2500 2700 2600
 Wire Wire Line
 	3000 2400 3450 2400
+Connection ~ 3450 2500
 Wire Wire Line
 	3450 2400 3450 2500
 Wire Wire Line
@@ -612,12 +610,12 @@ F 3 "" H 1150 2500 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	1400 2500 1550 2500
-Connection ~ 1550 2500
 Wire Wire Line
 	900  2500 800  2500
 Connection ~ 800  2500
 Wire Wire Line
 	800  2500 800  2600
+Connection ~ 1550 2500
 Wire Wire Line
 	1550 2400 1550 2500
 Wire Wire Line
@@ -637,7 +635,17 @@ Rot_A
 Text GLabel 9350 6550 2    39   Input ~ 0
 Rot_B
 Wire Wire Line
+	3600 1400 3600 1450
+Wire Wire Line
+	3600 1450 3600 1500
+Connection ~ 3600 1450
+Wire Wire Line
 	3600 1450 3750 1450
+Wire Wire Line
+	3600 1600 3600 1650
+Wire Wire Line
+	3600 1650 3600 1700
+Connection ~ 3600 1650
 Wire Wire Line
 	3600 1650 3750 1650
 Text GLabel 4400 2000 3    39   Input ~ 0
@@ -717,7 +725,7 @@ U 1 1 5F16637D
 P 1100 5550
 F 0 "S33" H 1300 5700 60  0000 C CNN
 F 1 "NRST" H 1100 5691 60  0000 C CNN
-F 2 "prettylib:SMD_Tacticle_Switch_TS24CA" H 1100 5550 60  0001 C CNN
+F 2 "prettylib:SMD_Tacticle_Switch_TS24CA_flipable" H 1100 5550 60  0001 C CNN
 F 3 "" H 1100 5550 60  0000 C CNN
 	1    1100 5550
 	-1   0    0    1   
@@ -745,6 +753,11 @@ F 3 "" H 10350 7750 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	10350 7500 10350 7350
+Wire Wire Line
+	10600 7350 10350 7350
+Connection ~ 10350 7350
+Wire Wire Line
+	10350 7350 10150 7350
 $Comp
 L YAEMK:VDD #PWR021
 U 1 1 5F76C3D6
@@ -775,7 +788,7 @@ U 1 1 5F480253
 P 12650 1000
 F 0 "D70" H 12650 900 50  0000 C CNN
 F 1 "LED" V 12750 1150 50  0001 C CNN
-F 2 "prettylib:LED-0603" H 12650 1100 60  0001 C CNN
+F 2 "prettylib:LED-0603_flipable" H 12650 1100 60  0001 C CNN
 F 3 "" H 12650 1000 60  0001 C CNN
 	1    12650 1000
 	1    0    0    1   
@@ -812,6 +825,11 @@ F 3 "" H 1650 5350 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
+	2200 5550 1650 5550
+Connection ~ 1650 5550
+Wire Wire Line
+	1300 5550 1650 5550
+Wire Wire Line
 	1650 4950 1650 5050
 $Comp
 L YAEMK:C C40
@@ -824,6 +842,9 @@ F 3 "" H 2200 5750 60  0000 C CNN
 	1    2200 5750
 	-1   0    0    1   
 $EndComp
+Connection ~ 2200 5550
+Wire Wire Line
+	2800 5550 2200 5550
 $Comp
 L YAEMK:VSS #PWR013
 U 1 1 5F8B6364
@@ -837,11 +858,6 @@ F 3 "" H 2200 6100 60  0000 C CNN
 $EndComp
 Text GLabel 2800 5550 2    39   Input ~ 0
 NRST
-Wire Wire Line
-	2800 5550 2200 5550
-Wire Wire Line
-	2200 5550 1650 5550
-Connection ~ 2200 5550
 Wire Wire Line
 	2200 5950 2200 6100
 $Comp
@@ -857,16 +873,13 @@ F 3 "" H 750 5550 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	750  5550 900  5550
-Wire Wire Line
-	1300 5550 1650 5550
-Connection ~ 1650 5550
 $Comp
 L YAEMK:SW S32
 U 1 1 5F8E8DE1
 P 1100 5050
 F 0 "S32" H 1300 5200 60  0000 C CNN
 F 1 "DFU" H 1100 5191 60  0000 C CNN
-F 2 "prettylib:SMD_Tacticle_Switch_TS24CA" H 1100 5050 60  0001 C CNN
+F 2 "prettylib:SMD_Tacticle_Switch_TS24CA_flipable" H 1100 5050 60  0001 C CNN
 F 3 "" H 1100 5050 60  0000 C CNN
 	1    1100 5050
 	-1   0    0    1   
@@ -973,6 +986,14 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21189f.pdf" H 14200 6100 50
 	1    14200 6100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	13800 6000 13800 6100
+Connection ~ 13800 6100
+Wire Wire Line
+	13800 6100 13800 6200
+Connection ~ 13800 6200
+Wire Wire Line
+	13800 6200 13800 6500
 $Comp
 L YAEMK:VSS #PWR012
 U 1 1 5FA0D64C
@@ -985,20 +1006,12 @@ F 3 "" H 14200 6650 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	13800 6000 13800 6100
-Connection ~ 13800 6100
-Wire Wire Line
-	13800 6100 13800 6200
-Wire Wire Line
-	13800 6200 13800 6500
-Wire Wire Line
 	13800 6500 14200 6500
 Wire Wire Line
 	14200 6500 14200 6400
-Connection ~ 13800 6200
+Connection ~ 14200 6500
 Wire Wire Line
 	14200 6500 14200 6650
-Connection ~ 14200 6500
 Wire Wire Line
 	14200 6500 14600 6500
 Wire Wire Line
@@ -1054,14 +1067,14 @@ Wire Wire Line
 	14800 6000 15050 6000
 Wire Wire Line
 	14800 5500 14800 5400
+Connection ~ 14200 5400
 Wire Wire Line
 	14800 5400 14200 5400
-Connection ~ 14200 5400
+Connection ~ 14800 5400
 Wire Wire Line
 	14800 5400 14950 5400
 Wire Wire Line
 	14950 5400 14950 5600
-Connection ~ 14800 5400
 Wire Notes Line
 	15450 5200 15450 6800
 Wire Notes Line
@@ -1097,19 +1110,12 @@ $EndComp
 Wire Wire Line
 	10150 7250 10600 7250
 Wire Wire Line
-	10600 7350 10350 7350
-Wire Wire Line
 	9350 7350 9650 7350
-Connection ~ 10350 7350
-Wire Wire Line
-	10350 7350 10150 7350
+Connection ~ 8550 4800
 Wire Wire Line
 	8550 4700 8550 4800
 Wire Wire Line
 	8950 4850 8950 4800
-Wire Wire Line
-	8950 4800 8850 4800
-Connection ~ 8850 4800
 $Comp
 L YAEMK:C C43
 U 1 1 5FA96ABF
@@ -1167,6 +1173,9 @@ F 3 "" H 11750 1250 60  0001 C CNN
 	1    11750 1250
 	1    0    0    -1  
 $EndComp
+Connection ~ 11750 1000
+Wire Wire Line
+	11550 1000 11750 1000
 $Comp
 L YAEMK:R R16
 U 1 1 5FAC5748
@@ -1178,33 +1187,34 @@ F 3 "" H 11750 1750 60  0001 C CNN
 	1    11750 1750
 	1    0    0    -1  
 $EndComp
+Connection ~ 11750 2000
+Wire Wire Line
+	12250 2000 11750 2000
 Wire Wire Line
 	10950 1000 11250 1000
 Text GLabel 1050 7150 0    39   Input ~ 0
 USB_VBUS
+Connection ~ 11750 1500
 Wire Wire Line
 	11750 1500 11200 1500
 Wire Wire Line
 	11200 1500 11200 1100
 Wire Wire Line
 	11200 1100 10950 1100
-Connection ~ 11750 1500
-Wire Wire Line
-	11550 1000 11750 1000
 Wire Wire Line
 	12250 1650 12250 2000
+Connection ~ 12250 2000
 Wire Wire Line
-	12250 2000 11750 2000
+	13050 2000 12250 2000
+Wire Wire Line
+	10650 1400 10650 2000
 Wire Wire Line
 	11750 2000 10650 2000
 Wire Wire Line
-	10650 1400 10650 2000
-Connection ~ 11750 2000
-Wire Wire Line
 	9900 2000 10650 2000
+Connection ~ 10650 2000
 Wire Wire Line
 	9900 1650 9900 2000
-Connection ~ 10650 2000
 $Comp
 L YAEMK:VSS #PWR017
 U 1 1 5FBAE62E
@@ -1229,23 +1239,22 @@ F 3 "" H 12250 800 60  0000 C CNN
 	1    12250 800 
 	1    0    0    -1  
 $EndComp
-Connection ~ 11750 1000
 Wire Wire Line
 	12250 1250 12250 1000
-Wire Wire Line
-	12250 1000 11750 1000
 Wire Wire Line
 	9650 1000 9900 1000
 Wire Wire Line
 	9900 1000 9900 1250
 Wire Wire Line
 	10350 1000 10200 1000
-Connection ~ 9900 1000
 Wire Wire Line
 	10200 1100 10200 1000
+Connection ~ 9900 1000
 Connection ~ 10200 1000
 Wire Wire Line
 	10200 1000 9900 1000
+Wire Wire Line
+	12250 1000 11750 1000
 Wire Wire Line
 	12450 1000 12250 1000
 Connection ~ 12250 1000
@@ -1257,9 +1266,6 @@ Wire Wire Line
 	13050 1000 13050 1200
 Wire Wire Line
 	13050 1700 13050 2000
-Wire Wire Line
-	13050 2000 12250 2000
-Connection ~ 12250 2000
 Text GLabel 10600 7150 2    39   Input ~ 0
 RGB_DATA
 $Comp
@@ -1368,6 +1374,11 @@ F 3 "" H 1800 8050 60  0001 C CNN
 $EndComp
 Wire Wire Line
 	1800 7300 1800 7150
+Wire Wire Line
+	1800 7150 1900 7150
+Connection ~ 1800 7150
+Wire Wire Line
+	1450 7150 1800 7150
 Text GLabel 2400 7150 2    39   Input ~ 0
 USB_VBUS_IN
 Wire Wire Line
@@ -1387,14 +1398,11 @@ Wire Wire Line
 	1800 8300 1800 8400
 Text GLabel 2000 7800 2    50   Input ~ 0
 PLUG_DETECT
+Connection ~ 1800 7800
 Wire Wire Line
 	2000 7800 1800 7800
-Connection ~ 1800 7800
 Text GLabel 9650 1000 0    39   Input ~ 0
 USB_VBUS_IN
-Connection ~ 1800 7150
-Wire Wire Line
-	1800 7150 1900 7150
 Text GLabel 9350 7050 2    39   Input ~ 0
 PLUG_DETECT
 $Comp
@@ -1432,9 +1440,9 @@ F 3 "" H 13950 3800 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	13950 3700 13950 3800
+Connection ~ 13950 3200
 Wire Wire Line
 	14150 3200 13950 3200
-Connection ~ 13950 3200
 $Comp
 L YAEMK:VDD #PWR0112
 U 1 1 5FBC8873
@@ -1479,54 +1487,6 @@ Wire Wire Line
 	10350 7150 9350 7150
 Text GLabel 10350 6500 2    50   Input ~ 0
 RGB_VDD
-Text GLabel 10300 3050 2    50   Input ~ 0
-RGB_VDD
-Text GLabel 9650 2850 0    39   Input ~ 0
-USB_VBUS_IN
-$Comp
-L YAEMK:VDD #PWR0101
-U 1 1 5FC9D453
-P 9650 3250
-F 0 "#PWR0101" H 9650 3350 30  0001 C CNN
-F 1 "VDD" H 9650 3360 30  0000 C CNN
-F 2 "" H 9650 3250 60  0000 C CNN
-F 3 "" H 9650 3250 60  0000 C CNN
-	1    9650 3250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L YAEMK-rescue:SolderJumper_2_Open-YAEMK JP9
-U 1 1 5FCABC59
-P 9900 2850
-F 0 "JP9" H 9900 3055 50  0000 C CNN
-F 1 "+5V" H 9900 2964 50  0000 C CNN
-F 2 "prettylib:SOLDER_JUMPER_2" H 9900 2850 50  0001 C CNN
-F 3 "" H 9900 2850 50  0001 C CNN
-	1    9900 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L YAEMK-rescue:SolderJumper_2_Open-YAEMK JP10
-U 1 1 5FCACCB8
-P 9900 3250
-F 0 "JP10" H 9900 3455 50  0000 C CNN
-F 1 "+3V3" H 9900 3364 50  0000 C CNN
-F 2 "prettylib:SOLDER_JUMPER_2" H 9900 3250 50  0001 C CNN
-F 3 "" H 9900 3250 50  0001 C CNN
-	1    9900 3250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 2850 9750 2850
-Wire Wire Line
-	9650 3250 9750 3250
-Wire Wire Line
-	10050 3250 10050 3050
-Wire Wire Line
-	10300 3050 10050 3050
-Connection ~ 10050 3050
-Wire Wire Line
-	10050 3050 10050 2850
 $Comp
 L YAEMK:C C54
 U 1 1 5FD58C06
@@ -1539,15 +1499,9 @@ F 3 "" H 2650 3300 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2250 3050 2650 3050
-Wire Wire Line
 	2650 3050 2650 3100
-Connection ~ 2250 3050
 Wire Wire Line
 	2650 3500 2650 3550
-Wire Wire Line
-	2650 3550 2250 3550
-Connection ~ 2250 3550
 Wire Notes Line
 	2950 2850 2950 3750
 Wire Notes Line
@@ -1576,8 +1530,6 @@ F 3 "~" H 1350 7150 50  0001 C CNN
 	1    1350 7150
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1450 7150 1800 7150
 Wire Wire Line
 	1250 7150 1050 7150
 $Comp
@@ -1623,16 +1575,6 @@ Wire Notes Line
 Wire Notes Line
 	13650 2450 14650 2450
 Wire Notes Line
-	9150 2500 10800 2500
-Wire Notes Line
-	10800 2500 10800 3500
-Wire Notes Line
-	10800 3500 9150 3500
-Wire Notes Line
-	9150 3500 9150 2500
-Text Notes 9150 2500 0    50   ~ 0
-RGB Led supply voltage selection
-Wire Notes Line
 	13650 4150 15050 4150
 Wire Notes Line
 	15050 4150 15050 4950
@@ -1650,23 +1592,23 @@ Wire Notes Line
 	550  6400 2950 6400
 Text Notes 550  6400 0    50   ~ 0
 Fuses and plug detect
+Connection ~ 3500 5750
 Wire Wire Line
 	3500 5750 3300 5750
 Wire Wire Line
 	3300 5750 3300 5700
-Connection ~ 3500 5750
-Wire Wire Line
-	3850 5150 3650 5150
 Wire Wire Line
 	3300 5200 3300 5150
 Connection ~ 3300 5150
 Wire Wire Line
 	3300 5150 2300 5150
 Wire Wire Line
-	3650 5200 3650 5150
-Connection ~ 3650 5150
+	3850 5150 3650 5150
 Wire Wire Line
 	3650 5150 3300 5150
+Connection ~ 3650 5150
+Wire Wire Line
+	3650 5200 3650 5150
 NoConn ~ 8050 6950
 NoConn ~ 8050 7050
 NoConn ~ 9350 6150

@@ -19,7 +19,7 @@ U 1 1 55931FD1
 P 7700 3800
 F 0 "D45" V 7450 3200 50  0000 C CNN
 F 1 "SW" V 7450 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 7700 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 7700 3800 60  0001 C CNN
 F 3 "" H 7700 3800 60  0000 C CNN
 	1    7700 3800
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 55932019
 P 8850 4800
 F 0 "D55" V 8600 4200 50  0000 C CNN
 F 1 "SW" V 8600 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 8850 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 8850 4800 60  0001 C CNN
 F 3 "" H 8850 4800 60  0000 C CNN
 	1    8850 4800
 	-1   0    0    1   
@@ -41,7 +41,7 @@ U 1 1 55932041
 P 5850 4800
 F 0 "D60" V 5600 4200 50  0000 C CNN
 F 1 "SW" V 5600 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 5850 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 5850 4800 60  0001 C CNN
 F 3 "" H 5850 4800 60  0000 C CNN
 	1    5850 4800
 	-1   0    0    1   
@@ -52,7 +52,7 @@ U 1 1 55932069
 P 2850 4800
 F 0 "D66" V 2600 4200 50  0000 C CNN
 F 1 "SW" V 2600 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 2850 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 2850 4800 60  0001 C CNN
 F 3 "" H 2850 4800 60  0000 C CNN
 	1    2850 4800
 	-1   0    0    1   
@@ -63,7 +63,7 @@ U 1 1 559329C6
 P 3450 4800
 F 0 "D64" V 3200 4200 50  0000 C CNN
 F 1 "SW" V 3200 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 3450 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 3450 4800 60  0001 C CNN
 F 3 "" H 3450 4800 60  0000 C CNN
 	1    3450 4800
 	-1   0    0    1   
@@ -85,7 +85,7 @@ U 1 1 559328FC
 P 9450 4800
 F 0 "D54" V 9200 4200 50  0000 C CNN
 F 1 "SW" V 9200 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 9450 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 9450 4800 60  0001 C CNN
 F 3 "" H 9450 4800 60  0000 C CNN
 	1    9450 4800
 	-1   0    0    1   
@@ -96,7 +96,7 @@ U 1 1 55932898
 P 9500 3800
 F 0 "D49" V 9250 3200 50  0000 C CNN
 F 1 "SW" V 9250 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 9500 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 9500 3800 60  0001 C CNN
 F 3 "" H 9500 3800 60  0000 C CNN
 	1    9500 3800
 	1    0    0    -1  
@@ -107,7 +107,7 @@ U 1 1 559326B2
 P 4050 4800
 F 0 "D63" V 3800 4200 50  0000 C CNN
 F 1 "SW" V 3800 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 4050 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 4050 4800 60  0001 C CNN
 F 3 "" H 4050 4800 60  0000 C CNN
 	1    4050 4800
 	-1   0    0    1   
@@ -118,7 +118,7 @@ U 1 1 5593265E
 P 7050 4800
 F 0 "D58" V 6800 4200 50  0000 C CNN
 F 1 "SW" V 6800 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 7050 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 7050 4800 60  0001 C CNN
 F 3 "" H 7050 4800 60  0000 C CNN
 	1    7050 4800
 	-1   0    0    1   
@@ -129,7 +129,7 @@ U 1 1 5593260C
 P 10050 4800
 F 0 "D53" V 9800 4200 50  0000 C CNN
 F 1 "SW" V 9800 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 10050 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 10050 4800 60  0001 C CNN
 F 3 "" H 10050 4800 60  0000 C CNN
 	1    10050 4800
 	-1   0    0    1   
@@ -140,7 +140,7 @@ U 1 1 559325BC
 P 8900 3800
 F 0 "D48" V 8650 3200 50  0000 C CNN
 F 1 "SW" V 8650 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 8900 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 8900 3800 60  0001 C CNN
 F 3 "" H 8900 3800 60  0000 C CNN
 	1    8900 3800
 	1    0    0    -1  
@@ -162,7 +162,7 @@ U 1 1 559323B2
 P 7650 4800
 F 0 "D57" V 7400 4200 50  0000 C CNN
 F 1 "SW" V 7400 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 7650 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 7650 4800 60  0001 C CNN
 F 3 "" H 7650 4800 60  0000 C CNN
 	1    7650 4800
 	-1   0    0    1   
@@ -173,7 +173,7 @@ U 1 1 55932370
 P 10650 4800
 F 0 "D52" V 10400 4200 50  0000 C CNN
 F 1 "SW" V 10400 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 10650 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 10650 4800 60  0001 C CNN
 F 3 "" H 10650 4800 60  0000 C CNN
 	1    10650 4800
 	-1   0    0    1   
@@ -184,7 +184,7 @@ U 1 1 55932216
 P 5250 4800
 F 0 "D61" V 5000 4200 50  0000 C CNN
 F 1 "SW" V 5000 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 5250 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 5250 4800 60  0001 C CNN
 F 3 "" H 5250 4800 60  0000 C CNN
 	1    5250 4800
 	-1   0    0    1   
@@ -195,7 +195,7 @@ U 1 1 559321E6
 P 8250 4800
 F 0 "D56" V 8000 4200 50  0000 C CNN
 F 1 "SW" V 8000 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 8250 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 8250 4800 60  0001 C CNN
 F 3 "" H 8250 4800 60  0000 C CNN
 	1    8250 4800
 	-1   0    0    1   
@@ -206,7 +206,7 @@ U 1 1 559321B0
 P 10700 3800
 F 0 "D51" V 10450 3200 50  0000 C CNN
 F 1 "SW" V 10450 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 10700 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 10700 3800 60  0001 C CNN
 F 3 "" H 10700 3800 60  0000 C CNN
 	1    10700 3800
 	1    0    0    -1  
@@ -217,7 +217,7 @@ U 1 1 55932182
 P 5900 3800
 F 0 "D46" V 5650 3200 50  0000 C CNN
 F 1 "SW" V 5650 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 5900 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 5900 3800 60  0001 C CNN
 F 3 "" H 5900 3800 60  0000 C CNN
 	1    5900 3800
 	1    0    0    -1  
@@ -239,7 +239,7 @@ U 1 1 559322F2
 P 4700 3800
 F 0 "D42" V 4450 3200 50  0000 C CNN
 F 1 "SW" V 4450 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 4700 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 4700 3800 60  0001 C CNN
 F 3 "" H 4700 3800 60  0000 C CNN
 	1    4700 3800
 	1    0    0    -1  
@@ -261,7 +261,7 @@ U 1 1 5593283A
 P 6500 3800
 F 0 "D44" V 6250 3200 50  0000 C CNN
 F 1 "SW" V 6250 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 6500 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 6500 3800 60  0001 C CNN
 F 3 "" H 6500 3800 60  0000 C CNN
 	1    6500 3800
 	1    0    0    -1  
@@ -272,7 +272,7 @@ U 1 1 55931FB3
 P 4100 3800
 F 0 "D40" V 3850 3200 50  0000 C CNN
 F 1 "SW" V 3850 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 4100 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 4100 3800 60  0001 C CNN
 F 3 "" H 4100 3800 60  0000 C CNN
 	1    4100 3800
 	1    0    0    -1  
@@ -294,7 +294,7 @@ U 1 1 559322B6
 P 2300 3800
 F 0 "D37" V 2050 3200 50  0000 C CNN
 F 1 "SW" V 2050 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 2300 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 2300 3800 60  0001 C CNN
 F 3 "" H 2300 3800 60  0000 C CNN
 	1    2300 3800
 	1    0    0    -1  
@@ -305,7 +305,7 @@ U 1 1 55932514
 P 2900 3800
 F 0 "D38" V 2650 3200 50  0000 C CNN
 F 1 "SW" V 2650 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 2900 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 2900 3800 60  0001 C CNN
 F 3 "" H 2900 3800 60  0000 C CNN
 	1    2900 3800
 	1    0    0    -1  
@@ -316,7 +316,7 @@ U 1 1 559327C4
 P 3500 3800
 F 0 "D39" V 3250 3250 50  0000 C CNN
 F 1 "SW" V 3250 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 3500 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 3500 3800 60  0001 C CNN
 F 3 "" H 3500 3800 60  0000 C CNN
 	1    3500 3800
 	1    0    0    -1  
@@ -327,7 +327,7 @@ U 1 1 55931F5E
 P 1100 3800
 F 0 "D35" V 850 3200 50  0000 C CNN
 F 1 "SW" V 850 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 1100 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 1100 3800 60  0001 C CNN
 F 3 "" H 1100 3800 60  0000 C CNN
 	1    1100 3800
 	1    0    0    -1  
@@ -704,7 +704,7 @@ U 1 1 55931FF1
 P 10100 3800
 F 0 "D50" V 9850 3200 50  0000 C CNN
 F 1 "SW" V 9850 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 10100 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 10100 3800 60  0001 C CNN
 F 3 "" H 10100 3800 60  0000 C CNN
 	1    10100 3800
 	1    0    0    -1  
@@ -726,7 +726,7 @@ U 1 1 5EFBFEC3
 P 1650 4800
 F 0 "D67" V 1400 4200 50  0000 C CNN
 F 1 "SW" V 1400 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 1650 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 1650 4800 60  0001 C CNN
 F 3 "" H 1650 4800 60  0000 C CNN
 	1    1650 4800
 	-1   0    0    1   
@@ -737,7 +737,7 @@ U 1 1 55932330
 P 8300 3800
 F 0 "D47" V 8050 3200 50  0000 C CNN
 F 1 "SW" V 8050 3500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 8300 3800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 8300 3800 60  0001 C CNN
 F 3 "" H 8300 3800 60  0000 C CNN
 	1    8300 3800
 	1    0    0    -1  
@@ -1062,7 +1062,7 @@ U 1 1 60098045
 P 2850 5850
 F 0 "D75" V 2600 5250 50  0000 C CNN
 F 1 "SW" V 2600 5550 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 2850 5850 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 2850 5850 60  0001 C CNN
 F 3 "" H 2850 5850 60  0000 C CNN
 	1    2850 5850
 	1    0    0    -1  
@@ -1073,7 +1073,7 @@ U 1 1 6009804F
 P 1650 5850
 F 0 "D73" V 1400 5250 50  0000 C CNN
 F 1 "SW" V 1400 5550 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 1650 5850 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 1650 5850 60  0001 C CNN
 F 3 "" H 1650 5850 60  0000 C CNN
 	1    1650 5850
 	1    0    0    -1  
@@ -1084,7 +1084,7 @@ U 1 1 60098059
 P 1050 5850
 F 0 "D72" V 800 5250 50  0000 C CNN
 F 1 "SW" V 800 5550 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 1050 5850 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 1050 5850 60  0001 C CNN
 F 3 "" H 1050 5850 60  0000 C CNN
 	1    1050 5850
 	1    0    0    -1  
@@ -1095,7 +1095,7 @@ U 1 1 60098063
 P 1050 4800
 F 0 "D71" V 800 4200 50  0000 C CNN
 F 1 "SW" V 800 4500 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 1050 4800 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 1050 4800 60  0001 C CNN
 F 3 "" H 1050 4800 60  0000 C CNN
 	1    1050 4800
 	-1   0    0    1   
@@ -1106,7 +1106,7 @@ U 1 1 6009806D
 P 2250 5850
 F 0 "D74" V 2000 5250 50  0000 C CNN
 F 1 "SW" V 2000 5550 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 2250 5850 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 2250 5850 60  0001 C CNN
 F 3 "" H 2250 5850 60  0000 C CNN
 	1    2250 5850
 	1    0    0    -1  
@@ -1117,7 +1117,7 @@ U 1 1 60098077
 P 3450 5850
 F 0 "D76" V 3200 5250 50  0000 C CNN
 F 1 "SW" V 3200 5550 50  0000 C CNN
-F 2 "prettylib:SK6812_mini_e_flippable" H 3450 5850 60  0001 C CNN
+F 2 "prettylib:SK6812_mini_e_flipable" H 3450 5850 60  0001 C CNN
 F 3 "" H 3450 5850 60  0000 C CNN
 	1    3450 5850
 	1    0    0    -1  
@@ -1386,132 +1386,6 @@ Wire Wire Line
 	9450 5100 10050 5100
 Wire Wire Line
 	11000 4800 10950 4800
-$Comp
-L Jumper:SolderJumper_2_Open JP3
-U 1 1 5FC59A5F
-P 1700 3250
-F 0 "JP3" H 1700 3455 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 1700 3364 50  0000 C CNN
-F 2 "prettylib:SOLDER_JUMPER_2" H 1700 3250 50  0001 C CNN
-F 3 "~" H 1700 3250 50  0001 C CNN
-	1    1700 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5FC5EAF9
-P 2250 5300
-F 0 "JP4" H 2250 5505 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 2250 5414 50  0000 C CNN
-F 2 "prettylib:SOLDER_JUMPER_2" H 2250 5300 50  0001 C CNN
-F 3 "~" H 2250 5300 50  0001 C CNN
-	1    2250 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP5
-U 1 1 5FC601CD
-P 4650 5300
-F 0 "JP5" H 4650 5505 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 4650 5414 50  0000 C CNN
-F 2 "prettylib:SOLDER_JUMPER_2" H 4650 5300 50  0001 C CNN
-F 3 "~" H 4650 5300 50  0001 C CNN
-	1    4650 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP7
-U 1 1 5FC6267C
-P 6450 5300
-F 0 "JP7" H 6450 5505 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 6450 5414 50  0000 C CNN
-F 2 "prettylib:SOLDER_JUMPER_2" H 6450 5300 50  0001 C CNN
-F 3 "~" H 6450 5300 50  0001 C CNN
-	1    6450 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP8
-U 1 1 5FC68D55
-P 7100 3300
-F 0 "JP8" H 7100 3505 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 7100 3414 50  0000 C CNN
-F 2 "prettylib:SOLDER_JUMPER_2" H 7100 3300 50  0001 C CNN
-F 3 "~" H 7100 3300 50  0001 C CNN
-	1    7100 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP6
-U 1 1 5FC6B932
-P 5300 3300
-F 0 "JP6" H 5300 3505 50  0000 C CNN
-F 1 "SolderJumper_2_Open" H 5300 3414 50  0000 C CNN
-F 2 "prettylib:SOLDER_JUMPER_2" H 5300 3300 50  0001 C CNN
-F 3 "~" H 5300 3300 50  0001 C CNN
-	1    5300 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5000 3800 5000 3300
-Wire Wire Line
-	5000 3300 5150 3300
-Connection ~ 5000 3800
-Wire Wire Line
-	5450 3300 5600 3300
-Wire Wire Line
-	5600 3300 5600 3800
-Connection ~ 5600 3800
-Wire Wire Line
-	1850 3250 2000 3250
-Wire Wire Line
-	2000 3250 2000 3800
-Connection ~ 2000 3800
-Wire Wire Line
-	1550 3250 1400 3250
-Wire Wire Line
-	1400 3250 1400 3800
-Connection ~ 1400 3800
-Wire Wire Line
-	6800 3800 6800 3300
-Wire Wire Line
-	6800 3300 6950 3300
-Connection ~ 6800 3800
-Wire Wire Line
-	7250 3300 7400 3300
-Wire Wire Line
-	7400 3300 7400 3800
-Connection ~ 7400 3800
-Wire Wire Line
-	6600 5300 6750 5300
-Wire Wire Line
-	6750 5300 6750 4800
-Connection ~ 6750 4800
-Wire Wire Line
-	6150 4800 6150 5300
-Wire Wire Line
-	6150 5300 6300 5300
-Connection ~ 6150 4800
-Wire Wire Line
-	4800 5300 4950 5300
-Wire Wire Line
-	4950 5300 4950 4800
-Connection ~ 4950 4800
-Wire Wire Line
-	4350 4800 4350 5300
-Wire Wire Line
-	4350 5300 4500 5300
-Connection ~ 4350 4800
-Wire Wire Line
-	2550 4800 2550 5300
-Wire Wire Line
-	2550 5300 2400 5300
-Connection ~ 2550 4800
-Wire Wire Line
-	1950 4800 1950 5300
-Wire Wire Line
-	1950 5300 2100 5300
-Connection ~ 1950 4800
 Wire Wire Line
 	5900 3500 6200 3500
 Wire Wire Line
@@ -1540,4 +1414,10 @@ Text GLabel 6350 700  2    50   Input ~ 0
 RGB_VDD
 Text GLabel 6350 1750 2    50   Input ~ 0
 RGB_VDD
+Text GLabel 4200 2850 2    50   Input ~ 0
+RGB_VDD
+Text GLabel 4050 2850 0    50   Input ~ 0
+USB_VBUS_IN
+Wire Wire Line
+	4050 2850 4200 2850
 $EndSCHEMATC
