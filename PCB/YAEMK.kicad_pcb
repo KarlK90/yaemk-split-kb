@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 45)
-    (tracks 1541)
+    (tracks 1540)
     (zones 0)
     (modules 219)
     (nets 134)
@@ -23,7 +23,7 @@
     (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
-    (40 Dwgs.User user)
+    (40 Dwgs.User user hide)
     (41 Cmts.User user hide)
     (42 Eco1.User user hide)
     (43 Eco2.User user hide)
@@ -1064,7 +1064,7 @@
   )
 
   (module prettylib:SSD1107_DISPLAY locked (layer Front) (tedit 5FDA0A1A) (tstamp 5FD9FA5C)
-    (at 96.774 90.424 90)
+    (at 96.712 90.3962 90)
     (descr "0.9n Inch 64x128 I2C OLED LCD Display")
     (path /5FDC3732)
     (fp_text reference P3 (at 5.7 -1.4 270) (layer F.SilkS) hide
@@ -16591,7 +16591,6 @@
   (gr_line (start 154.305 27.4066) (end 173.1772 27.4066) (layer Edge.Cuts) (width 0.127) (tstamp 5EF0C636))
   (gr_line (start 81.8896 35.5346) (end 77.8764 35.5346) (layer Edge.Cuts) (width 0.127) (tstamp 5EF0C625))
 
-  (segment (start 83.7476 75.184) (end 83.7342 75.1706) (width 0.2032) (layer Front) (net 0) (status 30))
   (segment (start 92.3162 70.80708) (end 92.2908 70.83248) (width 0.254) (layer Front) (net 1) (status 30))
   (segment (start 88.2269 65.1891) (end 87.9094 64.8716) (width 0.254) (layer Front) (net 1) (status 30))
   (via (at 85.3059 64.9351) (size 0.6096) (drill 0.3048) (layers Front Back) (net 1))
