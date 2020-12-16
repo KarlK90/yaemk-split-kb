@@ -6,7 +6,7 @@
     (tracks 1541)
     (zones 0)
     (modules 219)
-    (nets 135)
+    (nets 134)
   )
 
   (page A4)
@@ -235,7 +235,6 @@
   (net 131 "Net-(Q2-Pad4)")
   (net 132 "Net-(Q2-Pad1)")
   (net 133 "Net-(D40-Pad4)")
-  (net 134 "Net-(U5-Pad41)")
 
   (net_class Default "This is the default net class."
     (clearance 0.127)
@@ -361,7 +360,6 @@
     (add_net "Net-(U5-Pad10)")
     (add_net "Net-(U5-Pad3)")
     (add_net "Net-(U5-Pad4)")
-    (add_net "Net-(U5-Pad41)")
     (add_net "Net-(U5-Pad45)")
     (add_net "Net-(U5-Pad46)")
     (add_net PLUG_DETECT)
@@ -454,13 +452,13 @@
     (tags SOT-23-6)
     (path /5EAB754B)
     (attr smd)
-    (fp_text reference U4 (at 0 -2.9) (layer F.SilkS)
+    (fp_text reference U4 (at 0 -2.9) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value USBLC6-2SC6 (at 0 2.9) (layer F.Fab)
+    (fp_text value USBLC6-2SC6 (at 0 2.9) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0 90) (layer F.Fab)
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.075)))
     )
     (fp_line (start 1.9 -1.8) (end -1.9 -1.8) (layer F.CrtYd) (width 0.05))
@@ -499,13 +497,13 @@
     (tags SOT-23-6)
     (path /5EAA35F0)
     (attr smd)
-    (fp_text reference U3 (at 0 -2.9 90) (layer F.SilkS)
+    (fp_text reference U3 (at 0 -2.9 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value USBLC6-2SC6 (at 0 2.9 90) (layer F.Fab)
+    (fp_text value USBLC6-2SC6 (at 0 2.9 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab)
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.075)))
     )
     (fp_line (start 1.9 -1.8) (end -1.9 -1.8) (layer F.CrtYd) (width 0.05))
@@ -544,13 +542,13 @@
     (tags SOT-23)
     (path /60A97FB1)
     (attr smd)
-    (fp_text reference Q3 (at 0 -2.5 90) (layer F.SilkS)
+    (fp_text reference Q3 (at 0 -2.5 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value AO3401A (at 0 2.5 90) (layer F.Fab)
+    (fp_text value AO3401A (at 0 2.5 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0) (layer F.Fab)
+    (fp_text user %R (at 0 0) (layer F.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.075)))
     )
     (fp_line (start -0.7 -0.95) (end -0.7 1.5) (layer F.Fab) (width 0.1))
@@ -581,13 +579,13 @@
     (tags SOT-23-6)
     (path /60B73E03)
     (attr smd)
-    (fp_text reference Q2 (at 0 -2.9) (layer F.SilkS)
+    (fp_text reference Q2 (at 0 -2.9) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value DMMT5401 (at 0 2.9) (layer F.Fab)
+    (fp_text value DMMT5401 (at 0 2.9) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text user %R (at 0 0 90) (layer F.Fab)
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 0.5 0.5) (thickness 0.075)))
     )
     (fp_line (start 1.9 -1.8) (end -1.9 -1.8) (layer F.CrtYd) (width 0.05))
@@ -780,7 +778,7 @@
     (descr MXALPS)
     (tags MXALPS)
     (path /5FEAF7C8)
-    (fp_text reference D77 (at 0.6 -3.6) (layer B.SilkS)
+    (fp_text reference D77 (at 0.6 -3.6) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3048)) (justify mirror))
     )
     (fp_text value SW (at 0 3.6) (layer B.SilkS) hide
@@ -880,10 +878,10 @@
     (tags capacitor)
     (path /5FF6A616)
     (attr smd)
-    (fp_text reference C36 (at 0 -1.43 90) (layer F.SilkS)
+    (fp_text reference C36 (at 0 -1.43 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 100n (at 0 1.43 90) (layer F.Fab)
+    (fp_text value 100n (at 0 1.43 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.48 0.73) (end -1.48 0.73) (layer F.CrtYd) (width 0.05))
@@ -894,7 +892,7 @@
     (fp_line (start 0.8 -0.4) (end 0.8 0.4) (layer F.Fab) (width 0.1))
     (fp_line (start -0.8 -0.4) (end 0.8 -0.4) (layer F.Fab) (width 0.1))
     (fp_line (start -0.8 0.4) (end -0.8 -0.4) (layer F.Fab) (width 0.1))
-    (fp_text user %R (at 0 0 90) (layer F.Fab)
+    (fp_text user %R (at 0 0 90) (layer F.Fab) hide
       (effects (font (size 0.4 0.4) (thickness 0.06)))
     )
     (pad 2 smd roundrect (at 0.7875 0 90) (size 0.875 0.95) (layers Front F.Paste F.Mask) (roundrect_rratio 0.25)
@@ -16604,7 +16602,7 @@
   (gr_line (start 154.305 27.4066) (end 173.1772 27.4066) (layer Edge.Cuts) (width 0.127) (tstamp 5EF0C636))
   (gr_line (start 81.8896 35.5346) (end 77.8764 35.5346) (layer Edge.Cuts) (width 0.127) (tstamp 5EF0C625))
 
-  (segment (start 83.7476 75.184) (end 83.7342 75.1706) (width 0.2032) (layer Front) (net 134) (status 30))
+  (segment (start 83.7476 75.184) (end 83.7342 75.1706) (width 0.2032) (layer Front) (net 0) (status 30))
   (segment (start 92.3162 70.80708) (end 92.2908 70.83248) (width 0.254) (layer Front) (net 1) (status 30))
   (segment (start 88.2269 65.1891) (end 87.9094 64.8716) (width 0.254) (layer Front) (net 1) (status 30))
   (via (at 85.3059 64.9351) (size 0.6096) (drill 0.3048) (layers Front Back) (net 1))
