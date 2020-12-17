@@ -19,7 +19,7 @@
   (layers
     (0 Front signal)
     (31 Back signal)
-    (36 B.SilkS user hide)
+    (36 B.SilkS user)
     (37 F.SilkS user hide)
     (38 B.Mask user)
     (39 F.Mask user)
@@ -450,10 +450,10 @@
   (module prettylib:JLC_SMT_Assembly_Hole (layer Front) (tedit 5FDA4D89) (tstamp 5FDC2341)
     (at 101.6 40.894)
     (path /5FFC25D4)
-    (fp_text reference MH12 (at 0 0.5) (layer F.SilkS)
+    (fp_text reference MH12 (at 0 0.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value MOUNT_HOLE (at 0 -0.5) (layer F.Fab)
+    (fp_text value "Assembly Hole" (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "" np_thru_hole circle (at -0.025 2.175) (size 1.152 1.152) (drill 1.152) (layers *.Cu *.Mask)
@@ -463,10 +463,10 @@
   (module prettylib:JLC_SMT_Assembly_Hole (layer Front) (tedit 5FDA4D89) (tstamp 5FDC233C)
     (at 226.085 110.855)
     (path /5FFC070F)
-    (fp_text reference MH11 (at 0 0.5) (layer F.SilkS)
+    (fp_text reference MH11 (at 0 0.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value MOUNT_HOLE (at 0 -0.5) (layer F.Fab)
+    (fp_text value "Assembly Hole" (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "" np_thru_hole circle (at -0.025 2.175) (size 1.152 1.152) (drill 1.152) (layers *.Cu *.Mask)
@@ -476,10 +476,10 @@
   (module prettylib:JLC_SMT_Assembly_Hole (layer Front) (tedit 5FDA4D89) (tstamp 5FDC2337)
     (at 226.085 53.705)
     (path /5FFBE911)
-    (fp_text reference MH10 (at 0 0.5) (layer F.SilkS)
+    (fp_text reference MH10 (at 0 0.5) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value MOUNT_HOLE (at 0 -0.5) (layer F.Fab)
+    (fp_text value "Assembly Hole" (at 0 -0.5) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (pad "" np_thru_hole circle (at -0.025 2.175) (size 1.152 1.152) (drill 1.152) (layers *.Cu *.Mask)
@@ -13468,11 +13468,12 @@
 
   (module prettylib:LOGO locked (layer Back) (tedit 0) (tstamp 5F167A4C)
     (at 157.3022 84.455 180)
+    (path /5FE3B26E)
     (attr smd)
-    (fp_text reference G*** (at 0 0) (layer B.SilkS) hide
+    (fp_text reference G2 (at 0 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
-    (fp_text value LOGO (at 0.75 0) (layer B.SilkS) hide
+    (fp_text value Logo (at 0.75 0) (layer B.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)) (justify mirror))
     )
     (fp_poly (pts (xy -25.389736 45.22905) (xy -24.721016 45.215422) (xy -24.152448 45.194728) (xy -23.724287 45.166976)
@@ -14796,11 +14797,12 @@
 
   (module prettylib:LOGO locked (layer Front) (tedit 0) (tstamp 5F1679B3)
     (at 157.3022 84.5185)
+    (path /5FE39567)
     (attr smd)
-    (fp_text reference G*** (at 0 0) (layer F.SilkS) hide
+    (fp_text reference G1 (at 0 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
-    (fp_text value LOGO (at 0.75 0) (layer F.SilkS) hide
+    (fp_text value Logo (at 0.75 0) (layer F.SilkS) hide
       (effects (font (size 1.524 1.524) (thickness 0.3)))
     )
     (fp_poly (pts (xy -25.389736 -45.22905) (xy -24.721016 -45.215422) (xy -24.152448 -45.194728) (xy -23.724287 -45.166976)
