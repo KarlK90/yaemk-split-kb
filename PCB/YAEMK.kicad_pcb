@@ -12,7 +12,7 @@
   (page A4)
   (title_block
     (title YAEMK)
-    (date 2020-11-23)
+    (date 2020-12-17)
     (rev 1.2)
   )
 
@@ -6256,7 +6256,7 @@
     (at 93.218 56.007)
     (descr "6-pin SOT-23 package")
     (tags SOT-23-6)
-    (path /60B73E03)
+    (path /6106C813)
     (attr smd)
     (fp_text reference Q2 (at 0 -2.9) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))

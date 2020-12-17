@@ -5,7 +5,7 @@ $Descr A2 23386 16535
 encoding utf-8
 Sheet 1 1
 Title "YAEMK"
-Date "2020-12-16"
+Date "2020-12-17"
 Rev "1.2"
 Comp ""
 Comment1 "https://github.com/KarlK90/yaemk"
