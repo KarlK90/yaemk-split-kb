@@ -340,13 +340,26 @@
     (add_net "Net-(D9-Pad2)")
     (add_net "Net-(F1-Pad1)")
     (add_net "Net-(P1-PadA5)")
+    (add_net "Net-(P1-PadA8)")
     (add_net "Net-(P1-PadB5)")
+    (add_net "Net-(P1-PadB8)")
     (add_net "Net-(P1-PadS1)")
+    (add_net "Net-(P2-PadA5)")
+    (add_net "Net-(P2-PadA8)")
+    (add_net "Net-(P2-PadB5)")
+    (add_net "Net-(P2-PadB8)")
     (add_net "Net-(P2-PadS1)")
     (add_net "Net-(Q2-Pad1)")
     (add_net "Net-(Q2-Pad4)")
     (add_net "Net-(R18-Pad2)")
     (add_net "Net-(R19-Pad2)")
+    (add_net "Net-(U5-Pad10)")
+    (add_net "Net-(U5-Pad3)")
+    (add_net "Net-(U5-Pad4)")
+    (add_net "Net-(U5-Pad40)")
+    (add_net "Net-(U5-Pad41)")
+    (add_net "Net-(U5-Pad45)")
+    (add_net "Net-(U5-Pad46)")
     (add_net PLUG_DETECT)
     (add_net RGB_DATA)
     (add_net Rot_A)
@@ -6601,7 +6614,7 @@
     (fp_text reference R16 (at 0 -1.43 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 100k (at 0 1.43 90) (layer F.Fab) hide
+    (fp_text value 10k (at 0 1.43 90) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.48 0.73) (end -1.48 0.73) (layer F.CrtYd) (width 0.05))
@@ -10801,7 +10814,7 @@
     (fp_text reference R22 (at 0 -1.43) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 100k (at 0 1.43) (layer F.Fab) hide
+    (fp_text value 47k (at 0 1.43) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start 1.48 0.73) (end -1.48 0.73) (layer F.CrtYd) (width 0.05))
