@@ -1,8 +1,8 @@
-# Yet Another Ergonomic Mechanical Keyboard
-
 Is a 8x5 staggered column split keyboard with an pronounced offset between the colums. 
 
-![YAEMK front](./images/yaemk_front_1200.jpeg)
+![YAEMK wide view](images/1_yaemk_wide.webp)
+![YAEMK close up front](images/2_yaemk_close_up_rgb_front.webp)
+![YAEMK close up back](images/4_yaemk_close_up_rgb_back.webp)
 
 ## Features
 
@@ -12,10 +12,10 @@ Is a 8x5 staggered column split keyboard with an pronounced offset between the c
 * Kailh MX Hotswap Sockets
 * Per-Key RGB backlighting with SK6812-mini-e LEDs
 * RGB underglow with SK6812-mini LEDs
+* USB-C Sockets
+* 0.96" OLED Display (I2C SSD1107 64x128 Pixel)
 * 2 x Rotary Encoders
-* USB-C Socket with USB 2.0 Connection to PC
-* Hot-plugable USB-C Socket for Split Communtication
-* OLED Screen
+* 64KB I2C EEPROM for Settings, Keymaps etc.
 * Single PCB design for both sides
 * Mostly 0603 SMD Components
 * Extra slim design, no component is taller than 2mm
