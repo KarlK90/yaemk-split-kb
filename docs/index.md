@@ -6,19 +6,20 @@ Is a 8x5 staggered column split keyboard with an pronounced offset between the c
 
 ## Features
 
-* On-Board ARM Microcontroller (STM32F303)
+* On-board ARM microcontroller (STM32F303CCT6) or RISC-V microcontroller (GD32VF103CBT6)
 * Supported by QMK Firmware
-* 64-66 x 1u Keys
-* Kailh MX Hotswap Sockets
+* Hotswapable 64-66 x 1u Keys
+* Configureable thumb-cluster (4x1u, 2x2u, 2u+2x1u or 2x1u+2u)
 * Per-Key RGB backlighting with SK6812-mini-e LEDs
 * RGB underglow with SK6812-mini LEDs
-* USB-C Sockets
-* 0.96" OLED Display (I2C SSD1107 64x128 Pixel)
-* 2 x Rotary Encoders
-* 64KB I2C EEPROM for Settings, Keymaps etc.
+* USB-C sockets for USB and split comms
+* 0.96" OLED display (I2C SSD1107 64x128 Pixel)
+* 2 x rotary encoders
+* 64KB I2C EEPROM for settings, keymaps etc.
 * Single PCB design for both sides
-* Mostly 0603 SMD Components
+* Mostly 0603 SMD components
 * Extra slim design, no component is taller than 2mm
+* 2-plate acrylic case available
 
 ## Build Guide
 
@@ -65,7 +66,7 @@ Tip: Buy some excess LEDs as they are heat sensitive!
 ### The hard way
 
 Order the board form JLCPCB, order the components from LCSC and Aliexpress. Solder everything yourself. You know what you are doing, no help here.
-## 3mm Acrylic Case
+## 3mm acrylic case
 
 ### Additional BOM for one case
 
@@ -78,16 +79,4 @@ Order the board form JLCPCB, order the components from LCSC and Aliexpress. Sold
 
 ## Firmware
 
-YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. To flash it onto your Board, follow these instructions:
-
-1. Clone the  firmware repository:
-
-   `git clone -b yaemk https://github.com/KarlK90/qmk_firmware.git && cd qmk_firmware `
-
-2. Install the `qmk` tool:
-
-   You can find detailed instructions [here](https://docs.qmk.fm/#/newbs_getting_started).
-
-3. Flash the firmware:
-
-   `qmk flash -kb yaemk/rev1_2 -km via`
+YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. To flash it onto your Board, follow these instructions: **WIP**
