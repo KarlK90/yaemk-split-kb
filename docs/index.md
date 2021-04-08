@@ -25,6 +25,8 @@
 
 # Build Guide
 
+## 1) The Boards
+
 The complete design including schematics, gerbers and pcb assembly files are open source and available in the repo. Building your own YAEMK involves ordering the pcbs form JLCPCB with assembly and soldering the missing components. Most of them are SMD components so a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron are a must, a hot air station is recommended but not necessary. 
 
 > If you have never soldered before the YAEMK will be quite a challenge, therefore it is recommended to buy yourself some SMD soldering practice kits and learn it beforehand.
@@ -35,7 +37,7 @@ Nearly all components come pre-soldered if you choose to use the JLCPCB pcb asse
 
 For easy component location and sourcing of parts use the [Interactiv html BOM](./yaemk_rev_1_2.html). provided in this repo.
 
-## Additional BOM for one Board
+### Additional BOM for one Board
 
 All components that are NOT pre-soldered by JLCPCB are listed in this table and have to be bought and soldered by you. 
 
@@ -55,7 +57,7 @@ All components that are NOT pre-soldered by JLCPCB are listed in this table and 
 
 Tip: Buy some excess LEDs as they are heat sensitive!
 
-## Step-by-step Instructions
+### Step-by-step Instructions
 
 1. Solder USB-C Sockets for USB connection and Split communications.
   * Make sure to apply enough solder and thoroughly wet the pins that secure the socket with the pcb.
@@ -87,11 +89,11 @@ Make sure that you soldered the pins of the USB-C sockets to the pads, if in dou
 
 Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C sockets are soldered the their pads, if in doubt reflow with solder and flux.
 
-# Acrylic plate case
+## 2) Acrylic plate case
 
 Cast Acrylic is highly recommended for its clearer apperance and sturdyness, extruded acrylic is brittle and prone to cracks.
 
-## Additional BOM for one case
+### Additional BOM for one case
 
 | Amount | Part                          | Link                                                             |
 | ------ | ----------------------------- | ---------------------------------------------------------------- |
@@ -100,7 +102,7 @@ Cast Acrylic is highly recommended for its clearer apperance and sturdyness, ext
 | 18     | M2x5mm Washers                | [Aliexpress](https://www.aliexpress.com/item/4000734426632.html) |
 | 18     | M3x4.6x5mm Brass inserts nuts | [Aliexpress](https://www.aliexpress.com/item/4000688990203.html) |
 
-## Step-by-step instructions
+### Step-by-step instructions
 
 1. Melt M3 insert into the top plate
 2. Melt M2 standoffs into the top plate
@@ -108,6 +110,6 @@ Cast Acrylic is highly recommended for its clearer apperance and sturdyness, ext
 4. Assemble case with display and display cover
 5. Insert switches and keycaps
 
-# Firmware
+## 3) Firmware
 
 YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. To flash it onto your Board, follow these instructions: **WIP**
