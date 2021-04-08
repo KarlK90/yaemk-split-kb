@@ -25,7 +25,7 @@
 
 # Build Guide
 
-## 1) The Boards
+## 1 The Boards
 
 The complete design including schematics, gerbers and pcb assembly files are open source and available in the repo. Building your own YAEMK involves ordering the pcbs form JLCPCB with assembly and soldering the missing components. Most of them are SMD components so a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron are a must, a hot air station is recommended but not necessary. 
 
@@ -69,7 +69,7 @@ Tip: Buy some excess LEDs as they are heat sensitive!
 5. Power LED
 6. Flash Firmware
 7. Test Board
-8. RGB LED
+8. RGB LEDs
 9. MX Hotswap Sockets
 10. Debug Header (Optional)
 11. Display Socket
@@ -88,6 +88,11 @@ Make sure that you soldered the pins of the USB-C sockets to the pads, if in dou
 ### No power
 
 Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C sockets are soldered the their pads, if in doubt reflow with solder and flux.
+
+### LED chain broken or flickering LEDs
+
+Try to apply some pressure to first LED that doesn't work in the chain, if this turns on the led you have cold solder connection - reflow the led. Should that not work, try the last LED in the chain that does work properly, if that turns on other LEDs in the chain the problem was the again a cold solder connection - reflow the led. If all that doesn't help try to resolder these leds, even if applying pressure didn't help. If that doesn't solve the problem one of the leds is dead, replace with a new one. 
+
 
 ## 2) Acrylic plate case
 
