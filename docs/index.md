@@ -10,7 +10,7 @@
   + 4x1u, 2x2u, 2u+2x1u or 2x1u+2u configuration possible.
   + Inspired by the marvelous [Kyria](https://splitkb.com/collections/keyboard-kits/products/kyria-pcb-kit) from Thomas Baart!
 * On-board ARM microcontroller (STM32F303CCT6) or RISC-V microcontroller (GD32VF103CBT6)
-  + Worlds first RISC-V (Split-)Keyboard!
+  +**Worlds first RISC-V (Split-)Keyboard!**
 * Fully Supported by QMK Firmware
   + VIA json provided!
 * Per-Key RGB backlighting with 66 easy to solder SK6812-mini-e LEDs
