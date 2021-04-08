@@ -87,9 +87,11 @@ Make sure that you soldered the pins of the USB-C sockets to the pads, if in dou
 
 Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C sockets are soldered the their pads, if in doubt reflow with solder and flux.
 
-# 3mm acrylic case
+# Acrylic plate case
 
-### Additional BOM for one case
+Cast Acrylic is highly recommended for its clearer apperance and sturdyness, extruded acrylic is brittle and prone to cracks.
+
+## Additional BOM for one case
 
 | Amount | Part                          | Link                                                             |
 | ------ | ----------------------------- | ---------------------------------------------------------------- |
@@ -98,6 +100,14 @@ Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C
 | 18     | M2x5mm Washers                | [Aliexpress](https://www.aliexpress.com/item/4000734426632.html) |
 | 18     | M3x4.6x5mm Brass inserts nuts | [Aliexpress](https://www.aliexpress.com/item/4000688990203.html) |
 
-## Firmware
+## Step-by-step instructions
+
+1. Melt M3 insert into the top plate
+2. Melt M2 standoffs into the top plate
+3. Melt M2 standoffs into bottom plate
+4. Assemble case with display and display cover
+5. Insert switches and keycaps
+
+# Firmware
 
 YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. To flash it onto your Board, follow these instructions: **WIP**
