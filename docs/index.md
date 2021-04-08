@@ -93,7 +93,7 @@ Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C
 
 Try to apply some pressure to first LED that doesn't work in the chain, if this turns on the led you have cold solder connection - reflow the led. Should that not work, try the last LED in the chain that does work properly, if that turns on other LEDs in the chain the problem was the again a cold solder connection - reflow the led. If all that doesn't help try to resolder these leds, even if applying pressure didn't help. If that doesn't solve the problem one of the leds is dead, replace with a new one. 
 
-![YAEMK close up front 2](3_yaemk_close_up_rgb_front_2.webp)
+![YAEMK close up front 2](images/3_yaemk_close_up_rgb_front_2.webp)
 
 ## 2 Acrylic plate case
 
