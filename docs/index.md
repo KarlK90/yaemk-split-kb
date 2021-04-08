@@ -2,34 +2,42 @@
 ![YAEMK close up front](images/2_yaemk_close_up_rgb_front.webp)
 ![YAEMK close up back](images/4_yaemk_close_up_rgb_back.webp)
 
-## Features
+# Features of the YAEMK
 
+* Split-Keyboard with 5 rows by 8 columns matrix with columnar stagger.
+* All 64 to 66 Keys are MX-compatible and hotswapable.
+* The thumb-cluster is configurable in 4 different configurations, just solder the hotswap sockets to your needs.
+  + 4x1u, 2x2u, 2u+2x1u or 2x1u+2u configuration possible.
+  + Inspired by the marvelous [Kyria](https://splitkb.com/collections/keyboard-kits/products/kyria-pcb-kit) from Thomas Baart!
 * On-board ARM microcontroller (STM32F303CCT6) or RISC-V microcontroller (GD32VF103CBT6)
-* Supported by QMK Firmware
-* Hotswapable 64-66 x 1u Keys
-* Configureable thumb-cluster (4x1u, 2x2u, 2u+2x1u or 2x1u+2u)
-* Per-Key RGB backlighting with SK6812-mini-e LEDs
-* RGB underglow with SK6812-mini LEDs
-* USB-C sockets for USB and split comms
-* 0.96" OLED display (I2C SSD1107 64x128 Pixel)
-* 2 x rotary encoders
-* 64KB I2C EEPROM for settings, keymaps etc.
-* Single PCB design for both sides
-* Mostly 0603 SMD components
-* Extra slim design, no component is taller than 2mm
-* 2-plate acrylic case available
+  + Worlds first RISC-V (Split-)Keyboard!
+* Fully Supported by QMK Firmware
+  + VIA json provided!
+* Per-Key RGB backlighting with 66 easy to solder SK6812-mini-e LEDs
+* Underglow RGB with 14 SMD SK6812-mini LEDs
+* USB-C hotplugable sockets for USB connection and split communication between the halves
+* Two 0.96" OLED displays for comprehensive information (I2C SH1107 64x128 Pixel)
+* 2 x rotary encoders for scrolling, volume changes etc.
+* On-board 64KB I2C EEPROM for settings, keymaps etc.
+* Open-Source, single PCB design for both sides.
+  + PCB assembly files for JLCPCB in the repo!
+* 2-plate acrylic case files available.
 
-## Build Guide
+# Build Guide
 
-## Interactive BOM
+The complete design including schematics, gerbers and pcb assembly files are open source and available in the repo. Building your own YAEMK involves ordering the pcbs form JLCPCB with assembly and soldering the missing components. Most of them are SMD components so a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron are a must, a hot air station is recommended but not necessary. 
 
-You can find the Bill of Materials and component placement in this [Interactiv html BOM](./yaemk_rev_1_2.html).
+> If you have never soldered before the YAEMK will be quite a challenge, therefore it is recommended to buy yourself some SMD soldering practice kits and learn it beforehand.
 
-### The easy way - Order Board from JLCPCB with PCBA
+Nearly all components come pre-soldered if you choose to use the JLCPCB pcb assembly service (which is recommended), only through hole components, tactile-switches, connectors and SMD components which have to be soldered on the front or back side depending on the right or left handness of the pcb have to be soldered by you. The YAEMK PCB is flipable, which means that one circuit board can double as the left or right side of your keyboard. To determine the handness of the pcb one resistor has to be removed. All hotswap sockets and leds are soldered on the side facing to the ground. Please see the detailed step-by-step guide downbelow.
 
-Order the board nearly completely assembled from JLCPCB, solder a few missing components.
+### Interactive Guide aka. BOM
 
-#### Additional BOM for one Board
+For easy component location and sourcing of parts use the [Interactiv html BOM](./yaemk_rev_1_2.html). provided in this repo.
+
+## Additional BOM for one Board
+
+All components that are NOT pre-soldered by JLCPCB are listed in this table and have to be bought and soldered by you. 
 
 | Amount | Part                          | LCSC    | Link                                                                                                                                                                                                                                |
 | ------ | ----------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -46,25 +54,40 @@ Order the board nearly completely assembled from JLCPCB, solder a few missing co
 | 2      | Debug Pinheader (optional)    | C376124 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTB125-1106R1_C376124.html)                                                                                                                                 |
 
 Tip: Buy some excess LEDs as they are heat sensitive!
-####  Solder Components
 
-* USB-C Socket
-* Remove Split Hand Resistor 
-* Close Solder Bridge
-* Reset/DFU Switch
-* Power LED
-* Flash Firmware
-* Test Board
-* RGB LED
-* Kailh Sockets
-* Debug Header
-* Display Socket
-* Rotary Encoder
+## Step-by-step Instructions
+
+1. Solder USB-C Sockets for USB connection and Split communications.
+  * Make sure to apply enough solder and thoroughly wet the pins that secure the socket with the pcb.
+2. Remove handness selection resistors
+  * The handness, meaning if it is the right or left side of the keyboard, is determined by these resistors. PCBs come with both resistors soldered in place from JLCPCB. Keep the resistor for the side you want this PCB to be, e.g. keep the resistor next to the little R if this PCB should be the right side of the keyboard.
+3. Close split communication solder bridges
+  * Both halves of the YAEMK communicate via a full-duplex USART connection over a USB-C cable (we repurpose the USB cable for this). For this to work the TX lines of one halve have to be connected with the RX line of the other halve. Thats what the solder bridge is for, to reroute the TX line of one halve into the RX line of the other. Therefore connect the left pad with the middle pad via a solder bridge on the left side of the keyboard and connect the right pad with the middle pad via a solder bridge on the right side of the keyboard.
+4. Solder Reset/DFU Switch on the side facing away from you.
+5. Power LED
+6. Flash Firmware
+7. Test Board
+8. RGB LED
+9. MX Hotswap Sockets
+10. Debug Header (Optional)
+11. Display Socket
+12. Rotary Encoder
   
-### The hard way
+## Troubleshooting
 
-Order the board form JLCPCB, order the components from LCSC and Aliexpress. Solder everything yourself. You know what you are doing, no help here.
-## 3mm acrylic case
+### No USB connection 
+
+Make sure that you soldered the pins of the USB-C sockets to the pads, if in doubt reflow with solder and flux. Test for connuity with a multimeter on the d+ and d- lines between the legs of the ESD protection diode and a plugged in USB-C cable.  
+
+### No split communication
+
+Make sure that you soldered the pins of the USB-C sockets to the pads, if in doubt reflow with solder and flux. Test for connuity with a multimeter on the tx and rx lines between the legs of the ESD protection diode on both halves connecting them with a USB-C cable. Make sure that you closed the solder bridges in opposite fashion on both halves i.e. the left halve bridged the left pads with solder bridges and the right halve bridged the right pads with solder bridges.
+
+### No power
+
+Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C sockets are soldered the their pads, if in doubt reflow with solder and flux.
+
+# 3mm acrylic case
 
 ### Additional BOM for one case
 
