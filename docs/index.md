@@ -94,7 +94,7 @@ Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C
 Try to apply some pressure to first LED that doesn't work in the chain, if this turns on the led you have cold solder connection - reflow the led. Should that not work, try the last LED in the chain that does work properly, if that turns on other LEDs in the chain the problem was the again a cold solder connection - reflow the led. If all that doesn't help try to resolder these leds, even if applying pressure didn't help. If that doesn't solve the problem one of the leds is dead, replace with a new one. 
 
 
-## 2) Acrylic plate case
+## 2 Acrylic plate case
 
 Cast Acrylic is highly recommended for its clearer apperance and sturdyness, extruded acrylic is brittle and prone to cracks.
 
@@ -115,6 +115,6 @@ Cast Acrylic is highly recommended for its clearer apperance and sturdyness, ext
 4. Assemble case with display and display cover
 5. Insert switches and keycaps
 
-## 3) Firmware
+## 3 Firmware
 
 YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. To flash it onto your Board, follow these instructions: **WIP**
