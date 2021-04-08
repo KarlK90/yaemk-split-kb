@@ -1,5 +1,3 @@
-Is a 8x5 staggered column split keyboard with an pronounced offset between the colums. 
-
 ![YAEMK wide view](images/1_yaemk_wide.webp)
 ![YAEMK close up front](images/2_yaemk_close_up_rgb_front.webp)
 ![YAEMK close up back](images/4_yaemk_close_up_rgb_back.webp)
