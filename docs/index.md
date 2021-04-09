@@ -116,6 +116,14 @@ Try to apply some pressure to first LED that doesn't work in the chain, if this 
 
 The official YAEMK case consists of one top and bottom plate and a display cover for each side and is made out of 3mm acrylic plates. All designs are flipable, so each plate can be used for the left or right side of the keyboard. For each thumbcluster configuration a specific top plate was designed, the bottom plate is universal for all configurations. You can find the [SVG files](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) in the repo once without kerf and once with a kerf of 0.1mm for laser cutting. Cast Acrylic is highly recommended for its clearer apperance and sturdyness, extruded acrylic is brittle and prone to cracks!
 
+### Case principle
+
+![Case principle](images/case_principle.svg)
+
+The pcb is clamped by the brass M3 insert and M2 standoff by tightening the M2 screw which only has grip in the M2 standoff. The Display is clamped between the cover and the M2 standoffs of the top case and display socket. Both brass inserts are melted flat to the surface into the acrylic plates using a soldering iron set to 160c and a pointed tip, like the T12-I. Watch this [video](
+https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
+
+
 ### Bill of material for one case
 
 | Amount | Part                          | Link                                                             |
@@ -136,8 +144,9 @@ The official YAEMK case consists of one top and bottom plate and a display cover
 2. Melt M2 standoffs for the display cover into the top plate.
 3. Melt M2 standoffs into bottom plate.
 4. (Optional) Paint the blue display frame with a black marker pen.
-5. Assemble case with display and display cover.
-6. Insert switches and keycaps.
+5. Trim the plastic and the pin header of the display so that the pcb of the display sits flush on the display socket.
+6. Assemble case with display and display cover.
+7. Insert switches and keycaps.
 
 ## 3 Firmware
 
