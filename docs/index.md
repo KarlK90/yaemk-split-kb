@@ -37,6 +37,8 @@ Nearly all components come pre-soldered if you choose to use the  [JLCPCB](https
 
 For easy component location and sourcing of parts use the [Interactiv html BOM](./yaemk_rev_1_2.html).
 
+<iframe src="https://karlk90.github.io/yaemk-split-kb/yaemk_rev_1_2.html"></iframe>
+
 ### Additional BOM for one Board
 
 All components that are NOT pre-soldered by  [JLCPCB](https://jlcpcb.com/) are listed in this table and have to be bought and soldered by you. 
