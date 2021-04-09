@@ -59,22 +59,34 @@ Tip: Buy some excess LEDs as they are heat sensitive!
 
 ### Step-by-step Instructions
 
-1. Solder USB-C Sockets for USB connection and Split communications.
+![PCBs with Step-by-step instructions](images/pcb_combined_steps.webp)
+
+Emphasized text like `P1 and P2` are the component designators, you can find them in the schematic and interactive bom. 
+
+1. Solder USB-C Sockets for USB connection and Split communications. `P1 and P2`
   * Make sure to apply enough solder and thoroughly wet the pins that secure the socket with the pcb.
-2. Remove handness selection resistors
+2. Remove handness selection resistor `R24 or R25`
   * The handness, meaning if it is the right or left side of the keyboard, is determined by these resistors. PCBs come with both resistors soldered in place from JLCPCB. Keep the resistor for the side you want this PCB to be, e.g. keep the resistor next to the little R if this PCB should be the right side of the keyboard.
-3. Close split communication solder bridges
+3. (GD32VF103 only) Remove USB D+ pullup resistor `R20`
+4. Close split communication solder bridges `JP1 and JP2`
   * Both halves of the YAEMK communicate via a full-duplex USART connection over a USB-C cable (we repurpose the USB cable for this). For this to work the TX lines of one halve have to be connected with the RX line of the other halve. Thats what the solder bridge is for, to reroute the TX line of one halve into the RX line of the other. Therefore connect the left pad with the middle pad via a solder bridge on the left side of the keyboard and connect the right pad with the middle pad via a solder bridge on the right side of the keyboard.
-4. Solder Reset/DFU Switch on the side facing away from you.
-5. Power LED
-6. Flash Firmware
-7. Test Board
-8. RGB LEDs
-9. MX Hotswap Sockets
-10. Debug Header (Optional)
-11. Display Socket
-12. Rotary Encoder
-  
+5. Solder Reset/DFU Switch on the side facing away from you. `S32`
+6. Solder power LED on the side facing away from you. `D70`
+7. Flash the firmware and test for successful usb connection.
+8. Solder RGB LEDs on the side facing away from you. `D35 to D76`
+9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a thumbcluster configuration. `S1 to S31`
+10. Solder Debug Header (Optional) on the side facing away from you. `J1`
+11. Solder Display Socket on the side facing to you. `P3`
+12. Solder Rotary Encoder on the side facing to you. `SW1`
+13. Test board for full operation:
+    * Successfull USB connection of both halves to the pc, regardsless of plug orientation.
+    * Succesfull split connection of between both halves, regardless of plug orientation.
+    * Keypresses for all keys are registered, for testing bridge the terminals of the hotswap sockets with a piece of wire.
+    * All leds fully light up, no flickering when slightly bending the pcb.
+    * Rotary encoders register motion.
+    * Displays show YAEMK logo on startup on both halves.
+    * Reset+DFU tactile switch resets the board on short press and enters DFU bootloader on long press (see GD32VF103 specific notes in Firmware section).
+
 ## Troubleshooting
 
 ### No USB connection 
@@ -93,9 +105,9 @@ Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C
 
 Try to apply some pressure to first LED that doesn't work in the chain, if this turns on the led you have cold solder connection - reflow the led. Should that not work, try the last LED in the chain that does work properly, if that turns on other LEDs in the chain the problem was the again a cold solder connection - reflow the led. If all that doesn't help try to resolder these leds, even if applying pressure didn't help. If that doesn't solve the problem one of the leds is dead, replace with a new one. 
 
-![YAEMK close up front 2](images/3_yaemk_close_up_rgb_front_2.webp)
-
 ## 2 Acrylic plate case
+
+![YAEMK close up front 2](images/3_yaemk_close_up_rgb_front_2.webp)
 
 Cast Acrylic is highly recommended for its clearer apperance and sturdyness, extruded acrylic is brittle and prone to cracks.
 
