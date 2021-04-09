@@ -37,7 +37,7 @@ Nearly all components come pre-soldered if you choose to use the  [JLCPCB](https
 
 For easy component location and sourcing of parts use the [Interactiv html BOM](./yaemk_rev_1_2.html).
 
-<iframe src="./yaemk_rev_1_2.html" width="100%" height="500px"/>
+<iframe src="./yaemk_rev_1_2.html" width="100%" height="500px"></iframe>
 
 ### Additional BOM for one Board
 
