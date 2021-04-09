@@ -25,62 +25,64 @@
 
 # Build Guide
 
+**At the time of writing (9th of april 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, desoldering requires a hot air station.**
+
+The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers), [pcb assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) and a [acrylic plate case](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) are open source and available in the repo. The complete project can be opened with the open source [KiCad EDA](https://www.kicad.org/).
+
+> **If you have never soldered before the YAEMK will be quite a challenge, therefore it is recommended to buy yourself some SMD soldering practice kits and learn it beforehand.**
 ## 1 The Boards
 
-The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers) and [pcb assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) are open source, available in the repo and can be opened with [KiCad](https://www.kicad.org/). Building your own YAEMK involves ordering the pcbs form [JLCPCB](https://jlcpcb.com/) with assembly and soldering the missing components. Most of them are SMD components so a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron are a must, a hot air station is recommended but not necessary. 
-
-> If you have never soldered before the YAEMK will be quite a challenge, therefore it is recommended to buy yourself some SMD soldering practice kits and learn it beforehand.
-
-Nearly all components come pre-soldered if you choose to use the  [JLCPCB](https://jlcpcb.com/) pcb assembly service (which is recommended), only through hole components, tactile-switches, connectors and SMD components which have to be soldered on the front or back side depending on the right or left handness of the pcb have to be soldered by you. The YAEMK PCB is flipable, which means that one circuit board can double as the left or right side of your keyboard. To determine the handness of the pcb one resistor has to be removed. All hotswap sockets and leds are soldered on the side facing to the ground. Please see the detailed step-by-step guide downbelow.
-
-### Interactive Guide aka. BOM
-
-For easy component location and sourcing of parts use the [Interactiv html BOM](./yaemk_rev_1_2.html).
+Building your own YAEMK involves ordering the pcbs form [JLCPCB](https://jlcpcb.com/) with pcb assembly so nearly all components come pre-soldered. Only through hole components, tactile-switches, connectors and SMD components have to be soldered by you. It is crucial to understand that the YAEMK pcb is flipable, which means that every circuit board can be turned once into the left or right side of your keyboard. Depending on right or left handness of the pcb these components have to be soldered either on the front or back side of the pcb. The whole process is documented in detail below. The tools you will need are a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron, a hot air station is recommended but not strictly necessary. For easy component location and sourcing of parts it is recommended to use the [interactiv HTML BOM](./yaemk_rev_1_2.html).
 
 <iframe src="./yaemk_rev_1_2.html" width="100%" height="500px"></iframe>
 
-### Additional BOM for one Board
+### Additional bill of materials for one complete Keyboard
 
-All components that are NOT pre-soldered by  [JLCPCB](https://jlcpcb.com/) are listed in this table and have to be bought and soldered by you. 
+All components that are NOT pre-soldered by [JLCPCB](https://jlcpcb.com/) are listed in this table and have to be bought and assembled by you. 
 
-| Amount | Part                          | LCSC    | Link                                                                                                                                                                                                                                |
-| ------ | ----------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 4      | USB-C Socket Mid-mount        | C168688 | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C168688_C168688.html) or [Aliexpress](https://www.aliexpress.com/item/4000074094558.html)                                                 |
-| 2      | Alps EC11 Rotary Encoder      | C370986 | [LCSC](https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS-Electric-EC11E183440C_C370986.html)                                                                                                                               |
-| 66     | SK6812-mini-e (3228) RGB LEDs | -       | [Aliexpress](https://www.aliexpress.com/item/4000475685852.html)                                                                                                                                                                    |
-| 14     | SK6812-mini (3535) RGB LEDs   | -       | [Aliexpress](https://www.aliexpress.com/item/33019583218.html)                                                                                                                                                                      |
-| 66     | Kailh MX Sockets              | -       | [Aliexpress](https://www.aliexpress.com/item/32951252318.html)                                                                                                                                                                      |
-| 2      | Encoder Knob                  | -       | [Splitkb](https://splitkb.com/collections/keyboard-parts/products/matte-aluminium-encoder-knob) or [Aliexpress](https://www.aliexpress.com/item/32893184848.html) or [Aliexpress](https://www.aliexpress.com/item/32810522800.html) |
-| 2      | 0.96" SSD1107 64x128 Display  | -       | [Aliexpress](https://www.aliexpress.com/item/4000547865501.html)                                                                                                                                                                    |
-| 2      | Purple 0603 Power LED         | C268294 | [LCSC](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_OptoSupply-OSK40603C1E_C268294.html)                                                                                                                               |
-| 2      | Reset/DFU Switch              | C393942 | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html)                                                                                                                                               |
-| 2      | Display Socket                | C358718 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTF185-104SY1_C358718.html)                                                                                                                                 |
-| 2      | Debug Pinheader (optional)    | C376124 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTB125-1106R1_C376124.html)                                                                                                                                 |
+| Amount | Part                             | LCSC    | Link                                                                                                                                                                                                                                |
+| ------ | -------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 4      | USB-C Socket Mid-mount           | C168688 | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C168688_C168688.html) or [Aliexpress](https://www.aliexpress.com/item/4000074094558.html)                                                 |
+| 2      | Alps EC11 Rotary Encoder         | C370986 | [LCSC](https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS-Electric-EC11E183440C_C370986.html)                                                                                                                               |
+| 66     | SK6812-mini-e (3228) RGB LEDs    | -       | [Aliexpress](https://www.aliexpress.com/item/4000475685852.html)                                                                                                                                                                    |
+| 14     | SK6812-mini (3535) RGB LEDs      | -       | [Aliexpress](https://www.aliexpress.com/item/33019583218.html)                                                                                                                                                                      |
+| 66     | Hotswap Kailh or Gateron Sockets | -       | [Aliexpress](https://www.aliexpress.com/item/32951252318.html) or [Aliexpress](https://www.aliexpress.com/item/1005002037689483.html)                                                                                               |
+| 2      | Encoder Knob                     | -       | [Splitkb](https://splitkb.com/collections/keyboard-parts/products/matte-aluminium-encoder-knob) or [Aliexpress](https://www.aliexpress.com/item/32893184848.html) or [Aliexpress](https://www.aliexpress.com/item/32810522800.html) |
+| 2      | 0.96" SSD1107 64x128 Display     | -       | [Aliexpress](https://www.aliexpress.com/item/4000547865501.html)                                                                                                                                                                    |
+| 2      | Purple 0603 Power LED            | C268294 | [LCSC](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_OptoSupply-OSK40603C1E_C268294.html)                                                                                                                               |
+| 2      | Reset/DFU Switch                 | C393942 | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html)                                                                                                                                               |
+| 2      | Display Socket                   | C358718 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTF185-104SY1_C358718.html)                                                                                                                                 |
+| 2      | Debug Pinheader (optional)       | C376124 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTB125-1106R1_C376124.html)                                                                                                                                 |
 
-Tip: Buy some excess LEDs as they are heat sensitive!
+**Tip: Buy some excess LEDs as they are heat sensitive!**
 
 ### Step-by-step Instructions
 
 ![PCBs with Step-by-step instructions](images/pcb_combined_steps.webp)
 
-Emphasized text like `P1 and P2` are the component designators, you can find them in the schematic and interactive bom. 
+*Note: the picture shows pcbs without an mcu.*
+
+> Emphasized text like `P1 and P2` are the component references, you can find them in the schematic and interactive bom. 
 
 1. Solder USB-C Sockets for USB connection and Split communications. `P1 and P2`
   * Make sure to apply enough solder and thoroughly wet the pins that secure the socket with the pcb.
 2. Remove handness selection resistor `R24 or R25`
-  * The handness, meaning if it is the right or left side of the keyboard, is determined by these resistors. PCBs come with both resistors soldered in place from JLCPCB. Keep the resistor for the side you want this PCB to be, e.g. keep the resistor next to the little R if this PCB should be the right side of the keyboard.
-3. (GD32VF103 only) Remove USB D+ pullup resistor `R20`
+  * The handness, meaning if it is the right or left side of the keyboard, is determined by these resistors. PCBs come with both resistors soldered in place from JLCPCB. Keep the resistor for the side you want this PCB to be, e.g. keep resistor `R25` next to the little R if this PCB should be the right side of the keyboard and remove resistor `R24` next to the little L.
+3. *(GD32VF103 only)* Remove USB D+ pullup resistor `R20`
 4. Close split communication solder bridges `JP1 and JP2`
   * Both halves of the YAEMK communicate via a full-duplex USART connection over a USB-C cable (we repurpose the USB cable for this). For this to work the TX lines of one halve have to be connected with the RX line of the other halve. Thats what the solder bridge is for, to reroute the TX line of one halve into the RX line of the other. Therefore connect the left pad with the middle pad via a solder bridge on the left side of the keyboard and connect the right pad with the middle pad via a solder bridge on the right side of the keyboard.
 5. Solder Reset/DFU Switch on the side facing away from you. `S32`
 6. Solder power LED on the side facing away from you. `D70`
+  * A little triangle shows the orientation of the LED on the board, match this triangle with the triangle on the bottom of the led.
 7. Flash the firmware and test for successful usb connection.
 8. Solder RGB LEDs on the side facing away from you. `D35 to D76`
 9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a thumbcluster configuration. `S1 to S31`
-10. Solder Debug Header (Optional) on the side facing away from you. `J1`
+10. *(Optional)* Solder Debug Header  on the side facing away from you. `J1`
 11. Solder Display Socket on the side facing to you. `P3`
+  * Bridge the pads next to the through holes when soldering to close the contact.
 12. Solder Rotary Encoder on the side facing to you. `SW1`
-13. Test board for full operation:
+13. Clean the Board from any residues with alcohol.
+14. Test board for full operation:
     * Successfull USB connection of both halves to the pc, regardsless of plug orientation.
     * Succesfull split connection of between both halves, regardless of plug orientation.
     * Keypresses for all keys are registered, for testing bridge the terminals of the hotswap sockets with a piece of wire.
@@ -88,6 +90,7 @@ Emphasized text like `P1 and P2` are the component designators, you can find the
     * Rotary encoders register motion.
     * Displays show YAEMK logo on startup on both halves.
     * Reset+DFU tactile switch resets the board on short press and enters DFU bootloader on long press (see GD32VF103 specific notes in Firmware section).
+15. *(Optional)* Paint the edges of the pcb with a black marker pen.
 
 ## Troubleshooting
 
@@ -111,12 +114,15 @@ Try to apply some pressure to first LED that doesn't work in the chain, if this 
 
 ![YAEMK close up front 2](images/3_yaemk_close_up_rgb_front_2.webp)
 
-Cast Acrylic is highly recommended for its clearer apperance and sturdyness, extruded acrylic is brittle and prone to cracks.
+The official YAEMK case consists of one top and bottom plate and a display cover for each side and is made out of 3mm acrylic plates. All designs are flipable, so each plate can be used for the left or right side of the keyboard. For each thumbcluster configuration a specific top plate was designed, the bottom plate is universal for all configurations. You can find the [SVG files](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) in the repo once without kerf and once with a kerf of 0.1mm for laser cutting. Cast Acrylic is highly recommended for its clearer apperance and sturdyness, extruded acrylic is brittle and prone to cracks!
 
-### Additional BOM for one case
+### Bill of material for one case
 
 | Amount | Part                          | Link                                                             |
 | ------ | ----------------------------- | ---------------------------------------------------------------- |
+| 2      | YAEMK Top plate               | ---                                                              |
+| 2      | YAEMK Bottom plate            | ---                                                              |
+| 2      | YAEMK Display cover           | ---                                                              |
 | 22     | M2x12mm Screws                | [Aliexpress](https://www.aliexpress.com/item/4000720099366.html) |
 | 22     | M2x5mm Standoffs              | [Aliexpress](https://www.aliexpress.com/item/4000727223674.html) |
 | 18     | M2x5mm Washers                | [Aliexpress](https://www.aliexpress.com/item/4000734426632.html) |
@@ -124,11 +130,14 @@ Cast Acrylic is highly recommended for its clearer apperance and sturdyness, ext
 
 ### Step-by-step instructions
 
-1. Melt M3 insert into the top plate
-2. Melt M2 standoffs into the top plate
-3. Melt M2 standoffs into bottom plate
-4. Assemble case with display and display cover
-5. Insert switches and keycaps
+![Case assembly guide](images/case_combined.svg)
+
+1. Melt M3 insert into the top plate.
+2. Melt M2 standoffs for the display cover into the top plate.
+3. Melt M2 standoffs into bottom plate.
+4. (Optional) Paint the blue display frame with a black marker pen.
+5. Assemble case with display and display cover.
+6. Insert switches and keycaps.
 
 ## 3 Firmware
 
