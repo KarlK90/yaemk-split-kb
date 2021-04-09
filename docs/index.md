@@ -27,19 +27,19 @@
 
 ## 1 The Boards
 
-The complete design including schematics, gerbers and pcb assembly files are open source and available in the repo. Building your own YAEMK involves ordering the pcbs form JLCPCB with assembly and soldering the missing components. Most of them are SMD components so a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron are a must, a hot air station is recommended but not necessary. 
+The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers) and [pcb assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) are open source, available in the repo and can be opened with [KiCad](https://www.kicad.org/). Building your own YAEMK involves ordering the pcbs form [JLCPCB](https://jlcpcb.com/) with assembly and soldering the missing components. Most of them are SMD components so a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron are a must, a hot air station is recommended but not necessary. 
 
 > If you have never soldered before the YAEMK will be quite a challenge, therefore it is recommended to buy yourself some SMD soldering practice kits and learn it beforehand.
 
-Nearly all components come pre-soldered if you choose to use the JLCPCB pcb assembly service (which is recommended), only through hole components, tactile-switches, connectors and SMD components which have to be soldered on the front or back side depending on the right or left handness of the pcb have to be soldered by you. The YAEMK PCB is flipable, which means that one circuit board can double as the left or right side of your keyboard. To determine the handness of the pcb one resistor has to be removed. All hotswap sockets and leds are soldered on the side facing to the ground. Please see the detailed step-by-step guide downbelow.
+Nearly all components come pre-soldered if you choose to use the  [JLCPCB](https://jlcpcb.com/) pcb assembly service (which is recommended), only through hole components, tactile-switches, connectors and SMD components which have to be soldered on the front or back side depending on the right or left handness of the pcb have to be soldered by you. The YAEMK PCB is flipable, which means that one circuit board can double as the left or right side of your keyboard. To determine the handness of the pcb one resistor has to be removed. All hotswap sockets and leds are soldered on the side facing to the ground. Please see the detailed step-by-step guide downbelow.
 
 ### Interactive Guide aka. BOM
 
-For easy component location and sourcing of parts use the [Interactiv html BOM](./yaemk_rev_1_2.html). provided in this repo.
+For easy component location and sourcing of parts use the [Interactiv html BOM](./yaemk_rev_1_2.html).
 
 ### Additional BOM for one Board
 
-All components that are NOT pre-soldered by JLCPCB are listed in this table and have to be bought and soldered by you. 
+All components that are NOT pre-soldered by  [JLCPCB](https://jlcpcb.com/) are listed in this table and have to be bought and soldered by you. 
 
 | Amount | Part                          | LCSC    | Link                                                                                                                                                                                                                                |
 | ------ | ----------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
