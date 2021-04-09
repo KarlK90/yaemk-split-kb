@@ -25,7 +25,7 @@
 
 # Build Guide
 
-**At the time of writing (9th of april 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, desoldering requires a hot air station.**
+**DISCLAIMER: At the time of writing (9th of april 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires setting up a GCC RISC-V toolchain and the [ChibiOS port](https://github.com/ChibiOS/ChibiOS-Contrib/pull/266) that is needed for QMK support is bleeding edge and possibly has some undetected bugs! Use at your own risk.**
 
 The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers), [pcb assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) and a [acrylic plate case](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) are open source and available in the repo. The complete project can be opened with the open source [KiCad EDA](https://www.kicad.org/).
 
@@ -141,4 +141,24 @@ The official YAEMK case consists of one top and bottom plate and a display cover
 
 ## 3 Firmware
 
-YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. To flash it onto your Board, follow these instructions: **WIP**
+YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. At the time of writing (9th of april 2021) the YAEMK uses features which are still pending as pull requests namely:
+
+* [Update OLED driver to support some new displays by sigprof](https://github.com/qmk/qmk_firmware/pull/10379)
+* [Add support for RISC-V builds and GD32VF103 MCU by karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12508)
+* [Add Full-duplex serial driver for ARM boards by karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/9842)
+
+Until there is mainline support for YAEMK in QMK you will have to use my QMK fork, that is kept up to date with develop as best as possible. To flash it onto your Board, follow these instructions:
+
+1. Clone the  firmware repository.
+  * `git clone -b yaemk-split-kb https://github.com/KarlK90/qmk_firmware.git && cd qmk_firmware`
+2. Install the `qmk` tool.
+  * You can find detailed instructions [here](https://docs.qmk.fm/#/newbs_getting_started).
+3. Put your board into the USB-DFU bootloader mode.
+  * STM32F303: Hold the Reset+DFU button until your board registers as STM32 DFU bootloader
+  * GD32VF103: Hold the Reset+DFU button with the USB cable detached, plug in the cable and release the button shortly after. Timing is key it could take a few tries.
+4. Flash the firmware.
+  * `qmk flash -kb yaemk -km via`
+
+### GD32VF103 GCC Toolchain
+
+The default QMK toolchain doesn't support RISC-V GCC at the moment you have to build or install your own [`riscv64-unknown-elf` toolchain](https://github.com/riscv/riscv-gnu-toolchain) with multilib support.
