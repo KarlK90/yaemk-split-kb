@@ -30,6 +30,7 @@
 The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers), [pcb assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) and a [acrylic plate case](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) are open source and available in the repo. The complete project can be opened with the open source [KiCad EDA](https://www.kicad.org/).
 
 > **If you have never soldered before the YAEMK will be quite a challenge, therefore it is recommended to buy yourself some SMD soldering practice kits and learn it beforehand.**
+
 ## 1 The Boards
 
 Building your own YAEMK involves ordering the pcbs form [JLCPCB](https://jlcpcb.com/) with pcb assembly so nearly all components come pre-soldered. Only through hole components, tactile-switches, connectors and SMD components have to be soldered by you. It is crucial to understand that the YAEMK pcb is flipable, which means that every circuit board can be turned once into the left or right side of your keyboard. Depending on right or left handness of the pcb these components have to be soldered either on the front or back side of the pcb. The whole process is documented in detail below. The tools you will need are a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron, a hot air station is recommended but not strictly necessary. For easy component location and sourcing of parts it is recommended to use the [interactiv HTML BOM](./yaemk_rev_1_2.html).
@@ -56,6 +57,11 @@ All components that are NOT pre-soldered by [JLCPCB](https://jlcpcb.com/) are li
 
 **Tip: Buy some excess LEDs as they are heat sensitive!**
 
+### Thumbcluster configurations
+
+![Supported thumbcluster configurations](images/thumbcluster_configs.png)
+
+Four thumbcluster configurations are possible, depending on the location of the soldered hot swap sockets. Every configuration has a dedicated top plate for the case in the repo.
 ### Step-by-step Instructions
 
 ![PCBs with Step-by-step instructions](images/pcb_combined_steps.webp)
@@ -131,6 +137,7 @@ https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 | 2      | YAEMK Top plate               | ---                                                              |
 | 2      | YAEMK Bottom plate            | ---                                                              |
 | 2      | YAEMK Display cover           | ---                                                              |
+| 8      | Transparent plastic bumpers   | ---                                                              |
 | 22     | M2x12mm Screws                | [Aliexpress](https://www.aliexpress.com/item/4000720099366.html) |
 | 22     | M2x5mm Standoffs              | [Aliexpress](https://www.aliexpress.com/item/4000727223674.html) |
 | 18     | M2x5mm Washers                | [Aliexpress](https://www.aliexpress.com/item/4000734426632.html) |
