@@ -130,7 +130,7 @@ The official YAEMK case consists of one top and bottom plate and a display cover
 
 ### Step-by-step instructions
 
-![Case assembly guide](images/case_combined.svg)
+![Case assembly guide](images/case_combined.png)
 
 1. Melt M3 insert into the top plate.
 2. Melt M2 standoffs for the display cover into the top plate.
