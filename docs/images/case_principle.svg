@@ -150,9 +150,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="450.93638"
-     inkscape:cy="474.2845"
+     inkscape:zoom="1.979899"
+     inkscape:cx="680.2955"
+     inkscape:cy="362.28873"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -174,7 +174,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -211,13 +211,11 @@
        height="39.741924"
        x="101.09082"
        y="95.600494" />
-    <rect
-       style="fill:#ffcc00;stroke:#000000;stroke-width:0.8;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+    <path
        id="rect839-3"
-       width="37.495892"
-       height="37.269341"
-       x="95.887451"
-       y="35.719826" />
+       style="fill:#ffcc00;stroke:#000000;stroke-width:3.02362;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+       d="M 248.51367 216.80078 L 248.51367 325.60156 L 256.48828 325.60156 L 256.48828 357.8418 L 398.20508 357.8418 L 398.20508 325.60156 L 406.17969 325.60156 L 406.17969 216.80078 L 248.51367 216.80078 z "
+       transform="matrix(0.26458333,0,0,0.26458333,28.024868,-21.689957)" />
     <rect
        style="fill:#ffcc00;stroke:#000000;stroke-width:0.8;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
        id="rect856"
