@@ -66,29 +66,49 @@ After placing your order you can procced ordering the missing parts from [LCSC](
 
 ### Additional bill of materials for one complete Keyboard
 
-All components that are NOT pre-soldered by [JLCPCB](https://jlcpcb.com/) are listed in this table and have to be bought and assembled by you. 
+All components that are NOT pre-soldered by [JLCPCB](https://jlcpcb.com/) are listed in this table and have to be bought and assembled by you. Switches and Keycaps are highly personal decision, you find my recommendation at the bottom. As I'm using a rather uncommon keyboard layout (K.O,Y) I stick to blank keycaps.
 
-| Amount | Part                             | LCSC    | Link                                                                                                                                                                                                                                |
-| ------ | -------------------------------- | ------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 4      | USB-C Socket Mid-mount           | C168688 | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C168688_C168688.html) or [Aliexpress](https://www.aliexpress.com/item/4000074094558.html)                                                 |
-| 2      | Alps EC11 Rotary Encoder         | C370986 | [LCSC](https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS-Electric-EC11E183440C_C370986.html)                                                                                                                               |
-| 66     | SK6812-mini-e (3228) RGB LEDs    | -       | [Aliexpress](https://www.aliexpress.com/item/4000475685852.html)                                                                                                                                                                    |
-| 14     | SK6812-mini (3535) RGB LEDs      | -       | [Aliexpress](https://www.aliexpress.com/item/33019583218.html)                                                                                                                                                                      |
-| 66     | Hotswap Kailh or Gateron Sockets | -       | [Aliexpress](https://www.aliexpress.com/item/32951252318.html) or [Aliexpress](https://www.aliexpress.com/item/1005002037689483.html)                                                                                               |
-| 2      | Encoder Knob                     | -       | [Splitkb](https://splitkb.com/collections/keyboard-parts/products/matte-aluminium-encoder-knob) or [Aliexpress](https://www.aliexpress.com/item/32893184848.html) or [Aliexpress](https://www.aliexpress.com/item/32810522800.html) |
-| 2      | 0.96" SSD1107 64x128 Display     | -       | [Aliexpress](https://www.aliexpress.com/item/4000547865501.html)                                                                                                                                                                    |
-| 2      | Purple 0603 Power LED            | C268294 | [LCSC](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_OptoSupply-OSK40603C1E_C268294.html)                                                                                                                               |
-| 2      | Reset/DFU Switch                 | C393942 | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html)                                                                                                                                               |
-| 2      | Display Socket                   | C358718 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTF185-104SY1_C358718.html)                                                                                                                                 |
-| 2      | Debug Pinheader (optional)       | C376124 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTB125-1106R1_C376124.html)                                                                                                                                 |
+| Amount | Part                                   | LCSC    | Link                                                                                                                                                                                                                                                                 |
+| ------ | -------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 4      | USB-C Socket Mid-mount                 | C168688 | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C168688_C168688.html) or [Aliexpress](https://www.aliexpress.com/item/4000074094558.html)                                                                                  |
+| 2      | Alps EC11 Rotary Encoder               | C370986 | [LCSC](https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS-Electric-EC11E183440C_C370986.html)                                                                                                                                                                |
+| 66     | SK6812-mini-e (3228) RGB LEDs          | -       | [Aliexpress](https://www.aliexpress.com/item/4000475685852.html)                                                                                                                                                                                                     |
+| 14     | SK6812-mini (3535) RGB LEDs            | -       | [Aliexpress](https://www.aliexpress.com/item/33019583218.html)                                                                                                                                                                                                       |
+| 66     | Hotswap Kailh or Gateron Sockets       | -       | [Aliexpress](https://www.aliexpress.com/item/32951252318.html) or [Aliexpress](https://www.aliexpress.com/item/1005002037689483.html)                                                                                                                                |
+| 2      | Encoder Knob                           | -       | [Splitkb](https://splitkb.com/collections/keyboard-parts/products/matte-aluminium-encoder-knob) or [Aliexpress](https://www.aliexpress.com/item/32893184848.html) or [Aliexpress](https://www.aliexpress.com/item/32810522800.html)                                  |
+| 2      | 0.96" SSD1107 64x128 Display           | -       | [Aliexpress](https://www.aliexpress.com/item/4000547865501.html)                                                                                                                                                                                                     |
+| 2      | Purple 0603 Power LED                  | C268294 | [LCSC](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_OptoSupply-OSK40603C1E_C268294.html)                                                                                                                                                                |
+| 2      | Reset/DFU Switch                       | C393942 | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html)                                                                                                                                                                                |
+| 2      | Display Socket                         | C358718 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTF185-104SY1_C358718.html)                                                                                                                                                                  |
+| 2      | Debug Pinheader (optional)             | C376124 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTB125-1106R1_C376124.html)                                                                                                                                                                  |
+| 66     | Switches (depending on Thumbcluster)   | -       | Personal recommendations [Clicky - Box Yellow](https://www.aliexpress.com/item/1005001684056035.html) or [Tactile - Boba U4 RGB](https://www.aliexpress.com/item/1005001809357064.html) or [Linear - Boba Bobbagum](https://www.aliexpress.com/item/1005001985634467.html) |
+| 64-66  | 1u Keycaps (depending on Thumbcluster) | -       | Personal recommendation [1u XDAS Profil](https://www.aliexpress.com/item/33047653096.html)                                                                                                                                                                           |
+| 0-4    | 2u Keycaps (depending on Thumbcluster) | -       | [2u XDA Profile](https://www.aliexpress.com/item/1005001376888502.html)                                                                                                                                                                                                                                                                     |
 
 **Tip: Buy some excess LEDs as they are heat sensitive!**
 
 ### Thumbcluster configurations
 
+Four thumbcluster configurations are possible, depending on the location of the soldered hot swap sockets. Every configuration has a dedicated top plate for the case in the repo.
+
 ![Supported thumbcluster configurations](images/thumbcluster_configs.png)
 
-Four thumbcluster configurations are possible, depending on the location of the soldered hot swap sockets. Every configuration has a dedicated top plate for the case in the repo.
+#### Placement of hotswap sockets
+
+![Thumbcluster configurations sockets](images/thumbcluster_configs_sockets.webp)
+
+#### Correct orientation of hotswap sockets
+
+Do not obstruct the middle hole with the hotswap sockets or switches will not fit!
+
+![Correct orientation hotswap sockets](images/hotswap_orientation.webp)
+
+#### Correct orientation of rgb leds
+
+![Correct orientation of rgb leds](images/led_orientation.webp)
+
+Every led has little chamfer that indicates the correct orientation, match it with the chamfer on the pad of the pcb and the little white triangle silkscreened next to the pad. Two types of leds are used on the YAEMK the first sk6812 3535 are for underglow, there are 7 per side in total and distributed along the edges of the pcb, it is the upper led in the picture. They shine down on the surface the keyboard rests on. The secound type are sk6812-mini-e leds for per-key backlighting, it is the lower led in the picture. They shine up through the pcb, away from the surface the keyboard rests on.
+
 ### Step-by-step Instructions
 
 ![PCBs with Step-by-step instructions](images/pcb_combined_steps.webp)
@@ -102,15 +122,17 @@ Four thumbcluster configurations are possible, depending on the location of the 
 2. Remove handness selection resistor `R24 or R25`
   * The handness, meaning if it is the right or left side of the keyboard, is determined by these resistors. PCBs come with both resistors soldered in place from JLCPCB. Keep the resistor for the side you want this PCB to be, e.g. keep resistor `R25` next to the little R if this PCB should be the right side of the keyboard and remove resistor `R24` next to the little L.
 3. *(GD32VF103 only)* Remove USB D+ pullup resistor `R20`
-4. Close split communication solder bridges `JP1 and JP2`
-  * Both halves of the YAEMK communicate via a full-duplex USART connection over a USB-C cable (we repurpose the USB cable for this). For this to work the TX lines of one halve have to be connected with the RX line of the other halve. Thats what the solder bridge is for, to reroute the TX line of one halve into the RX line of the other. Therefore connect the left pad with the middle pad via a solder bridge on the left side of the keyboard and connect the right pad with the middle pad via a solder bridge on the right side of the keyboard.
+4. Close split communication solder jumpers `JP1 and JP2`
+  * Both halves of the YAEMK communicate via a full-duplex USART connection over a USB-C cable (we repurpose the USB cable for this). For this to work the TX lines of one halve have to be connected with the RX line of the other halve. Thats what the solder bridge is for, to reroute the TX line of one halve into the RX line of the other.
+  * Connect the left pad with the middle pad on both jumpers via a solder bridge on the left side of the keyboard.
+  * Connect the right pad with the middle pad on both jumpers via a solder bridge on the right side of the keyboard.
 5. Solder Reset/DFU Switch on the side facing away from you. `S32`
 6. Solder power LED on the side facing away from you. `D70`
   * A little triangle shows the orientation of the LED on the board, match this triangle with the triangle on the bottom of the led.
 7. Flash the firmware and test for successful usb connection.
-8. Solder RGB LEDs on the side facing away from you. `D35 to D76`
-9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a thumbcluster configuration. `S1 to S31`
-10. *(Optional)* Solder Debug Header  on the side facing away from you. `J1`
+8. Solder RGB LEDs on the side facing away from you, take care to orient these correctly. Make sure to correctly orient them, as they are not the same orientation all the time. Use the interactive bom when in doubt. `D35 to D76`
+9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a thumbcluster configuration. Make sure to correctly orient them. `S1 to S31`
+10. *(Optional)* Solder Debug Header on the side facing away from you. `J1`
 11. Solder Display Socket on the side facing to you. `P3`
   * Bridge the pads next to the through holes when soldering to close the contact.
 12. Solder Rotary Encoder on the side facing to you. `SW1`
@@ -145,7 +167,7 @@ Check for shorts between VDD and GND with a multimeter. Make sure that the USB-C
 
 ### LED chain broken or flickering LEDs
 
-Try to apply some pressure to first LED that doesn't work in the chain, if this turns on the led you have cold solder connection - reflow the led. Should that not work, try the last LED in the chain that does work properly, if that turns on other LEDs in the chain the problem was the again a cold solder connection - reflow the led. If all that doesn't help try to resolder these leds, even if applying pressure didn't help. If that doesn't solve the problem one of the leds is dead, replace with a new one. 
+Check the correct orientation of the rgb led first, correct if necessary. If correct try to apply some pressure to first LED that doesn't work in the chain, if this turns on the led you have cold solder connection - reflow the led. Should that not work, try the last LED in the chain that does work properly, if that turns on other LEDs in the chain the problem was the again a cold solder connection - reflow the led. If all that doesn't help try to resolder these leds, even if applying pressure didn't help. If that doesn't solve the problem one of the leds is dead, replace with a new one. 
 
 ## 2 Acrylic plate case
 
@@ -187,6 +209,11 @@ https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 6. Assemble case with display and display cover.
 7. Insert switches and keycaps.
 
+![Close up top plate](images/case_top_plate.webp)
+
+![Close up bottom plate](images/case_bottom_plate.webp)
+
+![Close up finished case](images/case_assembled_close_up.webp)
 ## 3 Firmware
 
 YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. At the time of writing (9th of april 2021) the YAEMK uses features which are still pending as pull requests namely:
