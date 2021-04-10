@@ -125,6 +125,10 @@ Four thumbcluster configurations are possible, depending on the location of the 
     * Reset+DFU tactile switch resets the board on short press and enters DFU bootloader on long press (see GD32VF103 specific notes in Firmware section).
 15. *(Optional)* Paint the edges of the pcb with a black marker pen.
 
+#### Finished left handed PCB for reference, switches are already installed.
+
+![YAEMK finished left side](images/yaemk_finished_left.webp)
+
 ## Troubleshooting
 
 ### No USB connection 
@@ -156,7 +160,6 @@ The official YAEMK case consists of one top and bottom plate and a display cover
 The pcb is clamped by the brass M3 insert and M2 standoff by tightening the M2 screw which only has grip in the M2 standoff. The Display is clamped between the cover and the M2 standoffs of the top case and display socket. Both brass inserts are melted flat to the surface into the acrylic plates using a soldering iron set to 160c and a pointed tip, like the T12-I. Watch this [video](
 https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 
-
 ### Bill of material for one case
 
 | Amount | Part                          | Link                                                             |
@@ -173,6 +176,8 @@ https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 ### Step-by-step instructions
 
 ![Case assembly guide](images/case_combined.png)
+
+**Pay attention to make all inserts flush with the surface! If acrylic obstructs the inserts after insertion remove it while it is still warm.**
 
 1. Melt M3 insert into the top plate.
 2. Melt M2 standoffs for the display cover into the top plate.
