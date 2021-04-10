@@ -25,7 +25,7 @@
 
 # Build Guide
 
-**DISCLAIMER: At the time of writing (9th of april 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires setting up a GCC RISC-V toolchain and the [ChibiOS port](https://github.com/ChibiOS/ChibiOS-Contrib/pull/266) that is needed for QMK support is bleeding edge and possibly has some undetected bugs! Use at your own risk.**
+## **DISCLAIMER: At the time of writing (9th of april 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires setting up a [GCC RISC-V toolchain](https://github.com/riscv/riscv-gnu-toolchain) and the [ChibiOS port](https://github.com/ChibiOS/ChibiOS-Contrib/pull/266) that is needed for QMK support is bleeding edge and possibly has some undetected bugs! Use at your own risk.**##
 
 The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers), [pcb assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) and a [acrylic plate case](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) are open source and available in the repo. The complete project can be opened with the open source [KiCad EDA](https://www.kicad.org/).
 
@@ -36,6 +36,33 @@ The complete design including [schematics](https://github.com/KarlK90/yaemk-spli
 Building your own YAEMK involves ordering the pcbs form [JLCPCB](https://jlcpcb.com/) with pcb assembly so nearly all components come pre-soldered. Only through hole components, tactile-switches, connectors and SMD components have to be soldered by you. It is crucial to understand that the YAEMK pcb is flipable, which means that every circuit board can be turned once into the left or right side of your keyboard. Depending on right or left handness of the pcb these components have to be soldered either on the front or back side of the pcb. The whole process is documented in detail below. The tools you will need are a good quality pair of tweezers, flux, leaded solder and a temperature controled soldering iron, a hot air station is recommended but not strictly necessary. For easy component location and sourcing of parts it is recommended to use the [interactiv HTML BOM](./yaemk_rev_1_2.html).
 
 <iframe src="./yaemk_rev_1_2.html" width="100%" height="500px"></iframe>
+
+### Ordering process
+
+
+If you have never ordered PCBs with assembly from [JLCPCB](https://jlcpcb.com) I highly recommend watching the steps from Phil’s Lab in the [KiCad STM32 + USB + Buck Converter PCB Design and JLCPCB Assembly](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9872s) video. The default settings are mostly fine the changes you want to pick are the following:
+
+#### PCB:
+
+* 2 Layers (The video has a 4 Layer board)
+* PCB Oty: As much as you like
+* PCB Color: Black
+* No impedance control (Option only shown in the video) 
+* Surface Finish: HASL(with lead) if you want the easiest soldering experience or LeadFree HASL. For extra bling-bling choose ENIG gold finish.
+* Remove Order Number: Yes
+
+#### SMT Assembly
+
+**ATTENTION: At the time of writing (9th of april 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. Therefore you currently can not order the pcb with the MCU pre-soldered. I was not able to correct and confirm the MCU orientation, it is likely rotated in correctly. As soon as the MCU is in stock again this will be addressed.**
+
+* Assemble top side
+* SMT Oty: As much as you like
+* Tooling holes: Added by Customer
+* Add BOM file: the file is PCB/assembly/YAEMK_bom.csv
+* Add CPL file: the file is PCB/assembly/YAEMK-top-poc_corrected.csv
+* If you want the GD32VF103 MCU, deselect `U5 STM32F303CCTx` on the Select Parts page. You have to source and solder the GD32VF103 yourself.
+
+After placing your order you can procced ordering the missing parts from [LCSC](https://lcsc.com/), as they are both part of the same company, you [can save shiping costs](https://easyeda.com/forum/topic/How-to-combine-boards-JLCPCB-and-components-LCSC-into-a-common-order-cc0f3ff5fc0845839af9f37910bca742) when specifiying your JLCPCB order number.
 
 ### Additional bill of materials for one complete Keyboard
 
