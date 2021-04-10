@@ -42,7 +42,7 @@ Building your own YAEMK involves ordering the pcbs form [JLCPCB](https://jlcpcb.
 
 If you have never ordered PCBs with assembly from [JLCPCB](https://jlcpcb.com) I highly recommend watching the steps from Phil’s Lab in the [KiCad STM32 + USB + Buck Converter PCB Design and JLCPCB Assembly](https://www.youtube.com/watch?v=C7-8nUU6e3E&t=9872s) video. The default settings are mostly fine the changes you want to pick are the following:
 
-#### PCB:
+#### PCB
 
 * 2 Layers (The video has a 4 Layer board)
 * PCB Oty: As much as you like
@@ -93,17 +93,17 @@ Four thumbcluster configurations are possible, depending on the location of the 
 
 ![Supported thumbcluster configurations](images/thumbcluster_configs.png)
 
-#### Placement of hotswap sockets for thumbcluster
+### Placement of hotswap sockets for thumbcluster
 
 ![Thumbcluster configurations sockets](images/thumbcluster_configs_sockets.webp)
 
-#### Correct orientation of hotswap sockets
+### Correct orientation of hotswap sockets
 
 Do not obstruct the middle hole with the hotswap sockets or switches will not fit!
 
 ![Correct orientation hotswap sockets](images/hotswap_orientation.webp)
 
-#### Correct orientation of rgb leds
+### Correct orientation of rgb leds
 
 ![Correct orientation of rgb leds](images/led_orientation.webp)
 
@@ -147,7 +147,7 @@ Every led has little chamfer that indicates the correct orientation, match it wi
     * Reset+DFU tactile switch resets the board on short press and enters DFU bootloader on long press (see GD32VF103 specific notes in Firmware section).
 15. *(Optional)* Paint the edges of the pcb with a black marker pen.
 
-#### Finished left handed PCB for reference, switches are already installed.
+### Finished left handed PCB for reference, switches are already installed.
 
 ![YAEMK finished left side](images/yaemk_finished_left.webp)
 
