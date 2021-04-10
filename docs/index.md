@@ -93,17 +93,17 @@ Four thumbcluster configurations are possible, depending on the location of the 
 
 ![Supported thumbcluster configurations](images/thumbcluster_configs.png)
 
-#### [Placement of hotswap sockets for thumbcluster](#socket-thumbcluster)
+#### Placement of hotswap sockets for thumbcluster
 
 ![Thumbcluster configurations sockets](images/thumbcluster_configs_sockets.webp)
 
-#### [Correct orientation of hotswap sockets](#socket-orientation)
+#### Correct orientation of hotswap sockets
 
 Do not obstruct the middle hole with the hotswap sockets or switches will not fit!
 
 ![Correct orientation hotswap sockets](images/hotswap_orientation.webp)
 
-#### [Correct orientation of rgb leds](#rgb-orientation)
+#### Correct orientation of rgb leds
 
 ![Correct orientation of rgb leds](images/led_orientation.webp)
 
@@ -130,8 +130,8 @@ Every led has little chamfer that indicates the correct orientation, match it wi
 6. Solder power LED on the side facing away from you. `D70`
   * A little triangle shows the orientation of the LED on the board, match this triangle with the triangle on the bottom of the led.
 7. Flash the firmware and test for successful usb connection.
-8. Solder RGB LEDs on the side facing away from you. Make sure to [correctly orient](#rgb-orientation) them, as they are not the same orientation all the time. Use the interactive bom when in doubt. `D35 to D76`
-9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a [thumbcluster configuration](#socket-thumbcluster). Make sure to [correctly orient](#socket-orientation) them. `S1 to S31`
+8. Solder RGB LEDs on the side facing away from you. Make sure to [correctly orient](#correct-orientation-of-rgb-leds) them, as they are not the same orientation all the time. Use the interactive bom when in doubt. `D35 to D76`
+9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a [thumbcluster configuration](#placement-of-hotswap-sockets-for-thumbcluster). Make sure to [correctly orient](#correct-orientation-of-hotswap-sockets) them. `S1 to S31`
 10. *(Optional)* Solder Debug Header on the side facing away from you. `J1`
 11. Solder Display Socket on the side facing to you. `P3`
   * Bridge the pads next to the through holes when soldering to close the contact.
