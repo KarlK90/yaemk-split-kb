@@ -1,3 +1,4 @@
 title: YAEMK
 description: YAEMK is yet another ergonomic mechanical (split-)keyboard
-theme: jekyll-theme-cayman
+theme: jekyll-theme-cayman 
+markdown: kramdown
