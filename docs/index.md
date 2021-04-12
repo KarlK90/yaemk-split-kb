@@ -4,7 +4,7 @@
 
 # Features of the YAEMK
 
-* Split-Keyboard with 5 rows by 8 columns matrix with columnar stagger. Key layout testers for print available!
+* Split-Keyboard with 5 rows by 8 columns matrix with columnar stagger. Key layout testers for print ([A4](yaemk_layout_tester_a4.pdf) and [Letter](yaemk_layout_tester_letter.pdf)) available!
 * All 64 to 66 Keys are MX-compatible and hot-swapable.
 * The thumb-cluster is configurable in 4 different configurations, just solder the hot-swap sockets to your needs.
   + 4x1u, 2x2u, 2u+2x1u or 2x1u+2u configuration possible.
