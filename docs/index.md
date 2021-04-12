@@ -23,7 +23,18 @@
   + PCB SMT assembly files for JLCPCB in the repo!
 * 2-plate acrylic case files available.
 
-## Tryout the key layout testers if the YAEMK is for you. Available in [A4](yaemk_layout_tester_a4.pdf) and [Letter](yaemk_layout_tester_letter.pdf) size.
+## YAEMK Key layout testers
+
+Find out if building a YAEMK fits your hands, available in:
+
+* [A4 Key layout tester](yaemk_layout_tester_a4.pdf)
+* [Letter Key layout tester](yaemk_layout_tester_letter.pdf).
+
+## Thumbcluster configurations
+
+Four thumbcluster configurations are possible, depending on the location of the soldered hot swap sockets. Every configuration has a dedicated top plate for the case in the repository.
+
+![Supported thumbcluster configurations](images/thumbcluster_configs.png)
 
 # Build Guide
 
@@ -89,11 +100,6 @@ All components that are NOT pre-soldered by [JLCPCB](https://jlcpcb.com/) are li
 
 **Tip: Buy some excess LEDs as they are heat sensitive!**
 
-### Thumbcluster configurations
-
-Four thumbcluster configurations are possible, depending on the location of the soldered hot swap sockets. Every configuration has a dedicated top plate for the case in the repository.
-
-![Supported thumbcluster configurations](images/thumbcluster_configs.png)
 
 ### Placement of hotswap sockets for thumbcluster
 
