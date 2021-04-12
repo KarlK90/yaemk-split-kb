@@ -163,11 +163,11 @@ Every led has little chamfer that indicates the correct orientation, match it wi
 
 ### No USB connection 
 
-Make sure that you soldered the pins of the USB-C sockets to the pads, if in doubt reflow with solder and flux. Test for continuity with a multimeter on the d+ and d- lines between the legs of the ESD protection diode and a plugged in USB-C cable.  
+Make sure that you soldered the pins of the USB-C sockets to the pads, if in doubt reflow with solder and flux. Test for continuity with a multimeter on the d+ and d- lines between the legs of the ESD protection diode `U3` and a plugged in USB-C cable.  
 
 ### No split communication
 
-Make sure that you soldered the pins of the USB-C sockets to the pads, if in doubt reflow with solder and flux. Test for continuity with a multimeter on the TX and RX lines between the legs of the ESD protection diode on both halves connecting them with a USB-C cable. Make sure that you closed the solder bridges in opposite fashion on both halves i.e. the left halve bridged the left pads with solder bridges and the right halve bridged the right pads with solder bridges.
+Make sure that you soldered the pins of the USB-C sockets to the pads, if in doubt reflow with solder and flux. Test for continuity with a multimeter on the TX and RX lines between the legs of the ESD protection diode `U4` on both halves connecting them with a USB-C cable. Make sure that you closed the solder bridges in opposite fashion on both halves i.e. the left halve bridged the left pads with solder bridges and the right halve bridged the right pads with solder bridges.
 
 ### No power
 
