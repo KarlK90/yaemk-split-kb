@@ -30,6 +30,8 @@
   
 ## YAEMK Key layout testers
 
+![Key layout](images/yaemk_keylayout.svg)
+
 Find out if building a YAEMK fits your hands, available in:
 
 * [A4 Key layout tester](yaemk_layout_tester_a4.pdf)
