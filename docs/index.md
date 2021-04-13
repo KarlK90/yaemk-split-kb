@@ -23,6 +23,8 @@
   + PCB SMT assembly files for JLCPCB in the repo!
 * 2-plate acrylic case files available.
 
+### Table of contents
+
 * TOC
 {:toc}
   
