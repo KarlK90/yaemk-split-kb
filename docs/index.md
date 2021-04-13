@@ -122,6 +122,11 @@ Do not obstruct the middle hole with the hotswap sockets or switches will not fi
 
 Every led has little chamfer that indicates the correct orientation, match it with the chamfer on the pad of the pcb and the little white triangle silk screened next to the pad. Two types of leds are used on the YAEMK the first sk6812 3535 are for underglow, there are 7 per side in total and distributed along the edges of the pcb, it is the upper led in the picture. They shine down on the surface the keyboard rests on. The second type are sk6812-mini-e leds for per-key backlighting, it is the lower led in the picture. They shine up through the pcb, away from the surface the keyboard rests on.
 
+### Modification of SH1107 display modules
+
+![SH1107 display module modifications](images/display_modifications.webp)
+
+Remove the pull-up resistors `R4` and `R5` with your soldering iron, these redundant as the YAEMK already has pull-ups in place. Remove the low drop out (LDO) regulator `Q1` by cutting its legs or with your soldering iron and bridge the terminal by soldering a small piece of wire in place. The LDO is redundant and serves no function as the YAEMK already supplies the display with stabilized 3.3V VDD.
 ### Step-by-step Instructions
 
 ![PCBs with Step-by-step instructions](images/pcb_combined_steps.webp)
@@ -150,7 +155,11 @@ Every led has little chamfer that indicates the correct orientation, match it wi
   * Bridge the pads next to the through holes when soldering to close the contact.
 12. Solder Rotary Encoder on the side facing to you. `SW1`
 13. Clean the Board from any residues with alcohol.
-14. Test board for full operation:
+14. Modifiy the SH1107 displays by removing the pull-ups and the LDO as [demonstrated](#modification-of-sh1107-display-modules).
+15. Trim the plastic and the pin header of the display so that the pcb of the display sits flush on the display socket.
+16. *(Optional)* Paint the edges of the pcb with a black marker pen.
+17. *(Optional)* Paint the blue display frame and pcb edges with a black marker pen.
+18. Test board for full operation:
     * Successful USB connection of both halves to the pc, regardless of plug orientation.
     * Successful split connection of between both halves, regardless of plug orientation.
     * Key presses for all keys are registered, for testing bridge the terminals of the hotswap-sockets with a piece of wire.
@@ -158,7 +167,6 @@ Every led has little chamfer that indicates the correct orientation, match it wi
     * Rotary encoders register motion.
     * Displays show YAEMK logo on startup on both halves.
     * Reset+DFU tactile switch resets the board on short press and enters DFU bootloader on long press (see GD32VF103 specific notes in Firmware section).
-15. *(Optional)* Paint the edges of the pcb with a black marker pen.
 
 ### Finished left handed PCB for reference, switches are already installed.
 
@@ -217,8 +225,6 @@ https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 1. Melt M3 insert into the top plate.
 2. Melt M2 standoffs for the display cover into the top plate.
 3. Melt M2 standoffs into bottom plate.
-4. (Optional) Paint the blue display frame with a black marker pen.
-5. Trim the plastic and the pin header of the display so that the pcb of the display sits flush on the display socket.
 6. Assemble case with display and display cover.
 7. Insert switches and keycaps.
 
