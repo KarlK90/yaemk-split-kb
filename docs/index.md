@@ -251,7 +251,7 @@ Until there is mainline support for YAEMK in QMK you will have to use my QMK for
 2. Install the `qmk` tool. You can find detailed instructions [here](https://docs.qmk.fm/#/newbs_getting_started).
 3. Put your board into the USB-DFU bootloader mode.
   * STM32F303: Hold the Reset+DFU button until your board registers as STM32 DFU bootloader
-  * GD32VF103: Hold the Reset+DFU button with the USB cable detached, plug in the cable and release the button shortly after. Timing is key it could take a few tries.
+  * GD32VF103: Hold the Reset+DFU button with the USB cable plugged in, detach cable and re-plug immediately release the button shortly after.
 4. Adjust features to your liking.
 5. Flash the firmware.
   * `qmk flash -kb yaemk -km default`
