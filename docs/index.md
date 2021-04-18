@@ -149,7 +149,7 @@ Remove the pull-up resistors `R4` and `R5` with your soldering iron, these redun
 5. Solder Reset/DFU Switch on the side facing away from you. `S32`
 6. Solder power LED on the side facing away from you. `D70`
   * A little triangle shows the orientation of the LED on the board, match this triangle with the triangle on the bottom of the led.
-7. Flash the firmware and test for successful usb connection.
+7. Flash the [testing firmware provided]() and test for successful usb connection.
 8. Solder RGB LEDs on the side facing away from you. Make sure to [correctly orient](#correct-orientation-of-rgb-leds) them, as they are not the same orientation all the time. Use the interactive BOM when in doubt. `D35 to D76`
 9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a [thumbcluster configuration](#placement-of-hotswap-sockets-for-thumbcluster). Make sure to [correctly orient](#correct-orientation-of-hotswap-sockets) them. `S1 to S31`
 10. *(Optional)* Solder Debug Header on the side facing away from you. `J1`
