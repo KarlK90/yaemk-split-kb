@@ -45,7 +45,7 @@ Four thumbcluster configurations are possible, depending on the location of the 
 
 # Build Guide
 
-**DISCLAIMER: At the time of writing (9th of April 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires setting up a [GCC RISC-V toolchain](https://github.com/riscv/riscv-gnu-toolchain) and the [ChibiOS port](https://github.com/ChibiOS/ChibiOS-Contrib/pull/266) that is needed for QMK support is bleeding edge and possibly has some undetected bugs! Use at your own risk.**
+**DISCLAIMER: At the time of writing (9th of April 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires setting up a [GCC RISC-V toolchain](https://github.com/riscv/riscv-gnu-toolchain) and the [ChibiOS port](https://github.com/ChibiOS/ChibiOS-Contrib/pull/266) that is needed for QMK support is bleeding edge! Use at your own risk.**
 
 The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers), [pcb smt assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) and a [acrylic plate case](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) are open source and available in the repository. The complete project can be opened with the open source [KiCad EDA](https://www.kicad.org/).
 
@@ -149,7 +149,7 @@ Remove the pull-up resistors `R4` and `R5` with your soldering iron, these redun
 5. Solder Reset/DFU Switch on the side facing away from you. `S32`
 6. Solder power LED on the side facing away from you. `D70`
   * A little triangle shows the orientation of the LED on the board, match this triangle with the triangle on the bottom of the led.
-7. Flash the [testing firmware provided]() and test for successful usb connection.
+7. Flash the [testing firmware provided](https://github.com/KarlK90/yaemk-split-kb/tree/main/Firmware) and test for successful usb connection.
 8. Solder RGB LEDs on the side facing away from you. Make sure to [correctly orient](#correct-orientation-of-rgb-leds) them, as they are not the same orientation all the time. Use the interactive BOM when in doubt. `D35 to D76`
 9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a [thumbcluster configuration](#placement-of-hotswap-sockets-for-thumbcluster). Make sure to [correctly orient](#correct-orientation-of-hotswap-sockets) them. `S1 to S31`
 10. *(Optional)* Solder Debug Header on the side facing away from you. `J1`
