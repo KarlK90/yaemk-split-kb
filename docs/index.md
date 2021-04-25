@@ -45,7 +45,7 @@ Four thumbcluster configurations are possible, depending on the location of the 
 
 # Build Guide
 
-**DISCLAIMER: At the time of writing (9th of April 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires setting up a [GCC RISC-V toolchain](https://github.com/riscv/riscv-gnu-toolchain) and the [ChibiOS port](https://github.com/ChibiOS/ChibiOS-Contrib/pull/266) that is needed for QMK support is bleeding edge! Use at your own risk.**
+**DISCLAIMER: At the time of writing (9th of April 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires setting up a [GCC RISC-V toolchain](https://github.com/riscv/riscv-gnu-toolchain), a recent `dfu-util` with fixes for the DFU bootloader and the [ChibiOS port](https://github.com/ChibiOS/ChibiOS-Contrib/pull/266) that is needed for QMK support is bleeding edge! Use at your own risk.**
 
 The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers), [pcb smt assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) and a [acrylic plate case](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) are open source and available in the repository. The complete project can be opened with the open source [KiCad EDA](https://www.kicad.org/).
 
@@ -256,6 +256,6 @@ Until there is mainline support for YAEMK in QMK you will have to use my QMK for
 5. Flash the firmware.
   * `qmk flash -kb yaemk -km default`
 
-### GD32VF103 GCC Toolchain
+### GD32VF103 GCC Toolchain and `dfu-util`
 
-The default QMK toolchain doesn't support RISC-V GCC at the moment you have to build or install your own [`riscv64-unknown-elf` toolchain](https://github.com/riscv/riscv-gnu-toolchain) with multilib support.
+The default QMK toolchain doesn't support RISC-V GCC at the moment you have to build or install your own [`riscv64-unknown-elf` toolchain](https://github.com/riscv/riscv-gnu-toolchain#installation-newliblinux-multilib) with multilib support and the newlib compiler. For flashing a recent version of `dfu-util` is needed because the DF U bootloader of the GD32VF103 has a bug in it. Follow these [instructions](http://dfu-util.sourceforge.net/build.html) for your OS. 

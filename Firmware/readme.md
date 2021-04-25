@@ -10,6 +10,8 @@ These firmware images are meant for easy testing purposes only when building you
 
 ## Flashing RISC-V
 
+**You need a recent version of `dfu-util` that has a fix for the DFU bootloader of the GD32VF103. Follow these [instructions](http://dfu-util.sourceforge.net/build.html) for your OS.** 
+
 * Hold the Reset+DFU button with the USB cable plugged in, detach cable and re-plug immediately release the button shortly after. Your keyboard shows up as `GDMicroelectronics GD32 DFU Bootloader`.
 * Flash firmware with dfu-util using this command:
     * `dfu-util -d 28e9:0189 -s 0x08000000:leave -D yaemk_via_riscv.bin -w` 
