@@ -243,6 +243,7 @@ YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. At the time of writ
 * [Extensible split data sync by tzarc](https://github.com/qmk/qmk_firmware/pull/11930/)
 * [Add support for RISC-V builds and GD32VF103 MCU by karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12508)
 * [Add Full-duplex serial driver for ARM boards by karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/9842)
+* [Register multiple key events/presses per USB report by hongaaronc and karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12686)
 
 Until there is mainline support for YAEMK in QMK you will have to use my QMK fork, that is kept up to date with develop as best as possible. To flash it onto your Board, follow these instructions:
 
