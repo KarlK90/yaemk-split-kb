@@ -45,7 +45,7 @@ Four thumbcluster configurations are possible, depending on the location of the 
 
 # Build Guide
 
-**DISCLAIMER: At the time of writing (9th of April 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires setting up a [GCC RISC-V toolchain](https://github.com/riscv/riscv-gnu-toolchain), a recent `dfu-util` with fixes for the DFU bootloader and the [ChibiOS port](https://github.com/ChibiOS/ChibiOS-Contrib/pull/266) that is needed for QMK support is bleeding edge! Use at your own risk.**
+**DISCLAIMER: At the time of writing (11th of May 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. The GD32VF103CBT6 can be sourced from devboards like the Sipeed Longan Nano, but desoldering requires a hot air station. Also the GD32VF103 requires installing a [GCC RISC-V toolchain](https://www.embecosm.com/resources/tool-chain-downloads/#riscv-stable), a recent `dfu-util` with fixes for the DFU bootloader.**
 
 The complete design including [schematics](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB), [gerbers](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers), [pcb smt assembly files](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/assembly) and a [acrylic plate case](https://github.com/KarlK90/yaemk-split-kb/tree/main/Case) are open source and available in the repository. The complete project can be opened with the open source [KiCad EDA](https://www.kicad.org/).
 
@@ -73,7 +73,7 @@ If you have never ordered PCBs with assembly from [JLCPCB](https://jlcpcb.com) I
 
 #### SMT Assembly
 
-**ATTENTION: At the time of writing (9th of april 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. Therefore you currently can not order the pcb with the MCU pre-soldered. I was not able to correct and confirm the MCU orientation, it is likely rotated in correctly. As soon as the MCU is in stock again this will be addressed.**
+**ATTENTION: At the time of writing (11th of May 2021) there is a world wide on-going semiconductor shortage, both MCUs of the YAEMK the [STM32F303CCT6](https://www.oemsecrets.com/compare/1/EUR/STM32F303CCT6) and [GD32VF103CBT6](https://www.oemsecrets.com/compare/1/EUR/GD32VF103CBT6) are affected of this shortage and are out of stock. Therefore you currently can not order the pcb with the MCU pre-soldered. I was not able to correct and confirm the MCU orientation, it is likely rotated in correctly. As soon as the MCU is in stock again this will be addressed.**
 
 * Assemble top side
 * SMT Oty: As much as you like
@@ -244,6 +244,8 @@ YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. At the time of writ
 * [Add support for RISC-V builds and GD32VF103 MCU by karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12508)
 * [Add Full-duplex serial driver for ARM boards by karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/9842)
 * [Register multiple key events/presses per USB report by hongaaronc and karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12686)
+* [Add HOLD_ON_OTHER_KEY_PRESS option for dual-role keys by sigprof](https://github.com/qmk/qmk_firmware/pull/9404)
+* [Add asym_eager_defer_pk debounce type](https://github.com/qmk/qmk_firmware/pull/12689)
 
 Until there is mainline support for YAEMK in QMK you will have to use my QMK fork, that is kept up to date with develop as best as possible. To flash it onto your Board, follow these instructions:
 
@@ -257,6 +259,27 @@ Until there is mainline support for YAEMK in QMK you will have to use my QMK for
 5. Flash the firmware.
   * `qmk flash -kb yaemk -km default`
 
-### GD32VF103 GCC Toolchain and `dfu-util`
+### GD32VF103 RISC-V GCC Toolchain and `dfu-util`
 
-The default QMK toolchain doesn't support RISC-V GCC at the moment you have to build or install your own [`riscv64-unknown-elf` toolchain](https://github.com/riscv/riscv-gnu-toolchain#installation-newliblinux-multilib) with multilib support and the newlib compiler. For flashing a recent version of `dfu-util` is needed because the DF U bootloader of the GD32VF103 has a bug in it. Follow these [instructions](http://dfu-util.sourceforge.net/build.html) for your OS. 
+At the moment the default QMK installation process doesn't include a RISC-V GCC toolchain. Fortunatlly there are pre-built toolchains available for a all major operating systems by [EMBECOSM](https://www.embecosm.com/resources/tool-chain-downloads/#riscv-stable) that we can install.
+
+1. [Download the stable GCC toolchain from EMBECOSM for your operating system.](https://www.embecosm.com/resources/tool-chain-downloads/#riscv-stable)
+2. Unpack the toolchain archive and copy to a folder accessible to your user.
+   * On Linux I used `/opt/riscv32-embecosm-ubuntu2004-gcc11.1.0` (moved with root privileges).
+3. Add the bin folder `/opt/riscv32-embecosm-ubuntu2004-gcc11.1.0/bin` to your [PATH environment Variable](https://superuser.com/questions/284342/what-are-path-and-other-environment-variables-and-how-can-i-set-or-use-them).
+   * You might need to logout and login again afterwards.
+4. Tryout if `riscv32-unknown-elf-gcc` is found by running `riscv32-unknown-elf-gcc --version` from a terminal/command line/console, if successful your done.
+  
+You should see an output similar to this:
+
+```
+❯ riscv32-unknown-elf-gcc --version 
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
+
+For flashing `dfu-util` with a version 0.10+ is needed because the DFU bootloader of the GD32VF103 has a bug in it.
+
+* **\[Linux\]** Most Linux distributions pack version 0.9 of `dfu-util`, if this is the case you have to build it yourself following these [instructions](http://dfu-util.sourceforge.net/build.html). 
+* **\[Windows and MacOS\]** [pre-built](http://dfu-util.sourceforge.net/releases/dfu-util-0.10-binaries.tar.xz) versions of dfu-util 0.10 are available, dowload, unpack and add to path like the GCC toolchain. 
