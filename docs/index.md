@@ -257,7 +257,7 @@ Until there is mainline support for YAEMK in QMK you will have to use my QMK for
   * GD32VF103: Hold the Reset+DFU button with the USB cable plugged in, detach cable and re-plug immediately release the button shortly after.
 4. Adjust features to your liking.
 5. Flash the firmware.
-  * `qmk flash -kb yaemk -km default`
+  * `qmk flash -kb karlk90/yaemk -km default`
 
 ### GD32VF103 RISC-V GCC Toolchain and `dfu-util`
 
