@@ -176,6 +176,38 @@ Remove the pull-up resistors `R4` and `R5` with your soldering iron, these redun
 
 ## Troubleshooting
 
+### General debugging and logs 
+
+QMK offers debug logs via USB connection, so if your YAEMK already connects successfully over USB you can use these. Follow the official [QMK guide](https://docs.qmk.fm/#/faq_debug) and apply these changes to the firmware.
+
+In `rules.mk` change these options:
+
+```
+CONSOLE_ENABLE     = yes
+KEYBOARD_SHARED_EP = yes
+```
+
+and in `yaemk.c`
+
+```
+void keyboard_post_init_user(void) {
+    // Customise these values to desired behaviour
+    debug_enable   = true;
+    debug_matrix   = true;
+    debug_keyboard = true;
+    debug_mouse    = true;
+}
+```
+
+### Sluggish keypresses / Keys not registered
+
+Make sure to have OLED screens and the EEPROM in place when you use the default firmware, otherwise heavy timeouts will lead to missed keypresses. If you don't want to use OLED screens and/or EEPROM change these defines in `rules.mk` and recompile the firmware.
+
+```
+EEPROM_DRIVER      = transient
+OLED_DRIVER_ENABLE = no
+```
+
 ### No USB connection 
 
 Make sure that you soldered the pins of the USB-C sockets to the pads, if in doubt reflow with solder and flux. Test for continuity with a multimeter on the d+ and d- lines between the legs of the ESD protection diode `U3` and a plugged in USB-C cable.  
