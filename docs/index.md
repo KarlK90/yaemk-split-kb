@@ -92,6 +92,7 @@ All components that are NOT pre-soldered by [JLCPCB](https://jlcpcb.com/) are li
 | ------ | -------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 4      | USB-C Socket Mid-mount                 | C168688 | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C168688_C168688.html) or [Aliexpress](https://www.aliexpress.com/item/4000074094558.html)                                                                                        |
 | 2      | Alps EC11 Rotary Encoder               | C370986 | [LCSC](https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS-Electric-EC11E183440C_C370986.html)                                                                                                                                                                      |
+| 5      | LMV321 Opamp (Backup)                  | C90297  | [LCSC](https://lcsc.com/product-detail/Operational-Amplifiers_3PEAK-LMV321TP-TR_C90297.html)                                                                                                                                                                               |
 | 66     | SK6812-mini-e (3228) RGB LEDs          | -       | [Aliexpress](https://www.aliexpress.com/item/4000475685852.html)                                                                                                                                                                                                           |
 | 14     | SK6812-mini (3535) RGB LEDs            | -       | [Aliexpress](https://www.aliexpress.com/item/33019583218.html)                                                                                                                                                                                                             |
 | 66     | Hotswap Kailh or Gateron Sockets       | -       | [Aliexpress](https://www.aliexpress.com/item/32951252318.html) or [Aliexpress](https://www.aliexpress.com/item/1005002037689483.html)                                                                                                                                      |
@@ -161,13 +162,13 @@ Remove the pull-up resistors `R4` and `R5` with your soldering iron, these redun
 15. Trim the plastic and the pin header of the display so that the pcb of the display sits flush on the display socket.
 16. *(Optional)* Paint the edges of the pcb with a black marker pen.
 17. *(Optional)* Paint the blue display frame and pcb edges with a black marker pen.
-18. Test board for full operation:
-    * Successful USB connection of both halves to the pc, regardless of plug orientation.
-    * Successful split connection of between both halves, regardless of plug orientation.
+18. Test board for full operation, see Troubleshooting notes below in case of errors:
+    * Displays show YAEMK logo on startup on both halves.
+    * Successful USB connection of both halves to the pc, regardless of plug orientation. Make sure that the default Layer designator "QWERTY" is surrounded by two small dots, this indicates that this side has a USB connection. 
+    * Successful split connection of between both halves, regardless of plug orientation. If both sides claim to have a USB connection ("QWERTY" is surrounded by two small dots on both sides) altough one is clearly powered by the other and has no direct USB connection to the PC (The peripheral half) jump to [Peripheral half show USB connection](#peripheral-half-shows-usb-connection).
     * Key presses for all keys are registered, for testing bridge the terminals of the hotswap-sockets with a piece of wire.
     * All leds fully light up, no flickering when slightly bending the pcb.
     * Rotary encoders register motion.
-    * Displays show YAEMK logo on startup on both halves.
     * Reset+DFU tactile switch resets the board on short press and enters DFU bootloader on long press (see GD32VF103 specific notes in Firmware section).
 
 ### Finished left handed PCB for reference, switches are already installed.
@@ -198,6 +199,10 @@ void keyboard_post_init_user(void) {
     debug_mouse    = true;
 }
 ```
+
+### Peripheral half shows USB connection
+
+In rare cases the USB connection detection malfunctions and the peripheral half that is connected to and powered by the primary half claims that it has a USB connection as well. This is the case if "QWERTY" on the OLED is surrounded by two small dots on both sides. In this case the split connection does not work and the primary half feels sluggish. The root cause is often a malfunctioning LMV321 Opamp with designator `U6`. The highly recommended fix is to replace it with a new one. A temporary workaround is disabeling the USB detection in software by commenting out the [`is_keyboard_master()`](https://github.com/KarlK90/qmk_firmware/blob/ac4591f9e417bdcc48421241e5b26c6b8ff710da/keyboards/karlk90/yaemk/yaemk.c#L11-L27) in [`yaemk.c`](https://github.com/KarlK90/qmk_firmware/blob/ac4591f9e417bdcc48421241e5b26c6b8ff710da/keyboards/karlk90/yaemk/yaemk.c#L11-L27) and afterwards recompiling and flashing the firmware.
 
 ### Sluggish keypresses / Keys not registered
 
