@@ -164,8 +164,8 @@ Remove the pull-up resistors `R4` and `R5` with your soldering iron, these redun
 17. *(Optional)* Paint the blue display frame and pcb edges with a black marker pen.
 18. Test board for full operation, see Troubleshooting notes below in case of errors:
     * Displays show YAEMK logo on startup on both halves.
-    * Successful USB connection of both halves to the pc, regardless of plug orientation. Make sure that the default Layer designator "QWERTY" is surrounded by two small dots, this indicates that this side has a USB connection. 
-    * Successful split connection of between both halves, regardless of plug orientation. If both sides claim to have a USB connection ("QWERTY" is surrounded by two small dots on both sides) altough one is clearly powered by the other and has no direct USB connection to the PC (The peripheral half) jump to [Peripheral half show USB connection](#peripheral-half-shows-usb-connection).
+    * Successful USB connection of both halves to the pc, regardless of plug orientation. Make sure that the default Layer designator "QWERTY" on the OLED is surrounded by two small dots, this indicates that this side has a USB connection. 
+    * Successful split connection of between both halves, regardless of plug orientation. If both sides claim to have a USB connection ("QWERTY" on the OLED is surrounded by two small dots on both sides) altough one is clearly powered by the other and has no direct USB connection to the PC (The peripheral half) jump to [Peripheral half show USB connection](#peripheral-half-shows-usb-connection).
     * Key presses for all keys are registered, for testing bridge the terminals of the hotswap-sockets with a piece of wire.
     * All leds fully light up, no flickering when slightly bending the pcb.
     * Rotary encoders register motion.
