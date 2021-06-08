@@ -181,14 +181,17 @@ Remove the pull-up resistors `R4` and `R5` with your soldering iron, these redun
 
 QMK offers debug logs via USB connection, so if your YAEMK already connects successfully over USB you can use these. Follow the official [QMK guide](https://docs.qmk.fm/#/faq_debug) and apply these changes to the firmware.
 
-In `rules.mk` change these options:
+In [`rules.mk`](https://github.com/KarlK90/qmk_firmware/blob/ac4591f9e417bdcc48421241e5b26c6b8ff710da/keyboards/karlk90/yaemk/rules.mk) change these options:
 
 ```
 CONSOLE_ENABLE     = yes
 KEYBOARD_SHARED_EP = yes
+# Disable VIA on RISC-V because the MCU has not enough endpoints
+# to support VIA and console at the same time.
+VIA_ENABLE         = no
 ```
 
-and in `yaemk.c`
+and in [`yaemk.c`](https://github.com/KarlK90/qmk_firmware/blob/ac4591f9e417bdcc48421241e5b26c6b8ff710da/keyboards/karlk90/yaemk/yaemk.c)
 
 ```
 void keyboard_post_init_user(void) {
