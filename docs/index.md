@@ -183,7 +183,7 @@ QMK offers debug logs via USB connection, so if your YAEMK already connects succ
 
 In [`rules.mk`](https://github.com/KarlK90/qmk_firmware/blob/ac4591f9e417bdcc48421241e5b26c6b8ff710da/keyboards/karlk90/yaemk/rules.mk) change these options:
 
-```
+```makefile
 CONSOLE_ENABLE     = yes
 KEYBOARD_SHARED_EP = yes
 # Disable VIA on RISC-V because the MCU has not enough endpoints
@@ -193,7 +193,7 @@ VIA_ENABLE         = no
 
 and in [`yaemk.c`](https://github.com/KarlK90/qmk_firmware/blob/ac4591f9e417bdcc48421241e5b26c6b8ff710da/keyboards/karlk90/yaemk/yaemk.c)
 
-```
+```c
 void keyboard_post_init_user(void) {
     // Customise these values to desired behaviour
     debug_enable   = true;
@@ -209,9 +209,9 @@ In rare cases the USB connection detection malfunctions and the peripheral half 
 
 ### Sluggish keypresses / Keys not registered
 
-Make sure to have OLED screens and the EEPROM in place when you use the default firmware, otherwise heavy timeouts will lead to missed keypresses. If you don't want to use OLED screens and/or EEPROM change these defines in `rules.mk` and recompile the firmware.
+Make sure to have OLED screens and the EEPROM in place when you use the default firmware, otherwise heavy timeouts will lead to missed keypresses. If you don't want to use OLED screens and/or EEPROM change these defines in  [`rules.mk`](https://github.com/KarlK90/qmk_firmware/blob/ac4591f9e417bdcc48421241e5b26c6b8ff710da/keyboards/karlk90/yaemk/rules.mk) and recompile the firmware.
 
-```
+```makefile
 EEPROM_DRIVER      = transient
 OLED_DRIVER_ENABLE = no
 ```
