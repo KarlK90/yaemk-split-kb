@@ -64,6 +64,7 @@ If you have never ordered PCBs with assembly from [JLCPCB](https://jlcpcb.com) I
 
 #### PCB
 
+* The Gerber preview has timeouts from time to time when uploading to JLCPCB. Just fill a width of `166mm` and a height of `131mm`.
 * 2 Layers (The video has a 4 Layer board)
 * PCB Oty: As much as you like
 * PCB Color: Black
