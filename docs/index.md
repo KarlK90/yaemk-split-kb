@@ -64,6 +64,7 @@ If you have never ordered PCBs with assembly from [JLCPCB](https://jlcpcb.com) I
 
 #### PCB
 
+* Use the [gerbers.zip](https://github.com/KarlK90/yaemk-split-kb/tree/main/PCB/gerbers.zip] file from the PCB folder for upload.
 * The Gerber preview has timeouts from time to time when uploading to JLCPCB. Just fill a width of `166mm` and a height of `131mm`.
 * 2 Layers (The video has a 4 Layer board)
 * PCB Oty: As much as you like
