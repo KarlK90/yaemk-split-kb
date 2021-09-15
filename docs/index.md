@@ -81,6 +81,7 @@ If you have never ordered PCBs with assembly from [JLCPCB](https://jlcpcb.com) I
 * SMT Oty: As much as you like
 * Tooling holes: Added by Customer
 * Add BOM file: the file is [PCB/assembly/YAEMK_bom.csv](https://github.com/KarlK90/yaemk-split-kb/blob/main/PCB/assembly/YAEMK_bom.csv)
+  * If the default EEPROM and Opamp are out of stock, you can try the alternate BOM file: the file is [PCB/assembly/YAEMK_bom_alternate_eeprom_and_opamp.csv](https://github.com/KarlK90/yaemk-split-kb/blob/main/PCB/assembly/YAEMK_bom_alternate_eeprom_and_opamp.csv)
 * Add CPL file: the file is [PCB/assembly/YAEMK-top-pos_corrected.csv](https://github.com/KarlK90/yaemk-split-kb/blob/main/PCB/assembly/YAEMK-top-pos_corrected.csv)
 * If you want the GD32VF103 MCU, deselect `U5 STM32F303CCTx` on the Select Parts page. You have to source and solder the GD32VF103 yourself.
 
@@ -254,7 +255,7 @@ https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 | 2      | YAEMK Top plate              | ---                                                              |
 | 2      | YAEMK Bottom plate           | ---                                                              |
 | 2      | YAEMK Display cover          | ---                                                              |
-| 8      | Transparent plastic bumpers  | ---                                                              |
+| 8      | Transparent rubber buffers   | ---                                                              |
 | 22     | M2x12mm Screws               | [Aliexpress](https://www.aliexpress.com/item/4000720099366.html) |
 | 22     | M2x5mm Standoffs             | [Aliexpress](https://www.aliexpress.com/item/4000727223674.html) |
 | 18     | M2x5mm Washers               | [Aliexpress](https://www.aliexpress.com/item/4000734426632.html) |
@@ -277,16 +278,43 @@ https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 ![Close up bottom plate](images/case_bottom_plate.webp)
 
 ![Close up finished case](images/case_assembled_close_up.webp)
-## 3 Firmware
+
+## 3 Magnetic tenting legs
+
+Tenting can be easily added to the acrylic case by using the magnetic tenting legs originally invented by [Manna Harbour](https://www.reddit.com/r/MechanicalKeyboards/comments/ebf228/diy_magnetic_tent_legs/
+). 
+
+### Bill of material to add tenting to one case
+
+
+| Amount | Part                                     | Link                                                                |
+| ------ | ---------------------------------------- | ------------------------------------------------------------------- |
+| 4      | 20mm x 3mm disc magnets                  | [Aliexpress](https://www.aliexpress.com/item/1005001632637670.html) |
+| 4      | 20mm x 3mm countersunk ring magnets      | [Aliexpress](https://www.aliexpress.com/item/1005001632871071.html) |
+| 4      | 10mm M3 flat head screws                 | [Aliexpress](https://www.aliexpress.com/item/1005001552459692.html) |
+| 4      | 20mm or 25mm M3 standoffs                | [Aliexpress](https://www.aliexpress.com/item/1005001584480996.html) |
+| 4      | M3 Thumb screws                          | [Aliexpress](https://www.aliexpress.com/item/1005001434315050.html) |
+| 8      | 6mm/8mm Round transparent rubber buffers | [Aliexpress](https://www.aliexpress.com/item/33030992785.html)      |
+
+### Step-by-step instructions
+
+If in doubt follow the link to the article by [Manna Harbour](https://www.reddit.com/r/MechanicalKeyboards/comments/ebf228/diy_magnetic_tent_legs/) to get a clear idea of the tenting mechanism.
+
+1. Glue the disc magnets to the bottom of the case, be careful to have them in parrallel to each other. I used transparent double sided adhesive tape for this.
+2. Fix the countersunk ring magnets to the standoffs using the flat head screws.
+3. Fix the thumb screws to the standoffs.
+4. Add rubber buffers to the outer edges of the case and the thumb screws.
+5. Attach the legs to the case.
+
+## 4 Firmware
 
 YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. At the time of writing (9th of April 2021) the YAEMK uses features which are still pending as pull requests namely:
 
 * [Update OLED driver to support some new displays by sigprof](https://github.com/qmk/qmk_firmware/pull/10379)
 * [Add support for RISC-V builds and GD32VF103 MCU by karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12508)
 * [Register multiple key events/presses per USB report by hongaaronc and karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12686)
-* [Add HOLD_ON_OTHER_KEY_PRESS option for dual-role keys by sigprof](https://github.com/qmk/qmk_firmware/pull/9404)
 
-Until there is mainline support for YAEMK in QMK you will have to use my QMK fork, that is kept up to date with develop as best as possible. To flash it onto your Board, follow these instructions:
+Until there is mainline support for YAEMK in QMK you will have to use my QMK fork. To flash it onto your Board, follow these instructions:
 
 1. Clone the  firmware repository.
   * `git clone -b yaemk-split-kb https://github.com/KarlK90/qmk_firmware.git && cd qmk_firmware`
