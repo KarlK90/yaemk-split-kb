@@ -81,7 +81,7 @@ If you have never ordered PCBs with assembly from [JLCPCB](https://jlcpcb.com) I
 * SMT Oty: As much as you like
 * Tooling holes: Added by Customer
 * Add BOM file: the file is [PCB/assembly/YAEMK_bom.csv](https://github.com/KarlK90/yaemk-split-kb/blob/main/PCB/assembly/YAEMK_bom.csv)
-* Add CPL file: the file is [PCB/assembly/YAEMK-top-poc_corrected.csv](https://github.com/KarlK90/yaemk-split-kb/blob/main/PCB/assembly/YAEMK-top-pos_corrected.csv)
+* Add CPL file: the file is [PCB/assembly/YAEMK-top-pos_corrected.csv](https://github.com/KarlK90/yaemk-split-kb/blob/main/PCB/assembly/YAEMK-top-pos_corrected.csv)
 * If you want the GD32VF103 MCU, deselect `U5 STM32F303CCTx` on the Select Parts page. You have to source and solder the GD32VF103 yourself.
 
 After placing your order you can proceed ordering the missing parts from [LCSC](https://lcsc.com/), as they are both part of the same company, you [can save shipping costs](https://easyeda.com/forum/topic/How-to-combine-boards-JLCPCB-and-components-LCSC-into-a-common-order-cc0f3ff5fc0845839af9f37910bca742) when specifying your JLCPCB order number.
