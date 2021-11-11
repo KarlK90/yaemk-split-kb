@@ -153,7 +153,7 @@ Remove the pull-up resistors `R4` and `R5` with your soldering iron, these redun
 5. Solder Reset/DFU Switch on the side facing away from you. `S32`
 6. Solder power LED on the side facing away from you. `D70`
   * A little triangle shows the orientation of the LED on the board, match this triangle with the triangle on the bottom of the led.
-7. Flash the [testing firmware provided](https://github.com/KarlK90/yaemk-split-kb/tree/main/Firmware) and test for successful usb connection.
+7. Flash the [testing firmware provided](https://github.com/KarlK90/yaemk-split-kb/tree/main/Bin) and test for successful usb connection.
 8. Solder RGB LEDs on the side facing away from you. Make sure to [correctly orient](#correct-orientation-of-rgb-leds) them, as they are not the same orientation all the time. Use the interactive BOM when in doubt. `D35 to D76`
 9. Solder MX Hotswap Sockets on the side facing away from you. Decide for a [thumbcluster configuration](#placement-of-hotswap-sockets-for-thumbcluster). Make sure to [correctly orient](#correct-orientation-of-hotswap-sockets) them. `S1 to S31`
 10. *(Optional)* Solder Debug Header on the side facing away from you. `J1`
@@ -311,13 +311,12 @@ If in doubt follow the link to the article by [Manna Harbour](https://www.reddit
 YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. At the time of writing (9th of April 2021) the YAEMK uses features which are still pending as pull requests namely:
 
 * [Update OLED driver to support some new displays by sigprof](https://github.com/qmk/qmk_firmware/pull/10379)
-* [Add support for RISC-V builds and GD32VF103 MCU by karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12508)
 * [Register multiple key events/presses per USB report by hongaaronc and karlk90 (me)](https://github.com/qmk/qmk_firmware/pull/12686)
 
 Until there is mainline support for YAEMK in QMK you will have to use my QMK fork. To flash it onto your Board, follow these instructions:
 
-1. Clone the  firmware repository.
-  * `git clone -b yaemk-split-kb https://github.com/KarlK90/qmk_firmware.git && cd qmk_firmware`
+1. Make that you have cloned the yaemk repository including its submodules with git and not downloaded a release zip.
+ * `git clone --recurse-submodules https://github.com/KarlK90/yaemk-split-kb.git`
 2. Install the `qmk` tool. You can find detailed instructions [here](https://docs.qmk.fm/#/newbs_getting_started).
 3. Put your board into the USB-DFU bootloader mode.
   * STM32F303: Hold the Reset+DFU button until your board registers as STM32 DFU bootloader
@@ -327,6 +326,25 @@ Until there is mainline support for YAEMK in QMK you will have to use my QMK for
   * `qmk flash -kb karlk90/yaemk -km default`
 
 ### GD32VF103 RISC-V GCC Toolchain and `dfu-util`
+
+### Debian 11 based distributions
+
+A fully working RISC-V GCC toolchain is shipped beginning with Debian 11 and distributions based on it, like Ubuntu 21.04. It can be installed with the help of `apt` or `apt-get`:
+
+1. `sudo apt install picolibc-riscv64-unknown-elf binutils-riscv64-unknown-elf gcc-riscv64-unknown-elf`
+2. Tryout if `riscv64-unknown-elf-gcc` is found by running `riscv64-unknown-elf-gcc --version` from a terminal/command line/console, if successful your done.
+  
+You should see an output similar to this:
+
+```
+❯ riscv64-unknown-elf-gcc --version 
+riscv64-unknown-elf-gcc () 10.2.0
+Copyright (C) 2020 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
+
+### Manual Installation
 
 At the moment the default QMK installation process doesn't include a RISC-V GCC toolchain. Fortunatlly there are pre-built toolchains available for a all major operating systems by [EMBECOSM](https://www.embecosm.com/resources/tool-chain-downloads/#riscv-stable) that we can install.
 
