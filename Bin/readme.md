@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Stefan Kerkmann <karlk90@pm.me>
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+
 # Test Firmware Files
 
 These firmware images are meant for easy testing purposes only when building your own YAEMK. Both images are VIA enabled, and meant to be used with oled screens and rgb leds.

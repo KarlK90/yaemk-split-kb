@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Stefan Kerkmann <karlk90@pm.me>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 title: YAEMK
 description: YAEMK is yet another ergonomic mechanical (split-)keyboard
 theme: jekyll-theme-cayman 
