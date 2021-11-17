@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
 # coding=utf8
 
+# SPDX-FileCopyrightText: 2019, Uri Shaked
+#
+# SPDX-License-Identifier: MIT
+
 # Converts a KiCad Footprint Position (.pos) File into JLCPCB compatible CPL file
-# Copyright (C) 2019, Uri Shaked. Released under the MIT license.
 # 
 # Usage: kicad_pos_to_cpl.py <input.csv> <output.csv> [overrides.json]
 #
