@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Stefan Kerkmann <karlk90@pm.me>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 okhv = "OKH-LOSHv1.0"
 name = "YAEMK - Yet Another Ergonomic Mechanical Keyboard"
 repo = "https://github.com/KarlK90/yaemk-split-kb"

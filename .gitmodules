@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2021 Stefan Kerkmann <karlk90@pm.me>
+#
+# SPDX-License-Identifier: CC-BY-SA-4.0
+
 [submodule "Firmware"]
 	path = Firmware
 	url = https://github.com/KarlK90/qmk_firmware

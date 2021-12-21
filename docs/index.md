@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2021 Stefan Kerkmann <karlk90@pm.me>
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+
 ![YAEMK wide view](images/1_yaemk_wide.webp)
 ![YAEMK close up front](images/2_yaemk_close_up_rgb_front.webp)
 ![YAEMK close up back](images/4_yaemk_close_up_rgb_back.webp)

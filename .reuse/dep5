@@ -1,0 +1,68 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: YAEMK
+Upstream-Contact: Stefan Kerkmann <karlk90@pm.me>
+Source: https://github.com/KarlK90/yaemk-split-kb
+
+Files:
+	PCB/YAEMK*
+	PCB/*-lib-table
+	PCB/lib/YAEMK.*
+Copyright: Stefan Kerkmann <karlk90@pm.me>
+License: GPL-3.0-only
+
+Files:
+	Bin/*.bin
+Copyright: qmk.fm
+License: GPL-2.0-or-later
+
+Files:
+	PCB/gerbers*
+	docs/yaemk_rev_1_2.html
+	docs/yaemk_*.pdf
+Copyright: Stefan Kerkmann <karlk90@pm.me>
+License: CC-BY-SA-4.0
+
+Files:
+	docs/images/*
+	Case/*
+	PCB/assembly/*.csv
+	PCB/assembly/overrides.json
+Copyright: Stefan Kerkmann <karlk90@pm.me>
+License: CC-BY-SA-4.0
+
+Files:
+	PCB/prettylib/Crystal_SMD_3225-4Pin_3.2x2.5mm.kicad_mod
+	PCB/prettylib/D_SOD-123.kicad_mod
+	PCB/prettylib/D_SOD-523.kicad_mod
+	PCB/prettylib/Fuse_1206_3216Metric.kicad_mod
+	PCB/prettylib/LED-0603.kicad_mod
+	PCB/prettylib/LQFP-48_7x7mm_P0.5mm.kicad_mod
+	PCB/prettylib/MountingHole_2.2mm_M2_Pad_Via.kicad_mod
+	PCB/prettylib/PinHeader_1x06_P2.54mm_Horizontal.kicad_mod
+	PCB/prettylib/RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm.kicad_mod
+	PCB/prettylib/SMD-0603.kicad_mod
+	PCB/prettylib/SMD-0805.kicad_mod
+	PCB/prettylib/SOLDER_JUMPER_2.kicad_mod
+	PCB/prettylib/SOLDER_JUMPER_3.kicad_mod
+	PCB/prettylib/SOT-23-5.kicad_mod
+	PCB/prettylib/SOT-23-6.kicad_mod
+	PCB/prettylib/SOT-23.kicad_mod
+	PCB/prettylib/TSSOP-8_4.4x3mm_P0.65mm.kicad_mod
+Copyright: Digi-Key Corporation <https://www.digikey.com/>
+License: CC-BY-SA-4.0
+# see: https://github.com/Digi-Key/digikey-kicad-library/blob/master/LICENSE.md
+
+Files:
+	PCB/prettylib/JLC_SMT_Assembly_Hole.kicad_mod
+	PCB/prettylib/LED-0603_flipable.kicad_mod
+	PCB/prettylib/LOGO.kicad_mod
+	PCB/prettylib/MX_KAILH_SOCKET_1U.kicad_mod
+	PCB/prettylib/MX_KAILH_SOCKET_2U_2X1U.kicad_mod
+	PCB/prettylib/SK6812_mini_e_flipable.kicad_mod
+	PCB/prettylib/SK6812_mini_flipable.kicad_mod
+	PCB/prettylib/SMD_Tacticle_Switch_TS24CA_flipable.kicad_mod
+	PCB/prettylib/SMD_Tacticle_Switch_TS24CA.kicad_mod
+	PCB/prettylib/SSD1107_DISPLAY.kicad_mod
+	PCB/prettylib/USB_C_Receptacle_MUP_U22401.kicad_mod
+Copyright: Stefan Kerkmann <karlk90@pm.me>
+License: CC-BY-SA-4.0
