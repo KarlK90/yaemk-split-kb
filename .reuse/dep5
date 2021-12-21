@@ -3,19 +3,30 @@ Upstream-Name: YAEMK
 Upstream-Contact: Stefan Kerkmann <karlk90@pm.me>
 Source: https://github.com/KarlK90/yaemk-split-kb
 
-Files: PCB/YAEMK* PCB/*-lib-table PCB/lib/YAEMK.*
+Files:
+	PCB/YAEMK*
+	PCB/*-lib-table
+	PCB/lib/YAEMK.*
 Copyright: Stefan Kerkmann <karlk90@pm.me>
 License: GPL-3.0-only
 
-Files: Bin/*.bin
+Files:
+	Bin/*.bin
 Copyright: qmk.fm
 License: GPL-2.0-or-later
 
-Files: PCB/gerbers* docs/yaemk_rev_1_2.html docs/yaemk_*.pdf
+Files:
+	PCB/gerbers*
+	docs/yaemk_rev_1_2.html
+	docs/yaemk_*.pdf
 Copyright: Stefan Kerkmann <karlk90@pm.me>
 License: CC-BY-SA-4.0
 
-Files: docs/images/* Case/* PCB/assembly/*.csv PCB/assembly/overrides.json
+Files:
+	docs/images/*
+	Case/*
+	PCB/assembly/*.csv
+	PCB/assembly/overrides.json
 Copyright: Stefan Kerkmann <karlk90@pm.me>
 License: CC-BY-SA-4.0
 
