@@ -31,7 +31,7 @@ Copyright: Stefan Kerkmann <karlk90@pm.me>
 License: CC-BY-SA-4.0
 
 Files: PCB/prettylib/*.kicad_mod
-Copyright: Digi-Key Corporation
+Copyright: Digi-Key Corporation <https://www.digikey.com/>
 License: CC-BY-SA-4.0
 # see: https://github.com/Digi-Key/digikey-kicad-library/blob/master/LICENSE.md
 
