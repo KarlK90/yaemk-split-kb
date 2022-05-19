@@ -15,7 +15,7 @@ image = [
 ]
 documentation-language = [ "en-US" ]
 technology-readiness-level = "OTRL-5"
-documentation-readiness-level = "ODRL-4"
+documentation-readiness-level = "ODRL-3"
 attestation = [
   "https://certification.oshwa.org/cl000001.html"
 ]
