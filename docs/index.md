@@ -101,19 +101,19 @@ All components that are NOT pre-soldered by [JLCPCB](https://jlcpcb.com/) are li
 | ------ | -------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 4      | USB-C Socket Mid-mount                 | C168688 | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C168688_C168688.html) or [Aliexpress](https://www.aliexpress.com/item/4000074094558.html)                                                                                        |
 | 2      | Alps EC11 Rotary Encoder               | C370986 | [LCSC](https://lcsc.com/product-detail/Coded-Rotary-Switches_ALPS-Electric-EC11E183440C_C370986.html)                                                                                                                                                                      |
-| 5      | LMV321 Opamp (Backup)                  | C90297  | [LCSC](https://lcsc.com/product-detail/Operational-Amplifiers_3PEAK-LMV321TP-TR_C90297.html)                                                                                                                                                                               |
+| 5      | LMV321 Opamp (Backup)                  | C686637 | [LCSC](https://lcsc.com/product-detail/Operational-Amplifier_PJSEMI-LMV321_C686637.html)                                                                                                                                                                                   |
 | 66     | SK6812-mini-e (3228) RGB LEDs          | -       | [Aliexpress](https://www.aliexpress.com/item/4000475685852.html)                                                                                                                                                                                                           |
 | 14     | SK6812-mini (3535) RGB LEDs            | -       | [Aliexpress](https://www.aliexpress.com/item/33019583218.html)                                                                                                                                                                                                             |
-| 66     | Hotswap Kailh or Gateron Sockets       | -       | [Aliexpress](https://www.aliexpress.com/item/32951252318.html) or [Aliexpress](https://www.aliexpress.com/item/1005002037689483.html)                                                                                                                                      |
+| 66     | Hotswap Kailh or Gateron Sockets       | -       | ---                                                                                                                                                                                                                                                                        |
 | 2      | Encoder Knob                           | -       | [Splitkb](https://splitkb.com/collections/keyboard-parts/products/matte-aluminium-encoder-knob) or [Aliexpress](https://www.aliexpress.com/item/32893184848.html) or [Aliexpress](https://www.aliexpress.com/item/32810522800.html)                                        |
-| 2      | 0.96" SSD1107 64x128 Display           | -       | [Aliexpress](https://www.aliexpress.com/item/4000547865501.html)                                                                                                                                                                                                           |
+| 2      | 0.96" SSD1107 64x128 Display           | ---     | ---                                                                                                                                                                                                                                                                        |
 | 2      | Blue 0603 Power LED                    | C72041  | [LCSC](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0603-Blue-light_C72041.html)                                                                                                                                                                              |
 | 2      | Reset/DFU Switch                       | C393942 | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html)                                                                                                                                                                                      |
 | 2      | Display Socket                         | C358718 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTF185-104SY1_C358718.html)                                                                                                                                                                        |
 | 2      | Debug Pinheader (optional)             | C56816  | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-2-54-1-6PHeader_C56816.html)                                                                                                                                                   |
 | 66     | Switches (depending on Thumbcluster)   | -       | Personal recommendations [Clicky - Box Yellow](https://www.aliexpress.com/item/1005001684056035.html) or [Tactile - Boba U4 RGB](https://www.aliexpress.com/item/1005001809357064.html) or [Linear - Boba Bobbagum](https://www.aliexpress.com/item/1005001985634467.html) |
-| 64-66  | 1u Keycaps (depending on Thumbcluster) | -       | Personal recommendation [1u XDAS Profil](https://www.aliexpress.com/item/33047653096.html)                                                                                                                                                                                 |
-| 0-4    | 2u Keycaps (depending on Thumbcluster) | -       | [2u XDA Profile](https://www.aliexpress.com/item/1005001376888502.html)                                                                                                                                                                                                    |
+| 64-66  | 1u Keycaps (depending on Thumbcluster) | -       | e.g. 1u XDA Profile caps                                                                                                                                                                                                                                                   |  |
+| 0-4    | 2u Keycaps (depending on Thumbcluster) | -       | e.g. 2u XDA Profile caps                                                                                                                                                                                                                                                   |
 
 **Tip: Buy some excess LEDs as they are heat sensitive!**
 
@@ -256,16 +256,16 @@ https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 
 ### Bill of material for one case
 
-| Amount | Part                         | Link                                                             |
-| ------ | ---------------------------- | ---------------------------------------------------------------- |
-| 2      | YAEMK Top plate              | ---                                                              |
-| 2      | YAEMK Bottom plate           | ---                                                              |
-| 2      | YAEMK Display cover          | ---                                                              |
-| 8      | Transparent rubber buffers   | ---                                                              |
-| 22     | M2x12mm Screws               | [Aliexpress](https://www.aliexpress.com/item/4000720099366.html) |
-| 22     | M2x5mm Standoffs             | [Aliexpress](https://www.aliexpress.com/item/4000727223674.html) |
-| 18     | M2x5mm Washers               | [Aliexpress](https://www.aliexpress.com/item/4000734426632.html) |
-| 18     | M3x4.6x5mm Brass insert nuts | [Aliexpress](https://www.aliexpress.com/item/4000688990203.html) |
+| Amount | Part                         |
+| ------ | ---------------------------- |
+| 2      | YAEMK Top plate              |
+| 2      | YAEMK Bottom plate           |
+| 2      | YAEMK Display cover          |
+| 8      | Transparent rubber buffers   |
+| 22     | M2x12mm Screws               |
+| 22     | M2x5mm Standoffs             |
+| 18     | M2x5mm Washers               |
+| 18     | M3x4.6x5mm Brass insert nuts |
 
 ### Step-by-step instructions
 
@@ -297,9 +297,9 @@ Tenting can be easily added to the acrylic case by using the magnetic tenting le
 | ------ | ---------------------------------------- | ------------------------------------------------------------------- |
 | 4      | 20mm x 3mm disc magnets                  | [Aliexpress](https://www.aliexpress.com/item/1005001632637670.html) |
 | 4      | 20mm x 3mm countersunk ring magnets      | [Aliexpress](https://www.aliexpress.com/item/1005001632871071.html) |
-| 4      | 10mm M3 flat head screws                 | [Aliexpress](https://www.aliexpress.com/item/1005001552459692.html) |
-| 4      | 20mm or 25mm M3 standoffs                | [Aliexpress](https://www.aliexpress.com/item/1005001584480996.html) |
-| 4      | M3 Thumb screws                          | [Aliexpress](https://www.aliexpress.com/item/1005001434315050.html) |
+| 4      | 10mm M3 flat head screws                 | ---                                                                 |
+| 4      | 20mm or 25mm M3 standoffs                | ---                                                                 |
+| 4      | M3 Thumb screws                          | ---                                                                 |
 | 8      | 6mm/8mm Round transparent rubber buffers | [Aliexpress](https://www.aliexpress.com/item/33030992785.html)      |
 
 ### Step-by-step instructions
