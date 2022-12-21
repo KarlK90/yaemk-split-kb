@@ -256,16 +256,18 @@ https://youtu.be/XNGXNDp0mMw?t=114) to get a understanding of the process.
 
 ### Bill of material for one case
 
-| Amount | Part                         |
-| ------ | ---------------------------- |
-| 2      | YAEMK Top plate              |
-| 2      | YAEMK Bottom plate           |
-| 2      | YAEMK Display cover          |
-| 8      | Transparent rubber buffers   |
-| 22     | M2x12mm Screws               |
-| 22     | M2x5mm Standoffs             |
-| 18     | M2x5mm Washers               |
-| 18     | M3x4.6x5mm Brass insert nuts |
+| Amount |                Part                |
+| ------ | ---------------------------------- |
+| 2      | YAEMK Top plate                    |
+| 2      | YAEMK Bottom plate                 |
+| 2      | YAEMK Display cover                |
+| 8      | Transparent rubber buffers         |
+| 22     | M2x12mm Screws                     |
+| 22     | M2x5x3.2mm Round brass standoffs   |
+| 18     | M2x5mm Round brass washers         |
+| 18     | M3x5x4.6mm Round brass insert nuts |
+
+> All size designations for the standoffs and insert nuts are `(dxHxD)`. `d` = inner diameter, `H` = height and `D` = outer diameter.
 
 ### Step-by-step instructions
 
