@@ -532,9 +532,6 @@ the YAEMK uses features which are still pending as pull requests namely:
 
 * [Update OLED driver to support some new displays by sigprof](
   https://github.com/qmk/qmk_firmware/pull/10379)
-* [Register multiple key events/presses per USB report
-  by hongaaronc and karlk90 (me)](
-  https://github.com/qmk/qmk_firmware/pull/12686)
 
 Until there is mainline support for YAEMK in QMK,
 you will have to use my QMK fork.
@@ -555,7 +552,8 @@ To flash it onto your board, follow these instructions:
       Immediately release the button shortly after.
 4. Adjust features to your liking.
 5. Flash the firmware.
-    * `qmk flash -kb karlk90/yaemk -km default`
+    * For the ARM version: `qmk flash -kb karlk90/yaemk/arm -km default`
+    * For the RISC-V version: `qmk flash -kb karlk90/yaemk/riscv -km default`
 
 ### GD32VF103 RISC-V GCC Toolchain and `dfu-util`
 
