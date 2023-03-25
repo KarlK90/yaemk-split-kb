@@ -30,3 +30,6 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# CI/Build-Bot output dir(s)
+/public/

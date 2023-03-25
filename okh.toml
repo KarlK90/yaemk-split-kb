@@ -8,15 +8,23 @@ repo = "https://github.com/KarlK90/yaemk-split-kb"
 version = "1.2.0"
 release = "https://github.com/KarlK90/yaemk-split-kb"
 license = "GPL-3.0-only"
-licensor = "Stefan Kerkmann"
+licensor = [ "Stefan Kerkmann" ]
 readme = "readme.md"
-image = "/docs/images/2_yaemk_close_up_rgb_front.webp"
-documentation-language = "en-US"
+image = [
+  "docs/images/2_yaemk_close_up_rgb_front.webp"
+]
+documentation-language = [ "en-US" ]
 technology-readiness-level = "OTRL-5"
-documentation-readiness-level = "ODRL-4"
-attestation = "https://certification.oshwa.org/cl000001.html"
+documentation-readiness-level = "ODRL-3"
+attestation = [
+  "https://certification.oshwa.org/cl000001.html"
+]
 function = "YEAMK is a 5x8 split keyboard with configurable thumb-clusters, rotary encoders and oleds. It runs on ARM and RISC-V microcontrollers."
 bom = "PCB/assembly/YAEMK_bom.csv"
-manufacturing-instructions = "/docs/index.md"
-outer-dimension-dim = "mm"
-outer-dimension = "cube(size = [165,140,30])"
+manufacturing-instructions = [
+  "docs/index.md"
+]
+
+[outer-dimensions]
+unit = "mm"
+openSCAD = "cube(size = [165,140,30])"
