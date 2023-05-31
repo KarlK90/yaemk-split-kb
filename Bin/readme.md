@@ -13,7 +13,7 @@ and meant to be used with oled screens and rgb leds.
 
 ## Flashing ARM
 
-* Hold Reset+DFU button with USB-cable plugged in
+* Hold Reset/DFU switch with USB-cable plugged in
   until the keyboard registers as `STMicroelectronics STM Device in DFU Mode`
 * Flash firmware with dfu-util using this command:
   * `dfu-util -d 0483:df11 -s 0x08000000:leave -D karlk90_yaemk_arm_via.bin -w`
@@ -25,7 +25,7 @@ that has a fix for the DFU bootloader of the GD32VF103.
 Follow these [instructions](
 http://dfu-util.sourceforge.net/build.html) for your OS.**
 
-* Hold the Reset+DFU button with the USB cable plugged in,
+* Hold the Reset/DFU switch with the USB cable plugged in,
   detach cable and re-plug immediately release the button shortly after.
   Your keyboard shows up as `GDMicroelectronics GD32 DFU Bootloader`.
 * Flash firmware with dfu-util using this command:
