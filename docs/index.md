@@ -259,9 +259,9 @@ as the YAEMK already supplies the display with stabilized 3.3V VDD.
       have to be connected with the RX line of the other halve.
       That's what the solder bridge is for,
       to reroute the TX line of one halve into the RX line of the other.
-    * Connect the left pad with the middle pad on both jumpers
+    * Connect the bottom pad with the middle pad on both jumpers
       via a solder bridge on the left side of the keyboard.
-    * Connect the right pad with the middle pad on both jumpers
+    * Connect the top pad with the middle pad on both jumpers
       via a solder bridge on the right side of the keyboard.
 5. Solder Reset/DFU Switch on the side facing away from you. `S32`
 6. Solder power LED on the side facing away from you. `D70`
