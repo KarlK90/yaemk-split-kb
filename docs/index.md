@@ -162,7 +162,7 @@ As soon as the MCU is in stock again this will be addressed.**
 
 After placing your order you can proceed ordering the missing parts from [LCSC](https://lcsc.com/),
 as they are both part of the same company,
-you [can save shipping costs](https://easyeda.com/forum/topic/How-to-combine-boards-JLCPCB-and-components-LCSC-into-a-common-order-cc0f3ff5fc0845839af9f37910bca742)
+you [can save shipping costs](https://www.lcsc.com/faqs?id=140)
 when specifying your JLCPCB order number.
 
 ### Additional bill of materials for one complete Keyboard
