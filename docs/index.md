@@ -173,6 +173,11 @@ Switches and Keycaps are highly personal decision,
 you find my recommendation at the bottom.
 As I'm using a rather uncommon keyboard layout (K.O,Y) I stick to blank keycaps.
 
+Personal recommendation of Aliexpress stores:
+
+    - [Cool Jazz Store](https://cooljazz.aliexpress.com/store/1806079)
+    - [KRepublic](https://kprepublic.aliexpress.com/store/3034003)
+
 | Amount | Part                                   | LCSC    | Link                                                                                                                                                                                                                                                                       |
 | ------ | -------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 4      | USB-C Socket Mid-mount                 | C168688 | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C168688_C168688.html) or [Aliexpress](https://www.aliexpress.com/item/4000074094558.html)                                                                                        |
