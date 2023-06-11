@@ -8,8 +8,12 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 These firmware images are meant for easy testing purposes
 only when building your own YAEMK.
-Both images are VIA enabled,
-and meant to be used with oled screens and rgb leds.
+Both images are VIA enabled. Successfully flashed firmware will
+have:
+- QWERTY layout
+- Both Switch and Backlight LEDs are in rainbow mode
+- Potentiometers are used for scrolling
+- OLED display shows "YAEMK" logo
 
 ## Flashing ARM
 
