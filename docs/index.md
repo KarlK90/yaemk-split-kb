@@ -278,7 +278,10 @@ as the YAEMK already supplies the display with stabilized 3.3V VDD.
 8. Solder RGB LEDs on the side facing away from you.
     Make sure to [correctly orient](#correct-orientation-of-rgb-leds) them,
     as they are not the same orientation all the time.
-    Use the interactive BOM when in doubt. `D35 to D76`
+    Use the interactive BOM when in doubt. `D35 to D76`. Check that all LEDs
+    are working by connecting the board to USB (the firmware from step 7 turns
+    on all the LEDs). Note that as LEDs are connected in chain - one dead LED
+    leads to all subsequent leds being off.
 9. Solder MX Hotswap Sockets on the side facing away from you.
     Decide for a [thumbcluster configuration](#placement-of-hotswap-sockets-for-thumbcluster).
     Make sure to [correctly orient](#correct-orientation-of-hotswap-sockets) them.
