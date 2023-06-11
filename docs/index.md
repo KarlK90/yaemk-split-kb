@@ -224,6 +224,8 @@ it is the lower led in the picture.
 They shine up through the PCB,
 away from the surface the keyboard rests on.
 
+![LED chain orientation](images/yaemk_led_chain.webp)
+
 ### Modification of SH1107 display modules
 
 ![SH1107 display module modifications](images/display_modifications.webp)
@@ -280,8 +282,9 @@ as the YAEMK already supplies the display with stabilized 3.3V VDD.
     as they are not the same orientation all the time.
     Use the interactive BOM when in doubt. `D35 to D76`. Check that all LEDs
     are working by connecting the board to USB (the firmware from step 7 turns
-    on all the LEDs). Note that as LEDs are connected in chain - one dead LED
-    leads to all subsequent leds being off.
+    on all the LEDs). Note that as LEDs are [connected in
+    chain](#correct-orientation-of-rgb-leds)  - one dead LED leads
+    to all subsequent leds being off.
 9. Solder MX Hotswap Sockets on the side facing away from you.
     Decide for a [thumbcluster configuration](#placement-of-hotswap-sockets-for-thumbcluster).
     Make sure to [correctly orient](#correct-orientation-of-hotswap-sockets) them.
