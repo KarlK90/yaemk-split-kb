@@ -162,7 +162,7 @@ As soon as the MCU is in stock again this will be addressed.**
 
 After placing your order you can proceed ordering the missing parts from [LCSC](https://lcsc.com/),
 as they are both part of the same company,
-you [can save shipping costs](https://easyeda.com/forum/topic/How-to-combine-boards-JLCPCB-and-components-LCSC-into-a-common-order-cc0f3ff5fc0845839af9f37910bca742)
+you [can save shipping costs](https://www.lcsc.com/faqs?id=140)
 when specifying your JLCPCB order number.
 
 ### Additional bill of materials for one complete Keyboard
@@ -173,6 +173,11 @@ Switches and Keycaps are highly personal decision,
 you find my recommendation at the bottom.
 As I'm using a rather uncommon keyboard layout (K.O,Y) I stick to blank keycaps.
 
+Personal recommendation of Aliexpress stores:
+
+    - [Cool Jazz Store](https://cooljazz.aliexpress.com/store/1806079)
+    - [KRepublic](https://kprepublic.aliexpress.com/store/3034003)
+
 | Amount | Part                                   | LCSC    | Link                                                                                                                                                                                                                                                                       |
 | ------ | -------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 4      | USB-C Socket Mid-mount                 | C168688 | [LCSC](https://lcsc.com/product-detail/USB-Connectors_Jing-Extension-of-the-Electronic-Co-C168688_C168688.html) or [Aliexpress](https://www.aliexpress.com/item/4000074094558.html)                                                                                        |
@@ -180,16 +185,16 @@ As I'm using a rather uncommon keyboard layout (K.O,Y) I stick to blank keycaps.
 | 5      | LMV321 Opamp (Backup)                  | C686637 | [LCSC](https://lcsc.com/product-detail/Operational-Amplifier_PJSEMI-LMV321_C686637.html)                                                                                                                                                                                   |
 | 66     | SK6812-mini-e (3228) RGB LEDs          | -       | [Aliexpress](https://www.aliexpress.com/item/4000475685852.html)                                                                                                                                                                                                           |
 | 14     | SK6812-mini (3535) RGB LEDs            | -       | [Aliexpress](https://www.aliexpress.com/item/33019583218.html)                                                                                                                                                                                                             |
-| 66     | Hotswap Kailh or Gateron Sockets       | -       | ---                                                                                                                                                                                                                                                                        |
+| 66     | Hotswap Kailh or Gateron Sockets       | -       | [Aliexpress](https://www.aliexpress.com/item/1005002037689483.html)                                                                                                                                                                                                        |
 | 2      | Encoder Knob                           | -       | [Splitkb](https://splitkb.com/collections/keyboard-parts/products/matte-aluminium-encoder-knob) or [Aliexpress](https://www.aliexpress.com/item/32893184848.html) or [Aliexpress](https://www.aliexpress.com/item/32810522800.html)                                        |
-| 2      | 0.96" SSD1107 64x128 Display           | ---     | ---                                                                                                                                                                                                                                                                        |
+| 2      | 0.96" SSD1107 64x128 Display           | ---     | [Aliexpress](https://www.aliexpress.com/item/1005002891710621.html)                                                                                                                                                                                                        |
 | 2      | Blue 0603 Power LED                    | C72041  | [LCSC](https://lcsc.com/product-detail/Light-Emitting-Diodes-LED_0603-Blue-light_C72041.html)                                                                                                                                                                              |
 | 2      | Reset/DFU Switch                       | C393942 | [LCSC](https://lcsc.com/product-detail/Tactile-Switches_SHOU-HAN-TS24CA_C393942.html)                                                                                                                                                                                      |
 | 2      | Display Socket                         | C358718 | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_MINTRON-MTF185-104SY1_C358718.html)                                                                                                                                                                        |
 | 2      | Debug Pinheader (optional)             | C56816  | [LCSC](https://lcsc.com/product-detail/Pin-Header-Female-Header_BOOMELE-Boom-Precision-Elec-2-54-1-6PHeader_C56816.html)                                                                                                                                                   |
 | 66     | Switches (depending on Thumbcluster)   | -       | Personal recommendations [Clicky - Box Yellow](https://www.aliexpress.com/item/1005001684056035.html) or [Tactile - Boba U4 RGB](https://www.aliexpress.com/item/1005001809357064.html) or [Linear - Boba Bobbagum](https://www.aliexpress.com/item/1005001985634467.html) |
-| 64-66  | 1u Keycaps (depending on Thumbcluster) | -       | e.g. 1u XDA Profile caps                                                                                                                                                                                                                                                   |  |
-| 0-4    | 2u Keycaps (depending on Thumbcluster) | -       | e.g. 2u XDA Profile caps                                                                                                                                                                                                                                                   |
+| 64-66  | 1u Keycaps (depending on Thumbcluster) | -       | e.g. 1u XDA Profile caps [Aliexpress](https://www.aliexpress.com/item/1005004021955113.html)                                                                                                                                                                               |  |
+| 0-4    | 2u Keycaps (depending on Thumbcluster) | -       | e.g. 2u XDA Profile caps [Aliexpress](https://www.aliexpress.com/item/1005001376888502.html)                                                                                                                                                                               |
 
 **Tip: Buy some excess LEDs as they are heat sensitive!**
 
@@ -218,6 +223,8 @@ The second type are sk6812-mini-e leds for per-key backlighting,
 it is the lower led in the picture.
 They shine up through the PCB,
 away from the surface the keyboard rests on.
+
+![LED chain orientation](images/yaemk_led_chain.webp)
 
 ### Modification of SH1107 display modules
 
@@ -259,9 +266,9 @@ as the YAEMK already supplies the display with stabilized 3.3V VDD.
       have to be connected with the RX line of the other halve.
       That's what the solder bridge is for,
       to reroute the TX line of one halve into the RX line of the other.
-    * Connect the left pad with the middle pad on both jumpers
+    * Connect the bottom pad with the middle pad on both jumpers
       via a solder bridge on the left side of the keyboard.
-    * Connect the right pad with the middle pad on both jumpers
+    * Connect the top pad with the middle pad on both jumpers
       via a solder bridge on the right side of the keyboard.
 5. Solder Reset/DFU Switch on the side facing away from you. `S32`
 6. Solder power LED on the side facing away from you. `D70`
@@ -273,7 +280,11 @@ as the YAEMK already supplies the display with stabilized 3.3V VDD.
 8. Solder RGB LEDs on the side facing away from you.
     Make sure to [correctly orient](#correct-orientation-of-rgb-leds) them,
     as they are not the same orientation all the time.
-    Use the interactive BOM when in doubt. `D35 to D76`
+    Use the interactive BOM when in doubt. `D35 to D76`. Check that all LEDs
+    are working by connecting the board to USB (the firmware from step 7 turns
+    on all the LEDs). Note that as LEDs are [connected in
+    chain](#correct-orientation-of-rgb-leds)  - one dead LED leads
+    to all subsequent leds being off.
 9. Solder MX Hotswap Sockets on the side facing away from you.
     Decide for a [thumbcluster configuration](#placement-of-hotswap-sockets-for-thumbcluster).
     Make sure to [correctly orient](#correct-orientation-of-hotswap-sockets) them.
