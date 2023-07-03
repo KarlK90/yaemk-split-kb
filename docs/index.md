@@ -537,15 +537,10 @@ to get a clear idea of the tenting mechanism.
 
 ## 4 Firmware
 
-YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*.
-At the time of writing (9th of April 2021),
-the YAEMK uses features which are still pending as pull requests namely:
-
-* [Update OLED driver to support some new displays by sigprof](
-  https://github.com/qmk/qmk_firmware/pull/10379)
-
+YAEMK uses the *Quantum Mechanical Keyboard Firmware (qmk)*. 
 Until there is mainline support for YAEMK in QMK,
 you will have to use my QMK fork.
+
 To flash it onto your board, follow these instructions:
 
 1. Make that you have cloned the yaemk repository,
