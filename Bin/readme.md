@@ -1,6 +1,5 @@
 <!--
 SPDX-FileCopyrightText: 2021 Stefan Kerkmann <karlk90@pm.me>
-
 SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
@@ -8,8 +7,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 These firmware images are meant for easy testing purposes
 only when building your own YAEMK.
-Both images are VIA enabled. Successfully flashed firmware will
-have:
+Successfully flashed firmware will have:
 - QWERTY layout
 - Both Switch and Backlight LEDs are in rainbow mode
 - Potentiometers are used for scrolling
@@ -26,7 +24,7 @@ The board need to be switched to DFU Mode in which it can be flashed:
 * Hold Reset/DFU switch with USB-cable plugged in
   until the keyboard registers as `STMicroelectronics STM Device in DFU Mode`
 * Flash firmware with dfu-util using this command:
-  * `dfu-util -d 0483:df11 -s 0x08000000:leave -D karlk90_yaemk_arm_via.bin -w`
+  * `dfu-util -d 0483:df11 -s 0x08000000:leave -D karlk90_yaemk_arm_default.bin -w`
 
 If `dfu-util` shows error that multiple DFU were found. Then, find one with
 "Internal Flash" in name:
@@ -51,4 +49,4 @@ http://dfu-util.sourceforge.net/build.html) for your OS.**
   detach cable and re-plug immediately release the button shortly after.
   Your keyboard shows up as `GDMicroelectronics GD32 DFU Bootloader`.
 * Flash firmware with dfu-util using this command:
-  * `dfu-util -d 28e9:0189 -s 0x08000000:leave -D karlk90_yaemk_riscv_via.bin -w`
+  * `dfu-util -d 28e9:0189 -s 0x08000000:leave -D karlk90_yaemk_riscv_default.bin -w`

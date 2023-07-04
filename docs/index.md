@@ -22,8 +22,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
     from Thomas Baart!
 * On-board ARM microcontroller (STM32F303CCT6) or RISC-V microcontroller (GD32VF103CBT6)
   * **Worlds first RISC-V (Split-)Keyboard!**
-* Fully Supported by QMK Firmware
-  * VIA json provided!
+* Fully supported by QMK Firmware
 * Per-Key RGB back lighting with 66 easy to solder SK6812-mini-e LEDs
 * Underglow RGB with 14 SMD SK6812-mini LEDs
 * USB-C Hot-plugable sockets for USB connection,
@@ -175,8 +174,8 @@ As I'm using a rather uncommon keyboard layout (K.O,Y) I stick to blank keycaps.
 
 Personal recommendation of Aliexpress stores:
 
-    - [Cool Jazz Store](https://cooljazz.aliexpress.com/store/1806079)
-    - [KRepublic](https://kprepublic.aliexpress.com/store/3034003)
+  - [Cool Jazz Store](https://cooljazz.aliexpress.com/store/1806079)
+  - [KRepublic](https://kprepublic.aliexpress.com/store/3034003)
 
 | Amount | Part                                   | LCSC    | Link                                                                                                                                                                                                                                                                       |
 | ------ | -------------------------------------- | ------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -345,10 +344,6 @@ change these options:
 
 ```makefile
 CONSOLE_ENABLE     = yes
-KEYBOARD_SHARED_EP = yes
-# Disable VIA on RISC-V because the MCU has not enough endpoints
-# to support VIA and console at the same time.
-VIA_ENABLE         = no
 ```
 
 and in [`yaemk.c`](
