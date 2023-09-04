@@ -223,7 +223,7 @@ it is the lower led in the picture.
 They shine up through the PCB,
 away from the surface the keyboard rests on.
 
-![LED chain orientation](images/yaemk_led_chain.webp)
+![LED chain orientation](images/yaemk_leds_chain.webp)
 
 ### Modification of SH1107 display modules
 
